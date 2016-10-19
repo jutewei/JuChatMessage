@@ -22,7 +22,8 @@
 
     _ju_headImage=[[UIButton alloc]init];
     [self.contentView addSubview:_ju_headImage];
-
+    [_ju_headImage.layer setCornerRadius:20];
+    [_ju_headImage setClipsToBounds:YES];
 
     _ju_viewBubble=[JuBubbleView juInit:juModel];
     [self.contentView addSubview:_ju_viewBubble];
