@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB266B091DB70F9C00D4A15F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B081DB70F9C00D4A15F /* main.m */; };
+		EB266B0C1DB70F9C00D4A15F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B0B1DB70F9C00D4A15F /* AppDelegate.m */; };
+		EB266B121DB70F9C00D4A15F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB266B101DB70F9C00D4A15F /* Main.storyboard */; };
+		EB266B141DB70F9C00D4A15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB266B131DB70F9C00D4A15F /* Assets.xcassets */; };
+		EB266B171DB70F9C00D4A15F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB266B151DB70F9C00D4A15F /* LaunchScreen.storyboard */; };
+		EB266B291DB710F800D4A15F /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B201DB710F800D4A15F /* JuLayout.m */; };
+		EB266B2A1DB710F800D4A15F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B221DB710F800D4A15F /* UIView+Frame.m */; };
+		EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B241DB710F800D4A15F /* UIView+JuConstraint.m */; };
+		EB266B2C1DB710F800D4A15F /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B261DB710F800D4A15F /* UIView+JuLayGroup.m */; };
+		EB266B2D1DB710F800D4A15F /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B281DB710F800D4A15F /* UIView+JuLayout.m */; };
+		EB266B301DB7110800D4A15F /* JuChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B2F1DB7110800D4A15F /* JuChatInputView.m */; };
+		EB266B331DB7117F00D4A15F /* JuChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B321DB7117F00D4A15F /* JuChatViewController.m */; };
+		EB266B361DB7141A00D4A15F /* JuChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B351DB7141A00D4A15F /* JuChatMessageCell.m */; };
+		EB266B3E1DB73EA300D4A15F /* consult_LeftBubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */; };
+		EB266B401DB73EB100D4A15F /* consult_RightBubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */; };
+		EB266B421DB73EC500D4A15F /* assistor_news0_03.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B411DB73EC500D4A15F /* assistor_news0_03.png */; };
+		EB266B451DB7482100D4A15F /* JuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B441DB7482100D4A15F /* JuBubbleView.m */; };
+		EB266B471DB74A8B00D4A15F /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB266B461DB74A8B00D4A15F /* timg.jpeg */; };
+		EB266B4A1DB74CAE00D4A15F /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B491DB74CAE00D4A15F /* NextViewController.m */; };
+		EB266B4D1DB7509400D4A15F /* JuBubbleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B4C1DB7509400D4A15F /* JuBubbleImage.m */; };
+		EB266B501DB7552200D4A15F /* JuMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B4F1DB7552200D4A15F /* JuMessageModel.m */; };
+		EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */; };
+		EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB266B041DB70F9C00D4A15F /* JuChatMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuChatMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB266B081DB70F9C00D4A15F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB266B0A1DB70F9C00D4A15F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB266B0B1DB70F9C00D4A15F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB266B111DB70F9C00D4A15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB266B131DB70F9C00D4A15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB266B161DB70F9C00D4A15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB266B181DB70F9C00D4A15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB266B1F1DB710F800D4A15F /* JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLayout.h; sourceTree = "<group>"; };
+		EB266B201DB710F800D4A15F /* JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuLayout.m; sourceTree = "<group>"; };
+		EB266B211DB710F800D4A15F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		EB266B221DB710F800D4A15F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		EB266B231DB710F800D4A15F /* UIView+JuConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuConstraint.h"; sourceTree = "<group>"; };
+		EB266B241DB710F800D4A15F /* UIView+JuConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuConstraint.m"; sourceTree = "<group>"; };
+		EB266B251DB710F800D4A15F /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayGroup.h"; sourceTree = "<group>"; };
+		EB266B261DB710F800D4A15F /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayGroup.m"; sourceTree = "<group>"; };
+		EB266B271DB710F800D4A15F /* UIView+JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayout.h"; sourceTree = "<group>"; };
+		EB266B281DB710F800D4A15F /* UIView+JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayout.m"; sourceTree = "<group>"; };
+		EB266B2E1DB7110800D4A15F /* JuChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatInputView.h; sourceTree = "<group>"; };
+		EB266B2F1DB7110800D4A15F /* JuChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatInputView.m; sourceTree = "<group>"; };
+		EB266B311DB7117F00D4A15F /* JuChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatViewController.h; sourceTree = "<group>"; };
+		EB266B321DB7117F00D4A15F /* JuChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatViewController.m; sourceTree = "<group>"; };
+		EB266B341DB7141A00D4A15F /* JuChatMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatMessageCell.h; sourceTree = "<group>"; };
+		EB266B351DB7141A00D4A15F /* JuChatMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatMessageCell.m; sourceTree = "<group>"; };
+		EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "consult_LeftBubble@3x.png"; sourceTree = "<group>"; };
+		EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "consult_RightBubble@3x.png"; sourceTree = "<group>"; };
+		EB266B411DB73EC500D4A15F /* assistor_news0_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assistor_news0_03.png; sourceTree = "<group>"; };
+		EB266B431DB7482100D4A15F /* JuBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleView.h; sourceTree = "<group>"; };
+		EB266B441DB7482100D4A15F /* JuBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleView.m; sourceTree = "<group>"; };
+		EB266B461DB74A8B00D4A15F /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		EB266B481DB74CAE00D4A15F /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		EB266B491DB74CAE00D4A15F /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		EB266B4B1DB7509400D4A15F /* JuBubbleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleImage.h; sourceTree = "<group>"; };
+		EB266B4C1DB7509400D4A15F /* JuBubbleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleImage.m; sourceTree = "<group>"; };
+		EB266B4E1DB7552200D4A15F /* JuMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuMessageModel.h; sourceTree = "<group>"; };
+		EB266B4F1DB7552200D4A15F /* JuMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuMessageModel.m; sourceTree = "<group>"; };
+		EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceLeft@2x.png"; sourceTree = "<group>"; };
+		EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceRight@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB266B011DB70F9C00D4A15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB266AFB1DB70F9C00D4A15F = {
+			isa = PBXGroup;
+			children = (
+				EB266B061DB70F9C00D4A15F /* JuChatMessage */,
+				EB266B051DB70F9C00D4A15F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB266B051DB70F9C00D4A15F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB266B041DB70F9C00D4A15F /* JuChatMessage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB266B061DB70F9C00D4A15F /* JuChatMessage */ = {
+			isa = PBXGroup;
+			children = (
+				EB266B1E1DB710F800D4A15F /* Layout */,
+				EB266B0A1DB70F9C00D4A15F /* AppDelegate.h */,
+				EB266B0B1DB70F9C00D4A15F /* AppDelegate.m */,
+				EB266B2E1DB7110800D4A15F /* JuChatInputView.h */,
+				EB266B2F1DB7110800D4A15F /* JuChatInputView.m */,
+				EB266B311DB7117F00D4A15F /* JuChatViewController.h */,
+				EB266B321DB7117F00D4A15F /* JuChatViewController.m */,
+				EB266B341DB7141A00D4A15F /* JuChatMessageCell.h */,
+				EB266B351DB7141A00D4A15F /* JuChatMessageCell.m */,
+				EB266B431DB7482100D4A15F /* JuBubbleView.h */,
+				EB266B441DB7482100D4A15F /* JuBubbleView.m */,
+				EB266B4B1DB7509400D4A15F /* JuBubbleImage.h */,
+				EB266B4C1DB7509400D4A15F /* JuBubbleImage.m */,
+				EB266B4E1DB7552200D4A15F /* JuMessageModel.h */,
+				EB266B4F1DB7552200D4A15F /* JuMessageModel.m */,
+				EB266B461DB74A8B00D4A15F /* timg.jpeg */,
+				EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */,
+				EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */,
+				EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */,
+				EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */,
+				EB266B411DB73EC500D4A15F /* assistor_news0_03.png */,
+				EB266B481DB74CAE00D4A15F /* NextViewController.h */,
+				EB266B491DB74CAE00D4A15F /* NextViewController.m */,
+				EB266B101DB70F9C00D4A15F /* Main.storyboard */,
+				EB266B131DB70F9C00D4A15F /* Assets.xcassets */,
+				EB266B151DB70F9C00D4A15F /* LaunchScreen.storyboard */,
+				EB266B181DB70F9C00D4A15F /* Info.plist */,
+				EB266B071DB70F9C00D4A15F /* Supporting Files */,
+			);
+			path = JuChatMessage;
+			sourceTree = "<group>";
+		};
+		EB266B071DB70F9C00D4A15F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB266B081DB70F9C00D4A15F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB266B1E1DB710F800D4A15F /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				EB266B1F1DB710F800D4A15F /* JuLayout.h */,
+				EB266B201DB710F800D4A15F /* JuLayout.m */,
+				EB266B211DB710F800D4A15F /* UIView+Frame.h */,
+				EB266B221DB710F800D4A15F /* UIView+Frame.m */,
+				EB266B231DB710F800D4A15F /* UIView+JuConstraint.h */,
+				EB266B241DB710F800D4A15F /* UIView+JuConstraint.m */,
+				EB266B251DB710F800D4A15F /* UIView+JuLayGroup.h */,
+				EB266B261DB710F800D4A15F /* UIView+JuLayGroup.m */,
+				EB266B271DB710F800D4A15F /* UIView+JuLayout.h */,
+				EB266B281DB710F800D4A15F /* UIView+JuLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB266B031DB70F9C00D4A15F /* JuChatMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB266B1B1DB70F9C00D4A15F /* Build configuration list for PBXNativeTarget "JuChatMessage" */;
+			buildPhases = (
+				EB266B001DB70F9C00D4A15F /* Sources */,
+				EB266B011DB70F9C00D4A15F /* Frameworks */,
+				EB266B021DB70F9C00D4A15F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuChatMessage;
+			productName = JuChatMessage;
+			productReference = EB266B041DB70F9C00D4A15F /* JuChatMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB266AFC1DB70F9C00D4A15F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Juvid;
+				TargetAttributes = {
+					EB266B031DB70F9C00D4A15F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EB266AFF1DB70F9C00D4A15F /* Build configuration list for PBXProject "JuChatMessage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB266AFB1DB70F9C00D4A15F;
+			productRefGroup = EB266B051DB70F9C00D4A15F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB266B031DB70F9C00D4A15F /* JuChatMessage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB266B021DB70F9C00D4A15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB266B401DB73EB100D4A15F /* consult_RightBubble@3x.png in Resources */,
+				EB266B471DB74A8B00D4A15F /* timg.jpeg in Resources */,
+				EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */,
+				EB266B171DB70F9C00D4A15F /* LaunchScreen.storyboard in Resources */,
+				EB266B421DB73EC500D4A15F /* assistor_news0_03.png in Resources */,
+				EB266B141DB70F9C00D4A15F /* Assets.xcassets in Resources */,
+				EB266B3E1DB73EA300D4A15F /* consult_LeftBubble@3x.png in Resources */,
+				EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */,
+				EB266B121DB70F9C00D4A15F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB266B001DB70F9C00D4A15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB266B361DB7141A00D4A15F /* JuChatMessageCell.m in Sources */,
+				EB266B4A1DB74CAE00D4A15F /* NextViewController.m in Sources */,
+				EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */,
+				EB266B451DB7482100D4A15F /* JuBubbleView.m in Sources */,
+				EB266B301DB7110800D4A15F /* JuChatInputView.m in Sources */,
+				EB266B4D1DB7509400D4A15F /* JuBubbleImage.m in Sources */,
+				EB266B2C1DB710F800D4A15F /* UIView+JuLayGroup.m in Sources */,
+				EB266B331DB7117F00D4A15F /* JuChatViewController.m in Sources */,
+				EB266B0C1DB70F9C00D4A15F /* AppDelegate.m in Sources */,
+				EB266B291DB710F800D4A15F /* JuLayout.m in Sources */,
+				EB266B2D1DB710F800D4A15F /* UIView+JuLayout.m in Sources */,
+				EB266B2A1DB710F800D4A15F /* UIView+Frame.m in Sources */,
+				EB266B501DB7552200D4A15F /* JuMessageModel.m in Sources */,
+				EB266B091DB70F9C00D4A15F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB266B101DB70F9C00D4A15F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB266B111DB70F9C00D4A15F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB266B151DB70F9C00D4A15F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB266B161DB70F9C00D4A15F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB266B191DB70F9C00D4A15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB266B1A1DB70F9C00D4A15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB266B1C1DB70F9C00D4A15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JuChatMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.JuChatMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB266B1D1DB70F9C00D4A15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JuChatMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.JuChatMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB266AFF1DB70F9C00D4A15F /* Build configuration list for PBXProject "JuChatMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB266B191DB70F9C00D4A15F /* Debug */,
+				EB266B1A1DB70F9C00D4A15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB266B1B1DB70F9C00D4A15F /* Build configuration list for PBXNativeTarget "JuChatMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB266B1C1DB70F9C00D4A15F /* Debug */,
+				EB266B1D1DB70F9C00D4A15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB266AFC1DB70F9C00D4A15F /* Project object */;
+}
