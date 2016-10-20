@@ -41,11 +41,14 @@
 }
 -(void)setJu_Model:(JuMessageModel *)ju_Model{
     _ju_Model=ju_Model;
+    [_ju_viewBubble juReSetLayout:ju_Model];
     _ju_viewBubble.ju_labMessage.text=ju_Model.ju_messageText;
     [_ju_headImage setBackgroundImage:[UIImage imageNamed:@"assistor_news0_03"] forState:UIControlStateNormal];
 }
 -(void)juLeftLayout{
     self.ju_headImage.juFrame(CGRectMake(10, 10, 40, 40));
+
+    ///< 气泡约束
     self.ju_viewBubble.juLeaSpace.toView(self.ju_headImage).equal(8);
     self.ju_viewBubble.juTrail.lessEqual(80);
 
@@ -57,8 +60,10 @@
 
 -(void)juRightLayout{
     self.ju_headImage.juFrame(CGRectMake(-10, 10, 40, 40));
+     ///< 气泡约束
     self.ju_viewBubble.juTraSpace.toView(self.ju_headImage).equal(-8);
     self.ju_viewBubble.juLead.greaterEqual(80);
+
     _ju_sendStatus.juTraSpace.toView(_ju_viewBubble).equal(-10);
 
     _ju_btnReSend.juTraSpace.toView(_ju_viewBubble).equal(-10);
@@ -70,13 +75,13 @@
     }else{
         [self juLeftLayout];
     }
-
+    ///< 气泡约束
     _ju_viewBubble.juHeight.greaterEqual(44);
-    self.ju_viewBubble.juTop.equal(25);
-    self.ju_viewBubble.juBottom.equal(15);
+    _ju_viewBubble.juTop.equal(25);
+    _ju_viewBubble.juBottom.equal(15);
 
     if (juModel.type==JUMessageBodyTypeVoice) {
-        _ju_viewBubble.juWidth.equal(200);
+        _ju_viewBubble.juWidth.equal(150);
     }
     _ju_btnReSend.juSize(CGSizeMake(30, 30));
     _ju_btnReSend.juCenterY.toView(_ju_viewBubble).equal(0);

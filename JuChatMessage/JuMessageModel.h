@@ -22,5 +22,6 @@ typedef enum{
 @property (nonatomic, assign) JUMessageBodyType type;
 @property (nonatomic, strong) NSString *ju_Identifier;
 @property (nonatomic,strong) NSString *ju_messageText;
+@property (nonatomic,assign) float ju_scale;
 
 @end

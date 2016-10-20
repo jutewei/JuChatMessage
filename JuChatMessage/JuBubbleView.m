@@ -54,7 +54,13 @@
     }
 
 }
-
+-(void)juReSetLayout:(JuMessageModel *)juModel{
+    if (_ju_imgMessage) {
+        self.ju_imgMessage.juWidth.equal(150*juModel.ju_scale);
+        self.ju_imgMessage.juAspectWH.multi(3.0/4.0).equal(0);
+//        self.ju_imgMessage.juHeight.priority(750).equal(200*juModel.ju_scale);
+    }
+}
 -(void)juLeftLayout{
 
     self.ju_imgBubble.image=[[UIImage imageNamed:@"consult_LeftBubble"] stretchableImageWithLeftCapWidth:20 topCapHeight:22];
@@ -64,14 +70,12 @@
     }
     if (self.ju_imgMessage) {
         self.ju_imgMessage.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
-        self.ju_imgMessage.juSize(CGSizeMake(150, 200));
     }
     if (_ju_imgVoice) {
         _ju_imgVoice.image=[UIImage imageNamed:@"chatVoiceLeft"];
         _ju_imgVoice.juLead.equal(15);
         _ju_labVoiceTime.juTrail.equal(15);
     }
-
 }
 
 -(void)juRightLayout{
@@ -83,7 +87,7 @@
     }
     if (self.ju_imgMessage) {
         self.ju_imgMessage.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
-        self.ju_imgMessage.juSize(CGSizeMake(150, 200));
+
     }
     if (_ju_imgVoice) {
         _ju_imgVoice.image=[UIImage imageNamed:@"chatVoiceRight"];

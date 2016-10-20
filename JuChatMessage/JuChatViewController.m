@@ -38,6 +38,7 @@
             juM.type=JUMessageBodyTypeText;
         }else if(i%3==1){
             juM.type=JUMessageBodyTypeImage;
+            juM.ju_scale=0.05*i+1;
         }else{
             juM.type=JUMessageBodyTypeVoice;
         }

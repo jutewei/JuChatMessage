@@ -11,6 +11,7 @@
 @implementation JuBubbleImage
 -(void)layoutSubviews{
     [super layoutSubviews];
+
     NSString *imgName=@"consult_RightBubble";
     if (_isLeft) {
         imgName=@"consult_LeftBubble";
@@ -24,6 +25,10 @@
     self.layer.mask = layer;
     [self setNeedsDisplay];
 }
+-(void)didMoveToWindow{
+    [super didMoveToWindow];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
