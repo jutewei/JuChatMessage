@@ -56,8 +56,8 @@
 }
 -(void)juReSetLayout:(JuMessageModel *)juModel{
     if (_ju_imgMessage) {
-        self.ju_imgMessage.juWidth.equal(150*juModel.ju_scale);
-        self.ju_imgMessage.juAspectWH.multi(3.0/4.0).equal(0);
+        self.ju_imgMessage.juWidth.equal(MIN(100*juModel.ju_scale, 160));
+        self.ju_imgMessage.juAspectWH.multi(600.0/891.0).equal(0);
 //        self.ju_imgMessage.juHeight.priority(750).equal(200*juModel.ju_scale);
     }
 }

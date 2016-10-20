@@ -1,13 +1,13 @@
 //
-//  NextViewController.h
+//  TestViewController.h
 //  JuChatMessage
 //
-//  Created by Juvid on 2016/10/19.
+//  Created by Juvid on 2016/10/20.
 //  Copyright © 2016年 Juvid. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface NextViewController : UIViewController
+@interface TestViewController : UIViewController
 
 @end

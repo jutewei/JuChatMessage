@@ -10,9 +10,8 @@
 #import "JuChatInputView.h"
 #import "UIView+JuLayGroup.h"
 #import "JuChatMessageCell.h"
-#import "NextViewController.h"
 #import "JuMessageModel.h"
-@interface JuChatViewController (){
+@interface JuChatViewController ()<JuChatMessageDelegate>{
     JuChatInputView * ju_InputView;
     __weak IBOutlet UITableView *ju_TableView;
     NSMutableArray *ju_MArrList;
@@ -24,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title=@"chatDome";
     ju_TableView.rowHeight=UITableViewAutomaticDimension;
     ju_TableView.estimatedRowHeight=50;
     ju_TableView.separatorStyle=UITableViewCellSeparatorStyleNone;
@@ -59,6 +59,7 @@
     JuChatMessageCell *cell=[tableView dequeueReusableCellWithIdentifier:juM.ju_Identifier];
     if (!cell) {
         cell=[[JuChatMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:juM.ju_Identifier withModel:juM];
+        cell.delegate=self;
     }
     cell.ju_Model=juM;
     return cell;
@@ -76,9 +77,7 @@
     [ju_InputView juViewWillDisAppear];
 }
 - (IBAction)juTouchNext:(id)sender {
-    NextViewController *vc=[[NextViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
+  }
 
 -(void)juSetInputView{
     ju_InputView =[[JuChatInputView alloc]init];

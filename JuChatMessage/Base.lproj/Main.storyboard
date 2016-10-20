@@ -51,9 +51,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="46e-AK-jCX">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="QYW-j4-9jO">
+                        <barButtonItem key="rightBarButtonItem" title="下一个" id="QYW-j4-9jO">
                             <connections>
-                                <action selector="juTouchNext:" destination="PTq-32-U4i" id="HTl-2D-ikh"/>
+                                <segue destination="7w0-CF-gpV" kind="push" id="wPW-hs-XhX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="722" y="20"/>
         </scene>
-        <!--View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="Ytb-Fe-POc">
             <objects>
-                <viewController id="7w0-CF-gpV" sceneMemberID="viewController">
+                <viewController id="7w0-CF-gpV" customClass="TestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NyC-Io-vxf"/>
                         <viewControllerLayoutGuide type="bottom" id="kNh-sI-N6m"/>
@@ -123,10 +123,7 @@
                                             <constraint firstItem="o21-vW-1wu" firstAttribute="top" secondItem="l6p-gX-kvw" secondAttribute="top" constant="20" id="ozx-jw-gwQ"/>
                                         </constraints>
                                     </view>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="X1R-Qc-TQg">
-                                        <frame key="frameInset" minX="100" minY="511" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </activityIndicatorView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="X1R-Qc-TQg"/>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Es-c7-bzY">
                                         <frame key="frameInset" minX="8" minY="54" height="128"/>
                                         <subviews>
@@ -159,7 +156,9 @@
                                     <constraint firstItem="l6p-gX-kvw" firstAttribute="leading" secondItem="L2G-Ur-cwA" secondAttribute="leading" constant="38" id="MsW-Sr-sFP"/>
                                     <constraint firstItem="l6p-gX-kvw" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="L2G-Ur-cwA" secondAttribute="trailing" constant="-97" id="Qee-ab-Kbi"/>
                                     <constraint firstAttribute="bottom" secondItem="Xt5-HX-qNo" secondAttribute="bottom" constant="146" id="U2W-mw-zLH"/>
+                                    <constraint firstItem="X1R-Qc-TQg" firstAttribute="leading" secondItem="L2G-Ur-cwA" secondAttribute="leading" constant="100" id="cvu-bb-6Wo"/>
                                     <constraint firstItem="l6p-gX-kvw" firstAttribute="top" secondItem="L2G-Ur-cwA" secondAttribute="top" constant="206" id="dxy-ot-Ce6"/>
+                                    <constraint firstAttribute="bottom" secondItem="X1R-Qc-TQg" secondAttribute="bottom" constant="72" id="kcj-dE-b1W"/>
                                     <constraint firstItem="Xt5-HX-qNo" firstAttribute="top" secondItem="l6p-gX-kvw" secondAttribute="bottom" constant="85" id="p1Y-NQ-gOR"/>
                                     <constraint firstItem="XRn-PC-GWJ" firstAttribute="top" secondItem="L2G-Ur-cwA" secondAttribute="top" constant="158" id="rex-8f-M6n"/>
                                     <constraint firstItem="Xt5-HX-qNo" firstAttribute="top" secondItem="L2G-Ur-cwA" secondAttribute="top" constant="419" id="tlF-bj-gBq"/>
@@ -175,6 +174,7 @@
                             <constraint firstAttribute="trailing" secondItem="L2G-Ur-cwA" secondAttribute="trailing" id="tVG-qT-qMl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="HVh-gp-H5w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Eo-Er-iSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

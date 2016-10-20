@@ -25,11 +25,11 @@
 		EB266B421DB73EC500D4A15F /* assistor_news0_03.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B411DB73EC500D4A15F /* assistor_news0_03.png */; };
 		EB266B451DB7482100D4A15F /* JuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B441DB7482100D4A15F /* JuBubbleView.m */; };
 		EB266B471DB74A8B00D4A15F /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB266B461DB74A8B00D4A15F /* timg.jpeg */; };
-		EB266B4A1DB74CAE00D4A15F /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B491DB74CAE00D4A15F /* NextViewController.m */; };
 		EB266B4D1DB7509400D4A15F /* JuBubbleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B4C1DB7509400D4A15F /* JuBubbleImage.m */; };
 		EB266B501DB7552200D4A15F /* JuMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B4F1DB7552200D4A15F /* JuMessageModel.m */; };
 		EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */; };
 		EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */; };
+		EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46F1BB1DB86A50004AB89A /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,14 +63,14 @@
 		EB266B431DB7482100D4A15F /* JuBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleView.h; sourceTree = "<group>"; };
 		EB266B441DB7482100D4A15F /* JuBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleView.m; sourceTree = "<group>"; };
 		EB266B461DB74A8B00D4A15F /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
-		EB266B481DB74CAE00D4A15F /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
-		EB266B491DB74CAE00D4A15F /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		EB266B4B1DB7509400D4A15F /* JuBubbleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleImage.h; sourceTree = "<group>"; };
 		EB266B4C1DB7509400D4A15F /* JuBubbleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleImage.m; sourceTree = "<group>"; };
 		EB266B4E1DB7552200D4A15F /* JuMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuMessageModel.h; sourceTree = "<group>"; };
 		EB266B4F1DB7552200D4A15F /* JuMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuMessageModel.m; sourceTree = "<group>"; };
 		EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceLeft@2x.png"; sourceTree = "<group>"; };
 		EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceRight@2x.png"; sourceTree = "<group>"; };
+		EB46F1BA1DB86A50004AB89A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		EB46F1BB1DB86A50004AB89A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,14 +118,14 @@
 				EB266B4C1DB7509400D4A15F /* JuBubbleImage.m */,
 				EB266B4E1DB7552200D4A15F /* JuMessageModel.h */,
 				EB266B4F1DB7552200D4A15F /* JuMessageModel.m */,
+				EB46F1BA1DB86A50004AB89A /* TestViewController.h */,
+				EB46F1BB1DB86A50004AB89A /* TestViewController.m */,
 				EB266B461DB74A8B00D4A15F /* timg.jpeg */,
 				EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */,
 				EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */,
 				EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */,
 				EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */,
 				EB266B411DB73EC500D4A15F /* assistor_news0_03.png */,
-				EB266B481DB74CAE00D4A15F /* NextViewController.h */,
-				EB266B491DB74CAE00D4A15F /* NextViewController.m */,
 				EB266B101DB70F9C00D4A15F /* Main.storyboard */,
 				EB266B131DB70F9C00D4A15F /* Assets.xcassets */,
 				EB266B151DB70F9C00D4A15F /* LaunchScreen.storyboard */,
@@ -238,8 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB266B361DB7141A00D4A15F /* JuChatMessageCell.m in Sources */,
-				EB266B4A1DB74CAE00D4A15F /* NextViewController.m in Sources */,
 				EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */,
+				EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */,
 				EB266B451DB7482100D4A15F /* JuBubbleView.m in Sources */,
 				EB266B301DB7110800D4A15F /* JuChatInputView.m in Sources */,
 				EB266B4D1DB7509400D4A15F /* JuBubbleImage.m in Sources */,
@@ -409,6 +409,7 @@
 				EB266B1D1DB70F9C00D4A15F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
