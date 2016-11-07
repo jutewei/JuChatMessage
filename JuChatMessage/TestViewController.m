@@ -16,6 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+
+    NSArray *arr=@[@"gfdgfd"];
+    NSMutableArray *Marr=[arr copy];
+    if ([Marr isKindOfClass:[NSMutableArray class]]) {
+        NSLog(@"可变数组1");
+    }
+    if ([Marr isMemberOfClass:[NSMutableArray class]]) {
+        NSLog(@"可变数组2");
+    }
+
    UIActivityIndicatorView *_ju_sendStatus=[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     [self.view addSubview:_ju_sendStatus];
     [_ju_sendStatus startAnimating];
