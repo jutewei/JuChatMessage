@@ -11,7 +11,7 @@
 #import "JuBubbleView.h"
 #import "JuMessageModel.h"
 @protocol JuChatMessageDelegate;
-@interface JuChatMessageCell : UITableViewCell
+@interface JuBaseMessageCell : UITableViewCell
 @property (nonatomic,readonly) JuBubbleView *ju_viewBubble;///< 气泡父视图
 @property (nonatomic,readonly) UILabel *ju_labName;///< 昵称
 @property (nonatomic,readonly) UIButton *ju_headImage;///< 头像

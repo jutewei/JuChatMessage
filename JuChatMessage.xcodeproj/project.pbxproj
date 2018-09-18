@@ -10,7 +10,7 @@
 		EB20E56C1DD0593700A05A95 /* JuBubbleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5611DD0593700A05A95 /* JuBubbleImage.m */; };
 		EB20E56D1DD0593700A05A95 /* JuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5631DD0593700A05A95 /* JuBubbleView.m */; };
 		EB20E56E1DD0593700A05A95 /* JuChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5651DD0593700A05A95 /* JuChatInputView.m */; };
-		EB20E56F1DD0593700A05A95 /* JuChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5671DD0593700A05A95 /* JuChatMessageCell.m */; };
+		EB20E56F1DD0593700A05A95 /* JuBaseMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */; };
 		EB20E5701DD0593700A05A95 /* JuChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5691DD0593700A05A95 /* JuChatViewController.m */; };
 		EB20E5711DD0593700A05A95 /* JuMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E56B1DD0593700A05A95 /* JuMessageModel.m */; };
 		EB266B091DB70F9C00D4A15F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B081DB70F9C00D4A15F /* main.m */; };
@@ -32,6 +32,10 @@
 		EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46F1BB1DB86A50004AB89A /* TestViewController.m */; };
 		EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */; };
 		EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */; };
+		EBAAD9B3214FA90D000248B3 /* JuBubbleView+image.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAAD9B2214FA90D000248B3 /* JuBubbleView+image.m */; };
+		EBAAD9B6214FA919000248B3 /* JuBubbleView+text.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAAD9B5214FA919000248B3 /* JuBubbleView+text.m */; };
+		EBAAD9B9214FA924000248B3 /* JuBubbleView+gif.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAAD9B8214FA924000248B3 /* JuBubbleView+gif.m */; };
+		EBAAD9BC214FAB94000248B3 /* JuBubbleView+Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAAD9BB214FAB94000248B3 /* JuBubbleView+Voice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +45,8 @@
 		EB20E5631DD0593700A05A95 /* JuBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleView.m; sourceTree = "<group>"; };
 		EB20E5641DD0593700A05A95 /* JuChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatInputView.h; sourceTree = "<group>"; };
 		EB20E5651DD0593700A05A95 /* JuChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatInputView.m; sourceTree = "<group>"; };
-		EB20E5661DD0593700A05A95 /* JuChatMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatMessageCell.h; sourceTree = "<group>"; };
-		EB20E5671DD0593700A05A95 /* JuChatMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatMessageCell.m; sourceTree = "<group>"; };
+		EB20E5661DD0593700A05A95 /* JuBaseMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBaseMessageCell.h; sourceTree = "<group>"; };
+		EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBaseMessageCell.m; sourceTree = "<group>"; };
 		EB20E5681DD0593700A05A95 /* JuChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatViewController.h; sourceTree = "<group>"; };
 		EB20E5691DD0593700A05A95 /* JuChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatViewController.m; sourceTree = "<group>"; };
 		EB20E56A1DD0593700A05A95 /* JuMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuMessageModel.h; sourceTree = "<group>"; };
@@ -75,6 +79,14 @@
 		EB46F1BB1DB86A50004AB89A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_record@2x.png"; sourceTree = "<group>"; };
 		EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_more@2x.png"; sourceTree = "<group>"; };
+		EBAAD9B1214FA90D000248B3 /* JuBubbleView+image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+image.h"; sourceTree = "<group>"; };
+		EBAAD9B2214FA90D000248B3 /* JuBubbleView+image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+image.m"; sourceTree = "<group>"; };
+		EBAAD9B4214FA919000248B3 /* JuBubbleView+text.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+text.h"; sourceTree = "<group>"; };
+		EBAAD9B5214FA919000248B3 /* JuBubbleView+text.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+text.m"; sourceTree = "<group>"; };
+		EBAAD9B7214FA924000248B3 /* JuBubbleView+gif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+gif.h"; sourceTree = "<group>"; };
+		EBAAD9B8214FA924000248B3 /* JuBubbleView+gif.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+gif.m"; sourceTree = "<group>"; };
+		EBAAD9BA214FAB94000248B3 /* JuBubbleView+Voice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Voice.h"; sourceTree = "<group>"; };
+		EBAAD9BB214FAB94000248B3 /* JuBubbleView+Voice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Voice.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,18 +103,12 @@
 		EB20E55F1DD0593700A05A95 /* JuChatMessage */ = {
 			isa = PBXGroup;
 			children = (
-				EB20E5601DD0593700A05A95 /* JuBubbleImage.h */,
-				EB20E5611DD0593700A05A95 /* JuBubbleImage.m */,
-				EB20E5621DD0593700A05A95 /* JuBubbleView.h */,
-				EB20E5631DD0593700A05A95 /* JuBubbleView.m */,
-				EB20E5641DD0593700A05A95 /* JuChatInputView.h */,
-				EB20E5651DD0593700A05A95 /* JuChatInputView.m */,
-				EB20E5661DD0593700A05A95 /* JuChatMessageCell.h */,
-				EB20E5671DD0593700A05A95 /* JuChatMessageCell.m */,
+				EBAAD9B0214FA8AD000248B3 /* Model */,
+				EBAAD9AF214FA89A000248B3 /* chatBar */,
+				EBAAD9AE214FA882000248B3 /* Cell */,
+				EBAAD9AD214FA873000248B3 /* Bubble */,
 				EB20E5681DD0593700A05A95 /* JuChatViewController.h */,
 				EB20E5691DD0593700A05A95 /* JuChatViewController.m */,
-				EB20E56A1DD0593700A05A95 /* JuMessageModel.h */,
-				EB20E56B1DD0593700A05A95 /* JuMessageModel.m */,
 			);
 			path = JuChatMessage;
 			sourceTree = "<group>";
@@ -172,6 +178,52 @@
 				EB266B281DB710F800D4A15F /* UIView+JuLayout.m */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		EBAAD9AD214FA873000248B3 /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				EB20E5601DD0593700A05A95 /* JuBubbleImage.h */,
+				EB20E5611DD0593700A05A95 /* JuBubbleImage.m */,
+				EB20E5621DD0593700A05A95 /* JuBubbleView.h */,
+				EB20E5631DD0593700A05A95 /* JuBubbleView.m */,
+				EBAAD9B7214FA924000248B3 /* JuBubbleView+gif.h */,
+				EBAAD9B8214FA924000248B3 /* JuBubbleView+gif.m */,
+				EBAAD9B4214FA919000248B3 /* JuBubbleView+text.h */,
+				EBAAD9B5214FA919000248B3 /* JuBubbleView+text.m */,
+				EBAAD9B1214FA90D000248B3 /* JuBubbleView+image.h */,
+				EBAAD9B2214FA90D000248B3 /* JuBubbleView+image.m */,
+				EBAAD9BA214FAB94000248B3 /* JuBubbleView+Voice.h */,
+				EBAAD9BB214FAB94000248B3 /* JuBubbleView+Voice.m */,
+			);
+			path = Bubble;
+			sourceTree = "<group>";
+		};
+		EBAAD9AE214FA882000248B3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB20E5661DD0593700A05A95 /* JuBaseMessageCell.h */,
+				EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EBAAD9AF214FA89A000248B3 /* chatBar */ = {
+			isa = PBXGroup;
+			children = (
+				EB20E5641DD0593700A05A95 /* JuChatInputView.h */,
+				EB20E5651DD0593700A05A95 /* JuChatInputView.m */,
+			);
+			path = chatBar;
+			sourceTree = "<group>";
+		};
+		EBAAD9B0214FA8AD000248B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB20E56A1DD0593700A05A95 /* JuMessageModel.h */,
+				EB20E56B1DD0593700A05A95 /* JuMessageModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,14 +305,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAAD9BC214FAB94000248B3 /* JuBubbleView+Voice.m in Sources */,
 				EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */,
 				EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */,
-				EB20E56F1DD0593700A05A95 /* JuChatMessageCell.m in Sources */,
+				EBAAD9B9214FA924000248B3 /* JuBubbleView+gif.m in Sources */,
+				EB20E56F1DD0593700A05A95 /* JuBaseMessageCell.m in Sources */,
 				EB266B2C1DB710F800D4A15F /* UIView+JuLayGroup.m in Sources */,
+				EBAAD9B6214FA919000248B3 /* JuBubbleView+text.m in Sources */,
 				EB266B0C1DB70F9C00D4A15F /* AppDelegate.m in Sources */,
 				EB266B291DB710F800D4A15F /* JuLayout.m in Sources */,
 				EB20E56D1DD0593700A05A95 /* JuBubbleView.m in Sources */,
 				EB20E56C1DD0593700A05A95 /* JuBubbleImage.m in Sources */,
+				EBAAD9B3214FA90D000248B3 /* JuBubbleView+image.m in Sources */,
 				EB266B2D1DB710F800D4A15F /* UIView+JuLayout.m in Sources */,
 				EB266B2A1DB710F800D4A15F /* UIView+Frame.m in Sources */,
 				EB20E56E1DD0593700A05A95 /* JuChatInputView.m in Sources */,

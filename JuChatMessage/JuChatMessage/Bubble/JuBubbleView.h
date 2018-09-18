@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JuBubbleImage.h"
+#import "JuMessageModel.h"
 #import "UIView+JuLayGroup.h"
 @interface JuBubbleView : UIView
 
@@ -23,4 +24,7 @@
 @property (nonatomic,strong) UILabel     *ju_labVoiceTime;///< 语音信息
 
 -(void)juReSetLayout:(id)juModel;
+
+-(void)juSetBubbleContent:(JuMessageModel *)juModel;
+
 @end

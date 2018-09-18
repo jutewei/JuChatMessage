@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Juvid. All rights reserved.
 //
 
-#import "JuChatMessageCell.h"
+#import "JuBaseMessageCell.h"
 #import "UIView+JuLayGroup.h"
-@implementation JuChatMessageCell
+@implementation JuBaseMessageCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier withModel:(JuMessageModel *)juModel{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -18,6 +18,7 @@
     }
     return self;
 }
+
 -(void)juInitView:(JuMessageModel *)juModel{
 
     _ju_headImage=[[UIButton alloc]init];
@@ -31,20 +32,15 @@
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(juTouchBubbleView:)];
     [_ju_viewBubble addGestureRecognizer:tapRecognizer];
 
-
     _ju_btnReSend=[[UIButton alloc]init];
     [_ju_btnReSend addTarget:self action:@selector(juTouchReSend:) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:_ju_btnReSend];
-
 
     _ju_actStatus=[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     _ju_actStatus.hidesWhenStopped=YES;
     [self.contentView addSubview:_ju_actStatus];
 
-
-
     [self juSetLayout:juModel];
-
 }
 
 
@@ -55,6 +51,7 @@
     [_ju_actStatus startAnimating];
     _ju_viewBubble.ju_labMessage.text=ju_Model.ju_messageText;
     [_ju_headImage setBackgroundImage:[UIImage imageNamed:@"assistor_news0_03"] forState:UIControlStateNormal];
+    [_ju_viewBubble juSetBubbleContent:ju_Model];
 }
 
 -(void)juSetLayout:(JuMessageModel *)juModel{

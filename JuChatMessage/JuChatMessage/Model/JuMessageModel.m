@@ -9,6 +9,7 @@
 #import "JuMessageModel.h"
 
 @implementation JuMessageModel
+
 -(NSString *)ju_Identifier{
     NSArray *arrSend=@[@"left",@"right"];
     NSArray *arrType=@[@"text",@"image",@"voice"];
