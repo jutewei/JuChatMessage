@@ -228,10 +228,12 @@
 }
 //按下
 -(void)juRecordTouchDown{
+    [_ju_btnRecord setTitle:@"松开发送" forState:UIControlStateNormal];
     [self.ju_recordView juStartRecord:self.superview];
 }
 //松开录制完成
 -(void)juRecordTouchUpInside{
+    [_ju_btnRecord setTitle:@"按住说话" forState:UIControlStateNormal];
     [self.ju_recordView juStopRecord];
     if ([self.delegate respondsToSelector:@selector(juDidSendVoice:)]) {
         [self.delegate juDidSendVoice:nil];
@@ -239,10 +241,12 @@
 }
 //移走后松开取消录制
 -(void)juRecordTouchUpOutside{
+    [_ju_btnRecord setTitle:@"按住说话" forState:UIControlStateNormal];
     [self.ju_recordView juStopRecord];
 }
 //移动回来
 -(void)juRecordDragInside{
+
     [self.ju_recordView juSetVoiceImage:NO];
 }
 //移走
