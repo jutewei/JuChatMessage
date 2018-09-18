@@ -91,7 +91,7 @@
         [weakSelf juGetText:text];
     };
     ju_InputView.ju_tableView=ju_TableView;
-    ju_InputView.juFrame(CGRectMake(0.01, -0.01, 0, 47));
+    ju_InputView.juSafeFrame(CGRectMake(0.01, -0.01, 0, 47));
 }
 -(void)juGetText:(NSString *)text{
     JuMessageModel *juM=[JuMessageModel new];

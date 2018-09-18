@@ -51,6 +51,10 @@
     if ([notification.name isEqualToString:UIKeyboardWillHideNotification]) {
         [self juChangeBarHeight:CGRectMake(0, 0, 0, 0) duration:animationDuration];
     }else if([notification.name isEqualToString:UIKeyboardWillChangeFrameNotification]){
+        if (@available(iOS 11.0, *)) {///< 减去安全区域底部高度
+            UIEdgeInsets instes = self.superview.safeAreaInsets;
+            keyboardEndFrame.size.height-=instes.bottom;
+        }
         [self juChangeBarHeight:keyboardEndFrame duration:animationDuration];
     }
 }
@@ -138,18 +142,8 @@
     _ju_btnRecord.juTrail.toView(_ju_TextView).equal(0);
 
 }
--(void)juTouchVoice:(UIButton *)sender{
-    _ju_btnRecord.hidden=!_ju_btnRecord.hidden;
-    _ju_TextView.hidden=!_ju_btnRecord.hidden;
-    if (_ju_btnRecord.hidden) {
-        [self textViewDidChange:_ju_TextView];
-    }else{
-        [self adjustTextViewHeightBy:33];
-    }
-}
--(void)juTouchMore:(UIButton *)sender{
 
-}
+
 /**弹键盘设置**/
 //检测输入框文本高度
 - (void)textViewDidChange:(UITextView *)textView
@@ -188,11 +182,9 @@
     CGFloat maxHeight = [JuChatInputView maxHeight];
     changeHeight=MIN(maxHeight, changeHeight+14);//   changeInHeight+19 文本内容高度加上最小高度
     self.ju_Height.constant=changeHeight;
-
-    [UIView animateWithDuration:0.3 animations:^{
-        [self layoutIfNeeded];
-    }];
-
+//    [UIView animateWithDuration:0.3 animations:^{
+//        [self layoutIfNeeded];
+//    }];
 }
 ///每行高度
 + (CGFloat)textViewLineHeight{
@@ -205,6 +197,19 @@
 /// 最大高度
 + (CGFloat)maxHeight{
     return ([self maxLines] + 1.0f) * [self textViewLineHeight];
+}
+
+-(void)juTouchVoice:(UIButton *)sender{
+    _ju_btnRecord.hidden=!_ju_btnRecord.hidden;
+    _ju_TextView.hidden=!_ju_btnRecord.hidden;
+    if (_ju_btnRecord.hidden) {
+        [self textViewDidChange:_ju_TextView];
+    }else{
+        [self adjustTextViewHeightBy:33];
+    }
+}
+-(void)juTouchMore:(UIButton *)sender{
+
 }
 -(void)dealloc{
     [self juViewWillDisAppear];
