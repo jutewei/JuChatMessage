@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @protocol JuChatBarDelegate <NSObject>
+
+@optional
 - (void)juDidSendText:(NSString *)text;
 
 - (void)juDidSendText:(NSString *)text withExt:(NSDictionary*)ext;
@@ -31,4 +33,5 @@
 - (void)juDidDragOutsideAction:(UIView *)recordView;
 
 - (void)juDidDragInsideAction:(UIView *)recordView;
+
 @end

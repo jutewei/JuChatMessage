@@ -9,10 +9,12 @@
 #import "JuChatBarView.h"
 #import "UIView+JuLayGroup.h"
 #import "JuRecordView.h"
+#import "JuChatMoreView.h"
 #import "JuChatBarDelegate.h"
 
 @implementation JuChatBarView{
     JuRecordView *ju_recordView;
+    JuChatMoreView *ju_chatMoreView;
 }
 
 -(instancetype)init{
@@ -26,8 +28,8 @@
 
 -(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
     UIView *view=[super hitTest:point withEvent:event];
-    if (!view&&_ju_TextView.isFirstResponder) {
-        [_ju_TextView resignFirstResponder];
+    if (!view&&(_ju_TextView.isFirstResponder||!ju_chatMoreView.hidden)) {
+        [self juNotHiddenView:self.juViewItem];
     }
     return view;
 }
@@ -54,32 +56,17 @@
     [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
 
     if ([notification.name isEqualToString:UIKeyboardWillHideNotification]) {
-        [self juChangeBarHeight:CGRectMake(0, 0, 0, 0) duration:animationDuration];
+        [self juChangeBarHeight:0 duration:animationDuration];
     }else if([notification.name isEqualToString:UIKeyboardWillChangeFrameNotification]){
         if (@available(iOS 11.0, *)) {///< 减去安全区域底部高度
             UIEdgeInsets instes = self.superview.safeAreaInsets;
             keyboardEndFrame.size.height-=instes.bottom;
         }
-        [self juChangeBarHeight:keyboardEndFrame duration:animationDuration];
+        [self juChangeBarHeight:keyboardEndFrame.size.height duration:animationDuration];
     }
 }
 
--(void)juChangeBarHeight:(CGRect)frame duration:(NSTimeInterval)time{
-///< 键盘动画可以不用设置动画，我也是醉了
-    CGFloat height=frame.size.height;
-    UIEdgeInsets inset=self.ju_tableView.contentInset;
-    inset.bottom = frame.size.height;
-    self.ju_tableView.contentInset=inset;
 
-    if (height>0&&[self.ju_tableView numberOfRowsInSection:0]>0) {
-        [self.ju_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[self.ju_tableView numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
-    }
-
-    self.ju_Bottom.constant=height;
-    [UIView animateWithDuration:time animations:^{
-        [self.superview layoutIfNeeded];
-    }];
-}
 -(void)juSetTextView{
     ///< 文本输入
     _ju_TextView=[[UITextView alloc]init];
@@ -95,12 +82,13 @@
     _ju_TextView.juBottom.equal(7);
     _ju_TextView.juTop.equal(7);
 
-
+    //分割线
     UIView *vieLine=[[UIView alloc]init];
     vieLine.backgroundColor=[UIColor lightGrayColor];
     [self addSubview:vieLine];
     vieLine.juFrame(CGRectMake(0, 0.01, 0, 0.5));
 
+    //录音按钮
     _ju_btnVoice=[[UIButton alloc]init];
     [_ju_btnVoice addTarget:self action:@selector(juTouchVoice:) forControlEvents:UIControlEventTouchUpInside];
     [_ju_btnVoice setImage:[UIImage imageNamed:@"chatBar_record"] forState:UIControlStateNormal];
@@ -128,6 +116,7 @@
     _ju_btnRecord.juTrail.equal(10);
     _ju_btnRecord.juHeight.equal(33);
 
+//更多按钮操作
     _ju_btnMedia=[[UIButton alloc]init];
     [_ju_btnMedia addTarget:self action:@selector(juTouchMore:) forControlEvents:UIControlEventTouchUpInside];
     [_ju_btnMedia setImage:[UIImage imageNamed:@"chatBar_more"] forState:UIControlStateNormal];
@@ -135,7 +124,6 @@
     _ju_btnMedia.juTrail.equal(5);
     _ju_btnMedia.juCenterY.equal(0);
     _ju_btnMedia.juSize(CGSizeMake(35, 35));
-
 
     if (_ju_btnVoice) {
         _ju_TextView.juLeaSpace.toView(_ju_btnVoice).equal(5);
@@ -152,7 +140,22 @@
     _ju_btnRecord.juTrail.toView(_ju_TextView).equal(0);
 
 }
+-(void)juChangeBarHeight:(CGFloat)height duration:(NSTimeInterval)time{
+    ///< 键盘动画可以不用设置动画，我也是醉了
 
+    UIEdgeInsets inset=self.ju_tableView.contentInset;
+    inset.bottom = height;
+    self.ju_tableView.contentInset=inset;
+
+    if (height>0&&[self.ju_tableView numberOfRowsInSection:0]>0) {
+        [self.ju_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[self.ju_tableView numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+    }
+
+    self.ju_Bottom.constant=height;
+    [UIView animateWithDuration:time animations:^{
+        [self.superview layoutIfNeeded];
+    }];
+}
 /**弹键盘设置**/
 //检测输入框文本高度
 - (void)textViewDidChange:(UITextView *)textView
@@ -188,9 +191,6 @@
     CGFloat maxHeight = [JuChatBarView maxHeight];
     changeHeight=MIN(maxHeight, changeHeight+14);//   changeInHeight+19 文本内容高度加上最小高度
     self.ju_Height.constant=changeHeight;
-//    [UIView animateWithDuration:0.3 animations:^{
-//        [self layoutIfNeeded];
-//    }];
 }
 ///每行高度
 + (CGFloat)textViewLineHeight{
@@ -214,16 +214,62 @@
 
 /***各个事件处理***/
 -(void)juTouchMore:(UIButton *)sender{
-
+    sender.selected=!sender.selected;
+    if (!ju_chatMoreView) {
+        ju_chatMoreView=[[JuChatMoreView alloc]init];
+    }
+    [self juShowView:sender.selected?@"more":@"text"];
 }
 /**语音与键盘切换*/
 -(void)juTouchVoice:(UIButton *)sender{
-    _ju_btnRecord.hidden=!_ju_btnRecord.hidden;
-    _ju_TextView.hidden=!_ju_btnRecord.hidden;
-    if (_ju_btnRecord.hidden) {
-        [self textViewDidChange:_ju_TextView];
+    sender.selected=!sender.selected;
+    [self juShowView:sender.selected?@"voice":@"text"];
+}
+/**键盘显示*/
+-(void)textViewDidBeginEditing:(UITextView *)textView{
+    [self juShowView:@"text"];
+}
+-(NSArray *)juViewItem{
+    return @[@"text",@"voice",@"more"];
+}
+//显示单个事件
+-(void)juShowView:(NSString *)type{
+    NSMutableArray *arrItem=[self.juViewItem mutableCopy];
+    [arrItem removeObject:type];
+    [self juNotHiddenView:arrItem];
+    _ju_TextView.hidden=NO;
+    if ([type isEqual:@"text"]) {
+        [_ju_TextView becomeFirstResponder];
+    }else if ([type isEqual:@"voice"]){
+        _ju_btnRecord.hidden=NO;
+        _ju_TextView.hidden=YES;
+        [self juChangeBarHeight:0 duration:0.3];
     }else{
-        [self adjustTextViewHeightBy:33];
+        [self juChangeBarHeight:[JuChatMoreView juHeight] duration:0.3];
+        [ju_chatMoreView juShowView:self.superview];
+    }
+}
+//隐藏多个事件
+-(void)juNotHiddenView:(NSArray *)types{
+    for (NSString *string in types) {
+        if ([string isEqual:@"text"]) {
+            if (_ju_TextView.isFirstResponder) {
+                 [_ju_TextView resignFirstResponder];
+            }
+        }else if ([string isEqual:@"voice"]){
+            if (!_ju_btnRecord.hidden) {
+                _ju_btnRecord.hidden=YES;
+                _ju_btnVoice.selected=NO;
+            }
+        }else if ([string isEqual:@"more"]){
+            if (!ju_chatMoreView.hidden) {
+                _ju_btnMedia.selected=NO;
+                [ju_chatMoreView juShowView:nil];
+            }
+        }
+    }
+    if (types.count==self.juViewItem.count) {
+        [self juChangeBarHeight:0 duration:0.3];
     }
 }
 //按下

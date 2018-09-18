@@ -54,6 +54,10 @@
 		EB3590132150C1A900B5AABC /* RecordingSignal006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFF2150C1A900B5AABC /* RecordingSignal006@2x.png */; };
 		EB3590142150C1A900B5AABC /* RecordCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3590002150C1A900B5AABC /* RecordCancel@2x.png */; };
 		EB3590172150C6EA00B5AABC /* JuRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3590162150C6EA00B5AABC /* JuRecordView.m */; };
+		EB35901B2150DEDB00B5AABC /* JuBubbleView+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = EB35901A2150DEDA00B5AABC /* JuBubbleView+Video.m */; };
+		EB35901E2150DEF600B5AABC /* JuBubbleView+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = EB35901D2150DEF600B5AABC /* JuBubbleView+Location.m */; };
+		EB3590212150DF0300B5AABC /* JuBubbleView+File.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3590202150DF0300B5AABC /* JuBubbleView+File.m */; };
+		EB3590242150DF4000B5AABC /* JuChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3590232150DF4000B5AABC /* JuChatMoreView.m */; };
 		EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46F1BB1DB86A50004AB89A /* TestViewController.m */; };
 		EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */; };
 		EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */; };
@@ -130,6 +134,14 @@
 		EB3590152150C6EA00B5AABC /* JuRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRecordView.h; sourceTree = "<group>"; };
 		EB3590162150C6EA00B5AABC /* JuRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuRecordView.m; sourceTree = "<group>"; };
 		EB3590182150D59B00B5AABC /* JuChatBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuChatBarDelegate.h; sourceTree = "<group>"; };
+		EB3590192150DEDA00B5AABC /* JuBubbleView+Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Video.h"; sourceTree = "<group>"; };
+		EB35901A2150DEDA00B5AABC /* JuBubbleView+Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Video.m"; sourceTree = "<group>"; };
+		EB35901C2150DEF600B5AABC /* JuBubbleView+Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Location.h"; sourceTree = "<group>"; };
+		EB35901D2150DEF600B5AABC /* JuBubbleView+Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Location.m"; sourceTree = "<group>"; };
+		EB35901F2150DF0300B5AABC /* JuBubbleView+File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+File.h"; sourceTree = "<group>"; };
+		EB3590202150DF0300B5AABC /* JuBubbleView+File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+File.m"; sourceTree = "<group>"; };
+		EB3590222150DF4000B5AABC /* JuChatMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuChatMoreView.h; sourceTree = "<group>"; };
+		EB3590232150DF4000B5AABC /* JuChatMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuChatMoreView.m; sourceTree = "<group>"; };
 		EB46F1BA1DB86A50004AB89A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB46F1BB1DB86A50004AB89A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_record@2x.png"; sourceTree = "<group>"; };
@@ -307,6 +319,12 @@
 				EBAAD9B2214FA90D000248B3 /* JuBubbleView+image.m */,
 				EBAAD9BA214FAB94000248B3 /* JuBubbleView+Voice.h */,
 				EBAAD9BB214FAB94000248B3 /* JuBubbleView+Voice.m */,
+				EB3590192150DEDA00B5AABC /* JuBubbleView+Video.h */,
+				EB35901A2150DEDA00B5AABC /* JuBubbleView+Video.m */,
+				EB35901C2150DEF600B5AABC /* JuBubbleView+Location.h */,
+				EB35901D2150DEF600B5AABC /* JuBubbleView+Location.m */,
+				EB35901F2150DF0300B5AABC /* JuBubbleView+File.h */,
+				EB3590202150DF0300B5AABC /* JuBubbleView+File.m */,
 			);
 			path = Bubble;
 			sourceTree = "<group>";
@@ -327,9 +345,11 @@
 			children = (
 				EB20E5641DD0593700A05A95 /* JuChatBarView.h */,
 				EB20E5651DD0593700A05A95 /* JuChatBarView.m */,
-				EB3590182150D59B00B5AABC /* JuChatBarDelegate.h */,
 				EB3590152150C6EA00B5AABC /* JuRecordView.h */,
 				EB3590162150C6EA00B5AABC /* JuRecordView.m */,
+				EB3590222150DF4000B5AABC /* JuChatMoreView.h */,
+				EB3590232150DF4000B5AABC /* JuChatMoreView.m */,
+				EB3590182150D59B00B5AABC /* JuChatBarDelegate.h */,
 			);
 			path = chatBar;
 			sourceTree = "<group>";
@@ -369,7 +389,7 @@
 		EB266AFC1DB70F9C00D4A15F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Juvid;
 				TargetAttributes = {
 					EB266B031DB70F9C00D4A15F = {
@@ -448,10 +468,13 @@
 				EB358FEB2150A8B500B5AABC /* CADisplayLineImage.m in Sources */,
 				EBAAD9BC214FAB94000248B3 /* JuBubbleView+Voice.m in Sources */,
 				EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */,
+				EB3590242150DF4000B5AABC /* JuChatMoreView.m in Sources */,
+				EB35901E2150DEF600B5AABC /* JuBubbleView+Location.m in Sources */,
 				EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */,
 				EBAAD9B9214FA924000248B3 /* JuBubbleView+gif.m in Sources */,
 				EB358FE02150A07E00B5AABC /* JuChatMessageCell.m in Sources */,
 				EB20E56F1DD0593700A05A95 /* JuBaseMessageCell.m in Sources */,
+				EB35901B2150DEDB00B5AABC /* JuBubbleView+Video.m in Sources */,
 				EB266B2C1DB710F800D4A15F /* UIView+JuLayGroup.m in Sources */,
 				EBAAD9B6214FA919000248B3 /* JuBubbleView+text.m in Sources */,
 				EB266B0C1DB70F9C00D4A15F /* AppDelegate.m in Sources */,
@@ -466,6 +489,7 @@
 				EB20E5701DD0593700A05A95 /* JuChatViewController.m in Sources */,
 				EB20E5711DD0593700A05A95 /* JuMessageModel.m in Sources */,
 				EB266B091DB70F9C00D4A15F /* main.m in Sources */,
+				EB3590212150DF0300B5AABC /* JuBubbleView+File.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,15 +524,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -548,15 +581,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
