@@ -9,7 +9,7 @@
 #import "JuBubbleView+Voice.h"
 
 @implementation JuBubbleView (Voice)
--(void)shSetVoiceView:(BOOL)isLeft{
+-(void)juSetVoiceView:(BOOL)isLeft{
     self.ju_imgVoice=[[UIImageView alloc]init];
     [self addSubview:self.ju_imgVoice];
     self.ju_labVoiceTime=[[UILabel alloc]init];

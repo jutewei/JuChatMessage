@@ -9,7 +9,10 @@
 #import "JuBubbleView+gif.h"
 
 @implementation JuBubbleView (gif)
--(void)shSetGifView{
+-(void)juSetGifView:(BOOL)isLeft{
+
+}
+-(void)juSetGifData:(JuMessageModel *)juModel{
     
 }
 @end

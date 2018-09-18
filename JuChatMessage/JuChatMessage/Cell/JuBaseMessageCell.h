@@ -15,7 +15,6 @@
 @property (nonatomic,readonly) JuBubbleView *ju_viewBubble;///< 气泡父视图
 @property (nonatomic,readonly) UILabel *ju_labName;///< 昵称
 @property (nonatomic,readonly) UIButton *ju_headImage;///< 头像
-@property (nonatomic,copy) JuMessageModel *ju_Model;
 @property (nonatomic,readonly) UIActivityIndicatorView *ju_actStatus;///< 状态
 @property (nonatomic,readonly) UIButton *ju_btnReSend;///< 重新发送
 
@@ -27,6 +26,7 @@
 
 @protocol JuChatMessageDelegate <NSObject>
 @optional
+
 -(void)juSelectReSend:(UIButton *)sender;
 -(void)juSelectHeadImage:(UIButton *)sender;
 -(void)juSelectBubble:(id)sender;

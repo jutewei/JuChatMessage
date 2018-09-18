@@ -23,8 +23,6 @@
 @property (nonatomic,strong) UIImageView *ju_imgVoice;///< 语音信息
 @property (nonatomic,strong) UILabel     *ju_labVoiceTime;///< 语音信息
 
--(void)juReSetLayout:(id)juModel;
-
 -(void)juSetBubbleContent:(JuMessageModel *)juModel;
 
 @end

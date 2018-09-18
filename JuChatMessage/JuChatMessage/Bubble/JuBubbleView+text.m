@@ -9,7 +9,7 @@
 #import "JuBubbleView+text.h"
 
 @implementation JuBubbleView (text)
--(void)shSetTextView:(BOOL)isLeft{
+-(void)juSetTextView:(BOOL)isLeft{
     self.ju_labMessage=[[UILabel alloc]init];
     [self addSubview:self.ju_labMessage];
     self.ju_labMessage.numberOfLines=0;

@@ -29,6 +29,7 @@
 		EB266B471DB74A8B00D4A15F /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB266B461DB74A8B00D4A15F /* timg.jpeg */; };
 		EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */; };
 		EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */; };
+		EB358FE02150A07E00B5AABC /* JuChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FDF2150A07E00B5AABC /* JuChatMessageCell.m */; };
 		EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46F1BB1DB86A50004AB89A /* TestViewController.m */; };
 		EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */; };
 		EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */; };
@@ -75,6 +76,8 @@
 		EB266B461DB74A8B00D4A15F /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 		EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceLeft@2x.png"; sourceTree = "<group>"; };
 		EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceRight@2x.png"; sourceTree = "<group>"; };
+		EB358FDE2150A07E00B5AABC /* JuChatMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuChatMessageCell.h; sourceTree = "<group>"; };
+		EB358FDF2150A07E00B5AABC /* JuChatMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuChatMessageCell.m; sourceTree = "<group>"; };
 		EB46F1BA1DB86A50004AB89A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB46F1BB1DB86A50004AB89A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_record@2x.png"; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 			children = (
 				EB20E5661DD0593700A05A95 /* JuBaseMessageCell.h */,
 				EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */,
+				EB358FDE2150A07E00B5AABC /* JuChatMessageCell.h */,
+				EB358FDF2150A07E00B5AABC /* JuChatMessageCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */,
 				EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */,
 				EBAAD9B9214FA924000248B3 /* JuBubbleView+gif.m in Sources */,
+				EB358FE02150A07E00B5AABC /* JuChatMessageCell.m in Sources */,
 				EB20E56F1DD0593700A05A95 /* JuBaseMessageCell.m in Sources */,
 				EB266B2C1DB710F800D4A15F /* UIView+JuLayGroup.m in Sources */,
 				EBAAD9B6214FA919000248B3 /* JuBubbleView+text.m in Sources */,

@@ -27,13 +27,13 @@
     self.ju_imgBubble.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
 
     if (juModel.type==JUMessageBodyTypeText) {
-        [self shSetTextView:juModel.isSend];
+        [self juSetTextView:juModel.isSend];
     }
     else if(juModel.type==JUMessageBodyTypeImage){
-        [self shSetImageView:juModel.isSend];
+        [self juSetImageView:juModel.isSend];
     }
     else if(juModel.type==JUMessageBodyTypeVoice){
-        [self shSetVoiceView:juModel.isSend];
+        [self juSetVoiceView:juModel.isSend];
     }
     if (juModel.isSend) {
          [self juRightLayout];
@@ -62,14 +62,7 @@
     }
 }
 
--(void)juReSetLayout:(JuMessageModel *)juModel{
-    if (_ju_imgMessage) {
-        self.ju_imgMessage.juWidth.equal(MIN(100*juModel.ju_scale, 150));
-        self.ju_imgMessage.juAspectWH.multi(600.0/891.0).equal(0);
-//        self.ju_imgMessage.juWidth.priority(750).equal(MIN(100*juModel.ju_scale, 150));
-//        self.ju_imgMessage.juAspectWH.priority(750).multi(600.0/891.0).equal(0);
-    }
-}
+
 -(void)juLeftLayout{
 
     self.ju_imgBubble.image=[[UIImage imageNamed:@"consult_LeftBubble"] stretchableImageWithLeftCapWidth:20 topCapHeight:22];

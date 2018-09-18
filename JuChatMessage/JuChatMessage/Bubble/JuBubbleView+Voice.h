@@ -9,6 +9,6 @@
 #import "JuBubbleView.h"
 
 @interface JuBubbleView (Voice)
--(void)shSetVoiceView:(BOOL)isLeft;
+-(void)juSetVoiceView:(BOOL)isLeft;
 -(void)juSetVoiceData:(JuMessageModel *)juModel;
 @end

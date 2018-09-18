@@ -18,7 +18,10 @@
     }
     return self;
 }
-
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
 -(void)juInitView:(JuMessageModel *)juModel{
 
     _ju_headImage=[[UIButton alloc]init];
@@ -43,22 +46,26 @@
     [self juSetLayout:juModel];
 }
 
-
-
--(void)setJu_Model:(JuMessageModel *)ju_Model{
-    _ju_Model=ju_Model;
-    [_ju_viewBubble juReSetLayout:ju_Model];
-    [_ju_actStatus startAnimating];
-    _ju_viewBubble.ju_labMessage.text=ju_Model.ju_messageText;
-    [_ju_headImage setBackgroundImage:[UIImage imageNamed:@"assistor_news0_03"] forState:UIControlStateNormal];
-    [_ju_viewBubble juSetBubbleContent:ju_Model];
-}
-
 -(void)juSetLayout:(JuMessageModel *)juModel{
-    if (juModel.isSend) {
-        [self juRightLayout];
+    if (juModel.isSend) {///右边
+        _ju_headImage.juFrame(CGRectMake(-10, 10, 40, 40));
+        ///< 气泡约束
+        _ju_viewBubble.juTraSpace.toView(_ju_headImage).equal(-8);
+        _ju_viewBubble.juLead.greaterEqual(80);
+
+        _ju_actStatus.juTraSpace.toView(_ju_viewBubble).equal(-10);
+
+        _ju_btnReSend.juTraSpace.toView(_ju_viewBubble).equal(-10);
     }else{
-        [self juLeftLayout];
+        _ju_headImage.juFrame(CGRectMake(10, 10, 40, 40));
+
+        ///< 气泡约束
+        _ju_viewBubble.juLeaSpace.toView(_ju_headImage).equal(8);
+        _ju_viewBubble.juTrail.lessEqual(80);
+
+        _ju_actStatus.juLeaSpace.toView(_ju_viewBubble).equal(10);
+
+        _ju_btnReSend.juLeaSpace.toView(_ju_viewBubble).equal(10);
     }
     ///< 气泡约束
     _ju_viewBubble.juHeight.greaterEqual(44);
@@ -73,36 +80,8 @@
 
     _ju_actStatus.juCenterY.toView(_ju_viewBubble).equal(0);
 }
--(void)juLeftLayout{
-    _ju_headImage.juFrame(CGRectMake(10, 10, 40, 40));
-
-    ///< 气泡约束
-    _ju_viewBubble.juLeaSpace.toView(_ju_headImage).equal(8);
-    _ju_viewBubble.juTrail.lessEqual(80);
-
-    _ju_actStatus.juLeaSpace.toView(_ju_viewBubble).equal(10);
-
-    _ju_btnReSend.juLeaSpace.toView(_ju_viewBubble).equal(10);
-
-}
-
--(void)juRightLayout{
-    _ju_headImage.juFrame(CGRectMake(-10, 10, 40, 40));
-     ///< 气泡约束
-    _ju_viewBubble.juTraSpace.toView(_ju_headImage).equal(-8);
-    _ju_viewBubble.juLead.greaterEqual(80);
-
-    _ju_actStatus.juTraSpace.toView(_ju_viewBubble).equal(-10);
-
-    _ju_btnReSend.juTraSpace.toView(_ju_viewBubble).equal(-10);
-
-}
 
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
 /**
  点击气泡
 
@@ -113,7 +92,7 @@
 
     if (tapRecognizer.state == UIGestureRecognizerStateEnded) {
         if ([_delegate respondsToSelector:@selector(juSelectBubble:)]) {
-            [_delegate juSelectBubble:_ju_Model];
+            [_delegate juSelectBubble:self];
         }
         NSLog(@"点击了气泡 ");
     }

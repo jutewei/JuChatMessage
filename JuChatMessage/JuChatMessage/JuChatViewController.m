@@ -9,7 +9,7 @@
 #import "JuChatViewController.h"
 #import "JuChatInputView.h"
 #import "UIView+JuLayGroup.h"
-#import "JuBaseMessageCell.h"
+#import "JuChatMessageCell.h"
 #import "JuMessageModel.h"
 @interface JuChatViewController ()<JuChatMessageDelegate>{
     JuChatInputView * ju_InputView;
@@ -56,9 +56,9 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     JuMessageModel *juM=ju_MArrList[indexPath.row];
-    JuBaseMessageCell *cell=[tableView dequeueReusableCellWithIdentifier:juM.ju_Identifier];
+    JuChatMessageCell *cell=[tableView dequeueReusableCellWithIdentifier:juM.ju_Identifier];
     if (!cell) {
-        cell=[[JuBaseMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:juM.ju_Identifier withModel:juM];
+        cell=[[JuChatMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:juM.ju_Identifier withModel:juM];
         cell.delegate=self;
     }
     cell.ju_Model=juM;

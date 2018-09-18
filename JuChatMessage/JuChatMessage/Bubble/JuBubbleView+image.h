@@ -9,6 +9,6 @@
 #import "JuBubbleView.h"
 
 @interface JuBubbleView (image)
--(void)shSetImageView:(BOOL)isLeft;
+-(void)juSetImageView:(BOOL)isLeft;
 -(void)juSetImageData:(JuMessageModel *)juModel;
 @end
