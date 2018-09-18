@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 typedef void(^juTextResult)(NSString *text);//下步操作后有跟新数据
-@interface JuChatInputView : UIView<UITextViewDelegate>
+@protocol JuChatBarDelegate;
+@interface JuChatBarView : UIView<UITextViewDelegate>
 
 @property (nonatomic,weak) UITableView *ju_tableView;
 
@@ -16,7 +17,10 @@ typedef void(^juTextResult)(NSString *text);//下步操作后有跟新数据
 @property (readonly,nonatomic) UIButton *ju_btnVoice;///< 语音
 @property (readonly,nonatomic) UIButton *ju_btnRecord;///< 录音
 @property (readonly,nonatomic) UIButton *ju_btnMedia;///< 多媒体
-@property (nonatomic,copy  ) juTextResult ju_TextResult;
+//@property (nonatomic,copy  ) juTextResult ju_TextResult;
+
+@property (weak, nonatomic) id<JuChatBarDelegate> delegate;
+
 -(void)juViewWillAppear;
 -(void)juViewWillDisAppear;
 @end

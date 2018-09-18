@@ -7,12 +7,13 @@
 //
 
 #import "JuChatViewController.h"
-#import "JuChatInputView.h"
+#import "JuChatBarView.h"
 #import "UIView+JuLayGroup.h"
 #import "JuChatMessageCell.h"
 #import "JuMessageModel.h"
-@interface JuChatViewController ()<JuChatMessageDelegate>{
-    JuChatInputView * ju_InputView;
+#import "JuChatBarDelegate.h"
+@interface JuChatViewController ()<JuChatMessageDelegate,JuChatBarDelegate>{
+    JuChatBarView * ju_InputView;
     __weak IBOutlet UITableView *ju_TableView;
     NSMutableArray *ju_MArrList;
 }
@@ -84,24 +85,30 @@
   }
 
 -(void)juSetInputView{
-    ju_InputView =[[JuChatInputView alloc]init];
+    ju_InputView =[[JuChatBarView alloc]init];
+    ju_InputView.delegate=self;
     [self.view addSubview:ju_InputView];
-    __weak typeof(self) weakSelf=self;
-    ju_InputView.ju_TextResult=^(NSString *text){
-        [weakSelf juGetText:text];
-    };
     ju_InputView.ju_tableView=ju_TableView;
     ju_InputView.juSafeFrame(CGRectMake(0.01, -0.01, 0, 47));
 }
--(void)juGetText:(NSString *)text{
+-(void)juDidSendText:(NSString *)text{
     JuMessageModel *juM=[JuMessageModel new];
     juM.isSend=YES;
     juM.type=JUMessageBodyTypeText;
     juM.ju_messageText=text;
     [ju_MArrList addObject:juM];
     [ju_TableView reloadData];
-     [ju_TableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:ju_MArrList.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+    [ju_TableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:ju_MArrList.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
 }
+-(void)juDidSendVoice:(NSString *)voicePath{
+    JuMessageModel *juM=[JuMessageModel new];
+    juM.isSend=YES;
+    juM.type=JUMessageBodyTypeVoice;
+    [ju_MArrList addObject:juM];
+    [ju_TableView reloadData];
+    [ju_TableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:ju_MArrList.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

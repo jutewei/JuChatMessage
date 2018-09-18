@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB20E56C1DD0593700A05A95 /* JuBubbleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5611DD0593700A05A95 /* JuBubbleImage.m */; };
 		EB20E56D1DD0593700A05A95 /* JuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5631DD0593700A05A95 /* JuBubbleView.m */; };
-		EB20E56E1DD0593700A05A95 /* JuChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5651DD0593700A05A95 /* JuChatInputView.m */; };
+		EB20E56E1DD0593700A05A95 /* JuChatBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5651DD0593700A05A95 /* JuChatBarView.m */; };
 		EB20E56F1DD0593700A05A95 /* JuBaseMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */; };
 		EB20E5701DD0593700A05A95 /* JuChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5691DD0593700A05A95 /* JuChatViewController.m */; };
 		EB20E5711DD0593700A05A95 /* JuMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E56B1DD0593700A05A95 /* JuMessageModel.m */; };
@@ -33,6 +33,27 @@
 		EB358FE42150A89E00B5AABC /* emoti_000.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB358FE32150A89E00B5AABC /* emoti_000.gif */; };
 		EB358FEA2150A8B500B5AABC /* CADisplayLineImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FE62150A8B500B5AABC /* CADisplayLineImageView.m */; };
 		EB358FEB2150A8B500B5AABC /* CADisplayLineImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FE72150A8B500B5AABC /* CADisplayLineImage.m */; };
+		EB3590012150C1A900B5AABC /* RecordingBkg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FED2150C1A900B5AABC /* RecordingBkg@3x.png */; };
+		EB3590022150C1A900B5AABC /* RecordingSignal001@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FEE2150C1A900B5AABC /* RecordingSignal001@3x.png */; };
+		EB3590032150C1A900B5AABC /* RecordingSignal003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FEF2150C1A900B5AABC /* RecordingSignal003@2x.png */; };
+		EB3590042150C1A900B5AABC /* RecordingSignal003@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF02150C1A900B5AABC /* RecordingSignal003@3x.png */; };
+		EB3590052150C1A900B5AABC /* RecordingSignal001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF12150C1A900B5AABC /* RecordingSignal001@2x.png */; };
+		EB3590062150C1A900B5AABC /* RecordingBkg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF22150C1A900B5AABC /* RecordingBkg@2x.png */; };
+		EB3590072150C1A900B5AABC /* RecordingSignal005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF32150C1A900B5AABC /* RecordingSignal005@2x.png */; };
+		EB3590082150C1A900B5AABC /* RecordingSignal007@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF42150C1A900B5AABC /* RecordingSignal007@3x.png */; };
+		EB3590092150C1A900B5AABC /* RecordingSignal007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF52150C1A900B5AABC /* RecordingSignal007@2x.png */; };
+		EB35900A2150C1A900B5AABC /* RecordingSignal005@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF62150C1A900B5AABC /* RecordingSignal005@3x.png */; };
+		EB35900B2150C1A900B5AABC /* RecordingSignal002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF72150C1A900B5AABC /* RecordingSignal002@2x.png */; };
+		EB35900C2150C1A900B5AABC /* RecordingSignal002@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF82150C1A900B5AABC /* RecordingSignal002@3x.png */; };
+		EB35900D2150C1A900B5AABC /* RecordCancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FF92150C1A900B5AABC /* RecordCancel@3x.png */; };
+		EB35900E2150C1A900B5AABC /* RecordingSignal006@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFA2150C1A900B5AABC /* RecordingSignal006@3x.png */; };
+		EB35900F2150C1A900B5AABC /* RecordingSignal008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFB2150C1A900B5AABC /* RecordingSignal008@2x.png */; };
+		EB3590102150C1A900B5AABC /* RecordingSignal004@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFC2150C1A900B5AABC /* RecordingSignal004@2x.png */; };
+		EB3590112150C1A900B5AABC /* RecordingSignal004@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFD2150C1A900B5AABC /* RecordingSignal004@3x.png */; };
+		EB3590122150C1A900B5AABC /* RecordingSignal008@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFE2150C1A900B5AABC /* RecordingSignal008@3x.png */; };
+		EB3590132150C1A900B5AABC /* RecordingSignal006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFF2150C1A900B5AABC /* RecordingSignal006@2x.png */; };
+		EB3590142150C1A900B5AABC /* RecordCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3590002150C1A900B5AABC /* RecordCancel@2x.png */; };
+		EB3590172150C6EA00B5AABC /* JuRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3590162150C6EA00B5AABC /* JuRecordView.m */; };
 		EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46F1BB1DB86A50004AB89A /* TestViewController.m */; };
 		EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */; };
 		EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */; };
@@ -47,8 +68,8 @@
 		EB20E5611DD0593700A05A95 /* JuBubbleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleImage.m; sourceTree = "<group>"; };
 		EB20E5621DD0593700A05A95 /* JuBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleView.h; sourceTree = "<group>"; };
 		EB20E5631DD0593700A05A95 /* JuBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleView.m; sourceTree = "<group>"; };
-		EB20E5641DD0593700A05A95 /* JuChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatInputView.h; sourceTree = "<group>"; };
-		EB20E5651DD0593700A05A95 /* JuChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatInputView.m; sourceTree = "<group>"; };
+		EB20E5641DD0593700A05A95 /* JuChatBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatBarView.h; sourceTree = "<group>"; };
+		EB20E5651DD0593700A05A95 /* JuChatBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatBarView.m; sourceTree = "<group>"; };
 		EB20E5661DD0593700A05A95 /* JuBaseMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBaseMessageCell.h; sourceTree = "<group>"; };
 		EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBaseMessageCell.m; sourceTree = "<group>"; };
 		EB20E5681DD0593700A05A95 /* JuChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatViewController.h; sourceTree = "<group>"; };
@@ -86,6 +107,29 @@
 		EB358FE72150A8B500B5AABC /* CADisplayLineImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLineImage.m; sourceTree = "<group>"; };
 		EB358FE82150A8B500B5AABC /* CADisplayLineImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLineImageView.h; sourceTree = "<group>"; };
 		EB358FE92150A8B500B5AABC /* CADisplayLineImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLineImage.h; sourceTree = "<group>"; };
+		EB358FED2150C1A900B5AABC /* RecordingBkg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@3x.png"; sourceTree = "<group>"; };
+		EB358FEE2150C1A900B5AABC /* RecordingSignal001@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal001@3x.png"; sourceTree = "<group>"; };
+		EB358FEF2150C1A900B5AABC /* RecordingSignal003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal003@2x.png"; sourceTree = "<group>"; };
+		EB358FF02150C1A900B5AABC /* RecordingSignal003@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal003@3x.png"; sourceTree = "<group>"; };
+		EB358FF12150C1A900B5AABC /* RecordingSignal001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal001@2x.png"; sourceTree = "<group>"; };
+		EB358FF22150C1A900B5AABC /* RecordingBkg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@2x.png"; sourceTree = "<group>"; };
+		EB358FF32150C1A900B5AABC /* RecordingSignal005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal005@2x.png"; sourceTree = "<group>"; };
+		EB358FF42150C1A900B5AABC /* RecordingSignal007@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal007@3x.png"; sourceTree = "<group>"; };
+		EB358FF52150C1A900B5AABC /* RecordingSignal007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal007@2x.png"; sourceTree = "<group>"; };
+		EB358FF62150C1A900B5AABC /* RecordingSignal005@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal005@3x.png"; sourceTree = "<group>"; };
+		EB358FF72150C1A900B5AABC /* RecordingSignal002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal002@2x.png"; sourceTree = "<group>"; };
+		EB358FF82150C1A900B5AABC /* RecordingSignal002@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal002@3x.png"; sourceTree = "<group>"; };
+		EB358FF92150C1A900B5AABC /* RecordCancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordCancel@3x.png"; sourceTree = "<group>"; };
+		EB358FFA2150C1A900B5AABC /* RecordingSignal006@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal006@3x.png"; sourceTree = "<group>"; };
+		EB358FFB2150C1A900B5AABC /* RecordingSignal008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal008@2x.png"; sourceTree = "<group>"; };
+		EB358FFC2150C1A900B5AABC /* RecordingSignal004@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal004@2x.png"; sourceTree = "<group>"; };
+		EB358FFD2150C1A900B5AABC /* RecordingSignal004@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal004@3x.png"; sourceTree = "<group>"; };
+		EB358FFE2150C1A900B5AABC /* RecordingSignal008@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal008@3x.png"; sourceTree = "<group>"; };
+		EB358FFF2150C1A900B5AABC /* RecordingSignal006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal006@2x.png"; sourceTree = "<group>"; };
+		EB3590002150C1A900B5AABC /* RecordCancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordCancel@2x.png"; sourceTree = "<group>"; };
+		EB3590152150C6EA00B5AABC /* JuRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRecordView.h; sourceTree = "<group>"; };
+		EB3590162150C6EA00B5AABC /* JuRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuRecordView.m; sourceTree = "<group>"; };
+		EB3590182150D59B00B5AABC /* JuChatBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuChatBarDelegate.h; sourceTree = "<group>"; };
 		EB46F1BA1DB86A50004AB89A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB46F1BB1DB86A50004AB89A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_record@2x.png"; sourceTree = "<group>"; };
@@ -198,6 +242,7 @@
 		EB358FE22150A88B00B5AABC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EB358FEC2150C1A900B5AABC /* VoiceImg */,
 				EB358FE32150A89E00B5AABC /* emoti_000.gif */,
 				EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */,
 				EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */,
@@ -219,6 +264,33 @@
 				EB358FE62150A8B500B5AABC /* CADisplayLineImageView.m */,
 			);
 			path = DisplayGif;
+			sourceTree = "<group>";
+		};
+		EB358FEC2150C1A900B5AABC /* VoiceImg */ = {
+			isa = PBXGroup;
+			children = (
+				EB3590002150C1A900B5AABC /* RecordCancel@2x.png */,
+				EB358FF92150C1A900B5AABC /* RecordCancel@3x.png */,
+				EB358FF22150C1A900B5AABC /* RecordingBkg@2x.png */,
+				EB358FED2150C1A900B5AABC /* RecordingBkg@3x.png */,
+				EB358FF12150C1A900B5AABC /* RecordingSignal001@2x.png */,
+				EB358FEE2150C1A900B5AABC /* RecordingSignal001@3x.png */,
+				EB358FF72150C1A900B5AABC /* RecordingSignal002@2x.png */,
+				EB358FF82150C1A900B5AABC /* RecordingSignal002@3x.png */,
+				EB358FEF2150C1A900B5AABC /* RecordingSignal003@2x.png */,
+				EB358FF02150C1A900B5AABC /* RecordingSignal003@3x.png */,
+				EB358FFC2150C1A900B5AABC /* RecordingSignal004@2x.png */,
+				EB358FFD2150C1A900B5AABC /* RecordingSignal004@3x.png */,
+				EB358FF32150C1A900B5AABC /* RecordingSignal005@2x.png */,
+				EB358FF62150C1A900B5AABC /* RecordingSignal005@3x.png */,
+				EB358FFF2150C1A900B5AABC /* RecordingSignal006@2x.png */,
+				EB358FFA2150C1A900B5AABC /* RecordingSignal006@3x.png */,
+				EB358FF52150C1A900B5AABC /* RecordingSignal007@2x.png */,
+				EB358FF42150C1A900B5AABC /* RecordingSignal007@3x.png */,
+				EB358FFB2150C1A900B5AABC /* RecordingSignal008@2x.png */,
+				EB358FFE2150C1A900B5AABC /* RecordingSignal008@3x.png */,
+			);
+			path = VoiceImg;
 			sourceTree = "<group>";
 		};
 		EBAAD9AD214FA873000248B3 /* Bubble */ = {
@@ -253,8 +325,11 @@
 		EBAAD9AF214FA89A000248B3 /* chatBar */ = {
 			isa = PBXGroup;
 			children = (
-				EB20E5641DD0593700A05A95 /* JuChatInputView.h */,
-				EB20E5651DD0593700A05A95 /* JuChatInputView.m */,
+				EB20E5641DD0593700A05A95 /* JuChatBarView.h */,
+				EB20E5651DD0593700A05A95 /* JuChatBarView.m */,
+				EB3590182150D59B00B5AABC /* JuChatBarDelegate.h */,
+				EB3590152150C6EA00B5AABC /* JuRecordView.h */,
+				EB3590162150C6EA00B5AABC /* JuRecordView.m */,
 			);
 			path = chatBar;
 			sourceTree = "<group>";
@@ -327,18 +402,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3590072150C1A900B5AABC /* RecordingSignal005@2x.png in Resources */,
+				EB35900A2150C1A900B5AABC /* RecordingSignal005@3x.png in Resources */,
 				EB266B401DB73EB100D4A15F /* consult_RightBubble@3x.png in Resources */,
+				EB3590062150C1A900B5AABC /* RecordingBkg@2x.png in Resources */,
+				EB3590112150C1A900B5AABC /* RecordingSignal004@3x.png in Resources */,
 				EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */,
 				EB358FE42150A89E00B5AABC /* emoti_000.gif in Resources */,
+				EB3590082150C1A900B5AABC /* RecordingSignal007@3x.png in Resources */,
+				EB35900D2150C1A900B5AABC /* RecordCancel@3x.png in Resources */,
+				EB35900E2150C1A900B5AABC /* RecordingSignal006@3x.png in Resources */,
+				EB3590122150C1A900B5AABC /* RecordingSignal008@3x.png in Resources */,
+				EB3590052150C1A900B5AABC /* RecordingSignal001@2x.png in Resources */,
 				EB266B471DB74A8B00D4A15F /* timg.jpeg in Resources */,
+				EB3590012150C1A900B5AABC /* RecordingBkg@3x.png in Resources */,
+				EB3590042150C1A900B5AABC /* RecordingSignal003@3x.png in Resources */,
+				EB3590022150C1A900B5AABC /* RecordingSignal001@3x.png in Resources */,
+				EB35900C2150C1A900B5AABC /* RecordingSignal002@3x.png in Resources */,
 				EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */,
+				EB3590132150C1A900B5AABC /* RecordingSignal006@2x.png in Resources */,
+				EB35900F2150C1A900B5AABC /* RecordingSignal008@2x.png in Resources */,
+				EB3590032150C1A900B5AABC /* RecordingSignal003@2x.png in Resources */,
+				EB3590142150C1A900B5AABC /* RecordCancel@2x.png in Resources */,
 				EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */,
 				EB266B171DB70F9C00D4A15F /* LaunchScreen.storyboard in Resources */,
 				EB266B421DB73EC500D4A15F /* assistor_news0_03.png in Resources */,
+				EB3590102150C1A900B5AABC /* RecordingSignal004@2x.png in Resources */,
+				EB3590092150C1A900B5AABC /* RecordingSignal007@2x.png in Resources */,
 				EB266B141DB70F9C00D4A15F /* Assets.xcassets in Resources */,
 				EB266B3E1DB73EA300D4A15F /* consult_LeftBubble@3x.png in Resources */,
 				EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */,
 				EB266B121DB70F9C00D4A15F /* Main.storyboard in Resources */,
+				EB35900B2150C1A900B5AABC /* RecordingSignal002@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3590172150C6EA00B5AABC /* JuRecordView.m in Sources */,
 				EB358FEB2150A8B500B5AABC /* CADisplayLineImage.m in Sources */,
 				EBAAD9BC214FAB94000248B3 /* JuBubbleView+Voice.m in Sources */,
 				EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */,
@@ -366,7 +462,7 @@
 				EB266B2D1DB710F800D4A15F /* UIView+JuLayout.m in Sources */,
 				EB266B2A1DB710F800D4A15F /* UIView+Frame.m in Sources */,
 				EB358FEA2150A8B500B5AABC /* CADisplayLineImageView.m in Sources */,
-				EB20E56E1DD0593700A05A95 /* JuChatInputView.m in Sources */,
+				EB20E56E1DD0593700A05A95 /* JuChatBarView.m in Sources */,
 				EB20E5701DD0593700A05A95 /* JuChatViewController.m in Sources */,
 				EB20E5711DD0593700A05A95 /* JuMessageModel.m in Sources */,
 				EB266B091DB70F9C00D4A15F /* main.m in Sources */,

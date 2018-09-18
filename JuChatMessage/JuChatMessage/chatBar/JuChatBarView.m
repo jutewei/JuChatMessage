@@ -6,10 +6,15 @@
 //  Copyright © 2016年 Juvid. All rights reserved.
 //
 
-#import "JuChatInputView.h"
+#import "JuChatBarView.h"
 #import "UIView+JuLayGroup.h"
+#import "JuRecordView.h"
+#import "JuChatBarDelegate.h"
 
-@implementation JuChatInputView
+@implementation JuChatBarView{
+    JuRecordView *ju_recordView;
+}
+
 -(instancetype)init{
     self=[super init];
     if (self) {
@@ -107,6 +112,11 @@
     _ju_btnRecord=[[UIButton alloc]init];
     _ju_btnRecord.hidden=YES;
     [_ju_btnRecord setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    [_ju_btnRecord addTarget:self action:@selector(juRecordTouchDown) forControlEvents:UIControlEventTouchDown];
+    [_ju_btnRecord addTarget:self action:@selector(juRecordTouchUpOutside) forControlEvents:UIControlEventTouchUpOutside];
+    [_ju_btnRecord addTarget:self action:@selector(juRecordTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
+    [_ju_btnRecord addTarget:self action:@selector(juRecordDragOutside) forControlEvents:UIControlEventTouchDragExit];
+    [_ju_btnRecord addTarget:self action:@selector(juRecordDragInside) forControlEvents:UIControlEventTouchDragEnter];
     [_ju_btnRecord.layer setBorderWidth:.5];
     [_ju_btnRecord.layer setBorderColor:[UIColor lightGrayColor].CGColor];
     [_ju_btnRecord.layer setCornerRadius:5];
@@ -143,12 +153,11 @@
 
 }
 
-
 /**弹键盘设置**/
 //检测输入框文本高度
 - (void)textViewDidChange:(UITextView *)textView
 {
-    CGFloat maxHeight = [JuChatInputView maxHeight];
+    CGFloat maxHeight = [JuChatBarView maxHeight];
     //    内容高度
     CGSize size = [textView sizeThatFits:CGSizeMake(textView.frame.size.width, maxHeight)];
     if (size.height >= maxHeight-14){
@@ -162,24 +171,21 @@
 }
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
     if ([text isEqual:@"\n"]) {
-        [self juSendText];
+        if ([self.delegate respondsToSelector:@selector(juDidSendText:)]) {
+            [self.delegate juDidSendText:textView.text];
+        }
+        textView.text=@"";
+        [textView resignFirstResponder];
         return NO;
     }
     return YES;
 }
--(void)juSendText{
-    if (_ju_TextResult) {
-        _ju_TextResult(_ju_TextView.text);
-    }
-    _ju_TextView.text=@"";
-    [_ju_TextView resignFirstResponder];
-    [self textViewDidChange:_ju_TextView];
-}
+
 //改变输入框的高度
 #pragma mark - Message input view
 -(void)adjustTextViewHeightBy:(CGFloat)changeHeight
 {
-    CGFloat maxHeight = [JuChatInputView maxHeight];
+    CGFloat maxHeight = [JuChatBarView maxHeight];
     changeHeight=MIN(maxHeight, changeHeight+14);//   changeInHeight+19 文本内容高度加上最小高度
     self.ju_Height.constant=changeHeight;
 //    [UIView animateWithDuration:0.3 animations:^{
@@ -199,6 +205,18 @@
     return ([self maxLines] + 1.0f) * [self textViewLineHeight];
 }
 
+-(JuRecordView *)ju_recordView{
+    if (!ju_recordView) {
+        ju_recordView = [[JuRecordView alloc]init];
+    }
+    return ju_recordView;
+}
+
+/***各个事件处理***/
+-(void)juTouchMore:(UIButton *)sender{
+
+}
+/**语音与键盘切换*/
 -(void)juTouchVoice:(UIButton *)sender{
     _ju_btnRecord.hidden=!_ju_btnRecord.hidden;
     _ju_TextView.hidden=!_ju_btnRecord.hidden;
@@ -208,8 +226,28 @@
         [self adjustTextViewHeightBy:33];
     }
 }
--(void)juTouchMore:(UIButton *)sender{
-
+//按下
+-(void)juRecordTouchDown{
+    [self.ju_recordView juStartRecord:self.superview];
+}
+//松开录制完成
+-(void)juRecordTouchUpInside{
+    [self.ju_recordView juStopRecord];
+    if ([self.delegate respondsToSelector:@selector(juDidSendVoice:)]) {
+        [self.delegate juDidSendVoice:nil];
+    }
+}
+//移走后松开取消录制
+-(void)juRecordTouchUpOutside{
+    [self.ju_recordView juStopRecord];
+}
+//移动回来
+-(void)juRecordDragInside{
+    [self.ju_recordView juSetVoiceImage:NO];
+}
+//移走
+-(void)juRecordDragOutside{
+    [self.ju_recordView juSetVoiceImage:YES];
 }
 -(void)dealloc{
     [self juViewWillDisAppear];
