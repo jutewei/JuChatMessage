@@ -183,11 +183,19 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
-		EBAAD9AD214FA873000248B3 /* Bubble */ = {
+		EB358FE12150A1B200B5AABC /* ExView */ = {
 			isa = PBXGroup;
 			children = (
 				EB20E5601DD0593700A05A95 /* JuBubbleImage.h */,
 				EB20E5611DD0593700A05A95 /* JuBubbleImage.m */,
+			);
+			path = ExView;
+			sourceTree = "<group>";
+		};
+		EBAAD9AD214FA873000248B3 /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				EB358FE12150A1B200B5AABC /* ExView */,
 				EB20E5621DD0593700A05A95 /* JuBubbleView.h */,
 				EB20E5631DD0593700A05A95 /* JuBubbleView.m */,
 				EBAAD9B7214FA924000248B3 /* JuBubbleView+gif.h */,
