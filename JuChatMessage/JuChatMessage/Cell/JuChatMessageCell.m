@@ -22,6 +22,7 @@
     [self.ju_headImage setBackgroundImage:[UIImage imageNamed:@"assistor_news0_03"] forState:UIControlStateNormal];
     [self.ju_viewBubble juSetBubbleContent:ju_Model];
 }
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

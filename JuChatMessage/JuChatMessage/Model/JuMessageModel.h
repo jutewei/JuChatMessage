@@ -10,11 +10,12 @@
 typedef enum{
     JUMessageBodyTypeText       =0,    /*! \~chinese 文本类型 \~english Text */
     JUMessageBodyTypeImage      =1,         /*! \~chinese 图片类型 \~english Image */
-    JUMessageBodyTypeVideo      =3,         /*! \~chinese 视频类型 \~english Video */
-    JUMessageBodyTypeLocation   =4,      /*! \~chinese 位置类型 \~english Location */
-    JUMessageBodyTypeVoice      =2,         /*! \~chinese 语音类型 \~english Voice */
-    JUMessageBodyTypeFile       =5,          /*! \~chinese 文件类型 \~english File */
-    JUMessageBodyTypeCmd        =6,           /*! \~chinese 命令类型 \~english Cmd */
+    JUMessageBodyTypeGif        =2,         /*! \~chinese 表情类型 \~english Image */
+    JUMessageBodyTypeVoice      =3,         /*! \~chinese 语音类型 \~english Voice */
+    JUMessageBodyTypeVideo      =4,         /*! \~chinese 视频类型 \~english Video */
+    JUMessageBodyTypeLocation   =5,      /*! \~chinese 位置类型 \~english Location */
+    JUMessageBodyTypeFile       =6,          /*! \~chinese 文件类型 \~english File */
+    JUMessageBodyTypeCmd        =7,           /*! \~chinese 命令类型 \~english Cmd */
 }JUMessageBodyType;
 
 @interface JuMessageModel : NSObject

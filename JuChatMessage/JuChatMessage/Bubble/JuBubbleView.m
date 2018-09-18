@@ -13,11 +13,10 @@
 #import "JuBubbleView+Voice.h"
 
 @implementation JuBubbleView
-+(instancetype)juInit:(JuMessageModel *)juModel{
-    JuBubbleView *bubbleView=[[JuBubbleView alloc]init];
-    [bubbleView juInitView:juModel];
-    return bubbleView;
-}
+//+(instancetype)juInit:(JuMessageModel *)juModel{
+//    JuBubbleView *bubbleView=[[JuBubbleView alloc]init];
+//    return bubbleView;
+//}
 
 //初始化视图
 -(void)juInitView:(JuMessageModel *)juModel{
@@ -34,13 +33,14 @@
     }
     else if(juModel.type==JUMessageBodyTypeVoice){
         [self juSetVoiceView:juModel.isSend];
+    } else if(juModel.type==JUMessageBodyTypeGif){
+        [self juSetGifView:juModel.isSend];
     }
-    if (juModel.isSend) {
-         [self juRightLayout];
 
+    if (juModel.isSend) {
+       self.ju_imgBubble.image=[[UIImage imageNamed:@"consult_RightBubble"] stretchableImageWithLeftCapWidth:15 topCapHeight:22];
     }else{
-        [self juLeftLayout];
-//        if (_ju_imgMessage) _ju_imgMessage.isLeft=YES;///< 绘制气泡使用
+        self.ju_imgBubble.image=[[UIImage imageNamed:@"consult_LeftBubble"] stretchableImageWithLeftCapWidth:20 topCapHeight:22];
     }
 
     ///< 气泡约束
@@ -60,43 +60,9 @@
     else if(juModel.type==JUMessageBodyTypeVoice){
         [self juSetVoiceData:juModel];
     }
-}
-
-
--(void)juLeftLayout{
-
-    self.ju_imgBubble.image=[[UIImage imageNamed:@"consult_LeftBubble"] stretchableImageWithLeftCapWidth:20 topCapHeight:22];
-
-//    if (self.ju_labMessage) {
-//        self.ju_labMessage.juEdge(UIEdgeInsetsMake(10, 12, 10, 10));
-//    }
-//    if (self.ju_imgMessage) {
-//        self.ju_imgMessage.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
-//    }
-//    if (_ju_imgVoice) {
-//        _ju_imgVoice.image=[UIImage imageNamed:@"chatVoiceLeft"];
-//        _ju_imgVoice.juLead.equal(15);
-//        _ju_labVoiceTime.juTrail.equal(15);
-//    }
-}
-
--(void)juRightLayout{
-
-    self.ju_imgBubble.image=[[UIImage imageNamed:@"consult_RightBubble"] stretchableImageWithLeftCapWidth:15 topCapHeight:22];
-
-//    if (self.ju_labMessage) {
-//        self.ju_labMessage.juEdge(UIEdgeInsetsMake(10, 10, 10, 12));
-//    }
-//    if (self.ju_imgMessage) {
-//        self.ju_imgMessage.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
-//
-//    }
-//    if (_ju_imgVoice) {
-//        _ju_imgVoice.image=[UIImage imageNamed:@"chatVoiceRight"];
-//        _ju_imgVoice.juTrail.equal(15);
-//        _ju_labVoiceTime.juLead.equal(15);
-//    }
-
+    else if(juModel.type==JUMessageBodyTypeGif){
+        [self juSetGifData:juModel];
+    }
 }
 
 /*

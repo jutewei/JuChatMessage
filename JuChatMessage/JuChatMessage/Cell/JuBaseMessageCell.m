@@ -30,8 +30,9 @@
     [_ju_headImage.layer setCornerRadius:20];
     [_ju_headImage setClipsToBounds:YES];
 
-    _ju_viewBubble=[JuBubbleView juInit:juModel];
+    _ju_viewBubble=[[JuBubbleView alloc]init];
     [self.contentView addSubview:_ju_viewBubble];
+    [_ju_viewBubble juInitView:juModel];
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(juTouchBubbleView:)];
     [_ju_viewBubble addGestureRecognizer:tapRecognizer];
 
@@ -50,18 +51,17 @@
     if (juModel.isSend) {///右边
         _ju_headImage.juFrame(CGRectMake(-10, 10, 40, 40));
         ///< 气泡约束
-        _ju_viewBubble.juTraSpace.toView(_ju_headImage).equal(-8);
+        _ju_viewBubble.juTraSpace.toView(_ju_headImage).equal(8);
         _ju_viewBubble.juLead.greaterEqual(80);
 
-        _ju_actStatus.juTraSpace.toView(_ju_viewBubble).equal(-10);
+        _ju_actStatus.juTraSpace.toView(_ju_viewBubble).equal(10);
 
-        _ju_btnReSend.juTraSpace.toView(_ju_viewBubble).equal(-10);
+        _ju_btnReSend.juTraSpace.toView(_ju_viewBubble).equal(10);
     }else{
         _ju_headImage.juFrame(CGRectMake(10, 10, 40, 40));
-
         ///< 气泡约束
         _ju_viewBubble.juLeaSpace.toView(_ju_headImage).equal(8);
-        _ju_viewBubble.juTrail.lessEqual(80);
+        _ju_viewBubble.juTrail.greaterEqual(80);
 
         _ju_actStatus.juLeaSpace.toView(_ju_viewBubble).equal(10);
 
@@ -72,9 +72,6 @@
     _ju_viewBubble.juTop.equal(25);
     _ju_viewBubble.juBottom.equal(15);
 
-    if (juModel.type==JUMessageBodyTypeVoice) {
-        _ju_viewBubble.juWidth.equal(150);
-    }
     _ju_btnReSend.juSize(CGSizeMake(30, 30));
     _ju_btnReSend.juCenterY.toView(_ju_viewBubble).equal(0);
 

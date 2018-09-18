@@ -9,7 +9,7 @@
 #import "JuBubbleView+Voice.h"
 
 @implementation JuBubbleView (Voice)
--(void)juSetVoiceView:(BOOL)isLeft{
+-(void)juSetVoiceView:(BOOL)isRight{
     self.ju_imgVoice=[[UIImageView alloc]init];
     [self addSubview:self.ju_imgVoice];
     self.ju_labVoiceTime=[[UILabel alloc]init];
@@ -21,7 +21,7 @@
     self.ju_imgVoice.juSize(CGSizeMake(20, 20));
     self.ju_labVoiceTime.juCenterY.equal(0);
 
-    if (isLeft) {
+    if (isRight) {
         self.ju_imgVoice.image=[UIImage imageNamed:@"chatVoiceRight"];
         self.ju_imgVoice.juTrail.equal(15);
         self.ju_labVoiceTime.juLead.equal(15);

@@ -3,7 +3,7 @@
 //  JuLayout
 //
 //  Created by Juvid on 16/7/19.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -42,6 +42,14 @@ typedef NS_ENUM(NSInteger,JuLayoutType){
 -(NSLayoutConstraint *)ju_Width;///< 宽度
 -(NSLayoutConstraint *)ju_Height;///< 高度
 -(NSLayoutConstraint *)ju_AspectWH;///< 宽高比
+
+
+/**
+ 兼容老版本
+ 用相反数
+ */
+-(void)setJu_Trail:(CGFloat)value;
+-(void)setJu_Bottom:(CGFloat)value;
 
 -(UIView *)ju_PryHigh;///< 750
 -(UIView *)ju_PryLow;///< 250

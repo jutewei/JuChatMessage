@@ -3,7 +3,7 @@
 //  YunHK
 //
 //  Created by Juvid on 14/12/16.
-//  Copyright (c) 2014年 Juvid. All rights reserved.
+//  Copyright (c) 2014年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import "UIView+Frame.h"

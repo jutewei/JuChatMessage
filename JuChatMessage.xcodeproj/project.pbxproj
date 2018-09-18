@@ -30,6 +30,9 @@
 		EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */; };
 		EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */; };
 		EB358FE02150A07E00B5AABC /* JuChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FDF2150A07E00B5AABC /* JuChatMessageCell.m */; };
+		EB358FE42150A89E00B5AABC /* emoti_000.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB358FE32150A89E00B5AABC /* emoti_000.gif */; };
+		EB358FEA2150A8B500B5AABC /* CADisplayLineImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FE62150A8B500B5AABC /* CADisplayLineImageView.m */; };
+		EB358FEB2150A8B500B5AABC /* CADisplayLineImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FE72150A8B500B5AABC /* CADisplayLineImage.m */; };
 		EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46F1BB1DB86A50004AB89A /* TestViewController.m */; };
 		EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */; };
 		EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */; };
@@ -78,6 +81,11 @@
 		EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceRight@2x.png"; sourceTree = "<group>"; };
 		EB358FDE2150A07E00B5AABC /* JuChatMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuChatMessageCell.h; sourceTree = "<group>"; };
 		EB358FDF2150A07E00B5AABC /* JuChatMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuChatMessageCell.m; sourceTree = "<group>"; };
+		EB358FE32150A89E00B5AABC /* emoti_000.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = emoti_000.gif; sourceTree = "<group>"; };
+		EB358FE62150A8B500B5AABC /* CADisplayLineImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLineImageView.m; sourceTree = "<group>"; };
+		EB358FE72150A8B500B5AABC /* CADisplayLineImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLineImage.m; sourceTree = "<group>"; };
+		EB358FE82150A8B500B5AABC /* CADisplayLineImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLineImageView.h; sourceTree = "<group>"; };
+		EB358FE92150A8B500B5AABC /* CADisplayLineImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLineImage.h; sourceTree = "<group>"; };
 		EB46F1BA1DB86A50004AB89A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB46F1BB1DB86A50004AB89A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_record@2x.png"; sourceTree = "<group>"; };
@@ -137,18 +145,13 @@
 			children = (
 				EB20E55F1DD0593700A05A95 /* JuChatMessage */,
 				EB266B1E1DB710F800D4A15F /* Layout */,
+				EB358FE52150A8B500B5AABC /* DisplayGif */,
+				EB358FE22150A88B00B5AABC /* Resources */,
 				EB266B0A1DB70F9C00D4A15F /* AppDelegate.h */,
 				EB266B0B1DB70F9C00D4A15F /* AppDelegate.m */,
 				EB46F1BA1DB86A50004AB89A /* TestViewController.h */,
 				EB46F1BB1DB86A50004AB89A /* TestViewController.m */,
 				EB266B461DB74A8B00D4A15F /* timg.jpeg */,
-				EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */,
-				EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */,
-				EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */,
-				EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */,
-				EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */,
-				EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */,
-				EB266B411DB73EC500D4A15F /* assistor_news0_03.png */,
 				EB266B101DB70F9C00D4A15F /* Main.storyboard */,
 				EB266B131DB70F9C00D4A15F /* Assets.xcassets */,
 				EB266B151DB70F9C00D4A15F /* LaunchScreen.storyboard */,
@@ -190,6 +193,32 @@
 				EB20E5611DD0593700A05A95 /* JuBubbleImage.m */,
 			);
 			path = ExView;
+			sourceTree = "<group>";
+		};
+		EB358FE22150A88B00B5AABC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB358FE32150A89E00B5AABC /* emoti_000.gif */,
+				EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */,
+				EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */,
+				EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */,
+				EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */,
+				EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */,
+				EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */,
+				EB266B411DB73EC500D4A15F /* assistor_news0_03.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB358FE52150A8B500B5AABC /* DisplayGif */ = {
+			isa = PBXGroup;
+			children = (
+				EB358FE92150A8B500B5AABC /* CADisplayLineImage.h */,
+				EB358FE72150A8B500B5AABC /* CADisplayLineImage.m */,
+				EB358FE82150A8B500B5AABC /* CADisplayLineImageView.h */,
+				EB358FE62150A8B500B5AABC /* CADisplayLineImageView.m */,
+			);
+			path = DisplayGif;
 			sourceTree = "<group>";
 		};
 		EBAAD9AD214FA873000248B3 /* Bubble */ = {
@@ -299,6 +328,7 @@
 			files = (
 				EB266B401DB73EB100D4A15F /* consult_RightBubble@3x.png in Resources */,
 				EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */,
+				EB358FE42150A89E00B5AABC /* emoti_000.gif in Resources */,
 				EB266B471DB74A8B00D4A15F /* timg.jpeg in Resources */,
 				EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */,
 				EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */,
@@ -318,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB358FEB2150A8B500B5AABC /* CADisplayLineImage.m in Sources */,
 				EBAAD9BC214FAB94000248B3 /* JuBubbleView+Voice.m in Sources */,
 				EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */,
 				EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */,
@@ -333,6 +364,7 @@
 				EBAAD9B3214FA90D000248B3 /* JuBubbleView+image.m in Sources */,
 				EB266B2D1DB710F800D4A15F /* UIView+JuLayout.m in Sources */,
 				EB266B2A1DB710F800D4A15F /* UIView+Frame.m in Sources */,
+				EB358FEA2150A8B500B5AABC /* CADisplayLineImageView.m in Sources */,
 				EB20E56E1DD0593700A05A95 /* JuChatInputView.m in Sources */,
 				EB20E5701DD0593700A05A95 /* JuChatViewController.m in Sources */,
 				EB20E5711DD0593700A05A95 /* JuMessageModel.m in Sources */,

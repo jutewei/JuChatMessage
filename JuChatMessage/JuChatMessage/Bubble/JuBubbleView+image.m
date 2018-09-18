@@ -9,15 +9,17 @@
 #import "JuBubbleView+image.h"
 
 @implementation JuBubbleView (image)
--(void)juSetImageView:(BOOL)isLeft{
+-(void)juSetImageView:(BOOL)isRight{
     self.ju_imgMessage=[[JuBubbleImage alloc]init];
     [self addSubview:self.ju_imgMessage];
-    if (isLeft) {
-        self.ju_imgMessage.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
-    }else{
-        self.ju_imgMessage.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
+    if (!isRight) {
+        self.ju_imgMessage.isLeft=YES;
     }
-
+//    if (isLeft) {
+        self.ju_imgMessage.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
+//    }else{
+//        self.ju_imgMessage.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
+//    }
 }
 -(void)juSetImageData:(JuMessageModel *)juModel{
     self.ju_imgMessage.juWidth.equal(MIN(100*juModel.ju_scale, 150));

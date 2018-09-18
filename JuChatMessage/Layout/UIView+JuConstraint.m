@@ -3,7 +3,7 @@
 //  JuConsout
 //
 //  Created by Juvid on 16/7/19.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import "UIView+JuConstraint.h"
@@ -79,6 +79,16 @@
 }
 -(NSLayoutConstraint *)ju_AspectWH{
     return  [self juConstrain:JuLayoutAspectWH];
+}
+
+-(void)setJu_Trail:(CGFloat)value{
+    NSLayoutConstraint *layout=[self juConstrain:JuLayoutTrail];
+    layout.constant=-value;
+}
+
+-(void)setJu_Bottom:(CGFloat)value{
+    NSLayoutConstraint *layout=[self juConstrain:JuLayoutBottom];
+    layout.constant=-value;
 }
 
 -(UIView *)ju_PryHigh{

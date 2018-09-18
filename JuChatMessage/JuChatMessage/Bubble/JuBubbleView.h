@@ -12,8 +12,6 @@
 #import "UIView+JuLayGroup.h"
 @interface JuBubbleView : UIView
 
-+(instancetype)juInit:(id)juModel;
-
 @property (nonatomic,strong) UIImageView *ju_imgBubble;///< 气泡
 
 @property (nonatomic,strong) UILabel *ju_labMessage;///< 文字信息
@@ -25,4 +23,5 @@
 
 -(void)juSetBubbleContent:(JuMessageModel *)juModel;
 
+-(void)juInitView:(JuMessageModel *)juModel;
 @end

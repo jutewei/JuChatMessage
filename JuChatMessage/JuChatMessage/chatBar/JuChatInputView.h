@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 typedef void(^juTextResult)(NSString *text);//下步操作后有跟新数据
 @interface JuChatInputView : UIView<UITextViewDelegate>
+
+@property (nonatomic,weak) UITableView *ju_tableView;
+
 @property (readonly,nonatomic) UITextView *ju_TextView;///< 文本
 @property (readonly,nonatomic) UIButton *ju_btnVoice;///< 语音
 @property (readonly,nonatomic) UIButton *ju_btnRecord;///< 录音

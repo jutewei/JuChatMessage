@@ -3,7 +3,7 @@
 //  testBlock
 //
 //  Created by Juvid on 16/7/17.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,6 +24,7 @@
 @property (readonly)  NSLayoutRelation juRelation;
 @property UILayoutPriority prioritys;
 @property (nonatomic) JuLayoutType juLayoutType;
+@property (nonatomic) BOOL isSafe;
 /**
  *  倍数
  */
@@ -38,6 +39,11 @@
  *  优先级（基本可以不用）
  */
 -(JuLayout *(^)(CGFloat  prioritys))priority;
+
+/**
+ *  安全区域
+ */
+-(JuLayout *)safe;
 
 /**最终设置约束*/
 /**

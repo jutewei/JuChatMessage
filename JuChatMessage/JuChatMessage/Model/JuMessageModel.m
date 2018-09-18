@@ -12,8 +12,8 @@
 
 -(NSString *)ju_Identifier{
     NSArray *arrSend=@[@"left",@"right"];
-    NSArray *arrType=@[@"text",@"image",@"voice"];
-    return [NSString stringWithFormat:@"message%@%@",arrSend[_isSend],arrType[self.type]];
+//    NSArray *arrType=@[@"text",@"image",@"voice"];
+    return [NSString stringWithFormat:@"message%@%u",arrSend[_isSend],self.type];
 }
 
 @end

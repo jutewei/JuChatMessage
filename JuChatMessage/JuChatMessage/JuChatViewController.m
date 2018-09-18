@@ -29,17 +29,21 @@
     ju_TableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     [self juSetInputView];
     ju_MArrList =[NSMutableArray array];
-    for (int i=0; i<20; i++) {
+    for (int i=0; i<100; i++) {
         JuMessageModel *juM=[JuMessageModel new];
         if (i%2==0) {
             juM.isSend=YES;
         }
-        if (i%3==0) {
+        if (i%4==0) {
             juM.type=JUMessageBodyTypeText;
-        }else if(i%3==1){
+        }else if(i%4==1){
             juM.type=JUMessageBodyTypeImage;
             juM.ju_scale=0.05*i+1;
-        }else{
+        }else if(i%4==2){
+            juM.type=JUMessageBodyTypeGif;
+            juM.ju_scale=1;
+        }
+        else{
             juM.type=JUMessageBodyTypeVoice;
         }
         juM.ju_messageText=@"这是条测试行家里的规定时间发链接而对方";
@@ -86,6 +90,7 @@
     ju_InputView.ju_TextResult=^(NSString *text){
         [weakSelf juGetText:text];
     };
+    ju_InputView.ju_tableView=ju_TableView;
     ju_InputView.juFrame(CGRectMake(0.01, -0.01, 0, 47));
 }
 -(void)juGetText:(NSString *)text{

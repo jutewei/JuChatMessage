@@ -18,6 +18,14 @@
     }
     return self;
 }
+
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    UIView *view=[super hitTest:point withEvent:event];
+    if (!view&&_ju_TextView.isFirstResponder) {
+        [_ju_TextView resignFirstResponder];
+    }
+    return view;
+}
 -(void)juViewWillAppear{
 
     [[NSNotificationCenter defaultCenter]addObserver:self
@@ -41,15 +49,24 @@
     [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
 
     if ([notification.name isEqualToString:UIKeyboardWillHideNotification]) {
-        [self juShowOrHide:CGRectMake(0, 0, 0, 0) duration:animationDuration];
+        [self juChangeBarHeight:CGRectMake(0, 0, 0, 0) duration:animationDuration];
     }else if([notification.name isEqualToString:UIKeyboardWillChangeFrameNotification]){
-        [self juShowOrHide:keyboardEndFrame duration:animationDuration];
+        [self juChangeBarHeight:keyboardEndFrame duration:animationDuration];
     }
 }
 
--(void)juShowOrHide:(CGRect)frame duration:(NSTimeInterval)time{
+-(void)juChangeBarHeight:(CGRect)frame duration:(NSTimeInterval)time{
 ///< 键盘动画可以不用设置动画，我也是醉了
-     self.ju_Bottom.constant=-frame.size.height;
+    CGFloat height=frame.size.height;
+    UIEdgeInsets inset=self.ju_tableView.contentInset;
+    inset.bottom = frame.size.height;
+    self.ju_tableView.contentInset=inset;
+
+    if (height>0&&[self.ju_tableView numberOfRowsInSection:0]>0) {
+        [self.ju_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[self.ju_tableView numberOfRowsInSection:0]-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+    }
+
+    self.ju_Bottom.constant=height;
     [UIView animateWithDuration:time animations:^{
         [self.superview layoutIfNeeded];
     }];
@@ -112,7 +129,7 @@
         _ju_TextView.juLead.equal(10);
     }
     if (_ju_btnMedia) {
-        _ju_TextView.juTraSpace.toView(_ju_btnMedia).equal(-5);
+        _ju_TextView.juTraSpace.toView(_ju_btnMedia).equal(5);
     }else{
         _ju_TextView.juTrail.equal(10);
     }

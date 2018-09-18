@@ -9,6 +9,6 @@
 #import "JuBubbleView.h"
 
 @interface JuBubbleView (gif)
--(void)juSetGifView:(BOOL)isLeft;
+-(void)juSetGifView:(BOOL)isRight;
 -(void)juSetGifData:(JuMessageModel *)juModel;
 @end
