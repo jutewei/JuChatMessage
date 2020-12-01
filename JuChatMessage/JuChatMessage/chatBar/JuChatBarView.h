@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#define ChatBarHeight 47
+
 typedef void(^juTextResult)(NSString *text);//下步操作后有跟新数据
 @protocol JuChatBarDelegate;
 @interface JuChatBarView : UIView<UITextViewDelegate>

@@ -89,7 +89,8 @@
     ju_InputView.delegate=self;
     [self.view addSubview:ju_InputView];
     ju_InputView.ju_tableView=ju_TableView;
-    ju_InputView.juSafeFrame(CGRectMake(0.01, -0.01, 0, 47));
+    ju_InputView.juSafeFrame(CGRectMake(0.01, -0.01, 0, ChatBarHeight));
+    ju_TableView.juBottom.safe.equal(ChatBarHeight);
 }
 -(void)juDidSendText:(NSString *)text{
     JuMessageModel *juM=[JuMessageModel new];

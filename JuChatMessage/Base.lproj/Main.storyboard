@@ -172,16 +172,29 @@
                                 <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mA0-A9-b5T">
+                                <rect key="frame" x="67.5" y="237.5" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="XEm-P3-pMV"/>
+                                    <constraint firstAttribute="width" constant="240" id="i9b-1o-ufe"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.019607843140000001" green="0.70588235290000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="odG-Hj-o1O" firstAttribute="height" secondItem="odG-Hj-o1O" secondAttribute="width" multiplier="19:31" id="3sO-eO-RDJ"/>
                             <constraint firstItem="odG-Hj-o1O" firstAttribute="centerY" secondItem="hUB-eB-U49" secondAttribute="centerY" id="3v4-Kk-GAf"/>
                             <constraint firstItem="53O-Be-8rL" firstAttribute="leading" secondItem="EHZ-CY-B8s" secondAttribute="leading" id="CNc-dJ-Jtf"/>
+                            <constraint firstItem="mA0-A9-b5T" firstAttribute="centerX" secondItem="hUB-eB-U49" secondAttribute="centerX" id="DA9-QF-UGI"/>
                             <constraint firstItem="Xt5-HX-qNo" firstAttribute="leading" secondItem="hUB-eB-U49" secondAttribute="leadingMargin" id="DQf-AR-bmc"/>
                             <constraint firstItem="53O-Be-8rL" firstAttribute="bottom" secondItem="EHZ-CY-B8s" secondAttribute="bottom" id="F89-RF-O0W"/>
                             <constraint firstItem="53O-Be-8rL" firstAttribute="trailing" secondItem="EHZ-CY-B8s" secondAttribute="trailing" id="Oms-lS-2jt"/>
                             <constraint firstItem="EHZ-CY-B8s" firstAttribute="trailing" secondItem="odG-Hj-o1O" secondAttribute="leading" constant="-14" id="cMu-08-haW"/>
+                            <constraint firstItem="mA0-A9-b5T" firstAttribute="centerY" secondItem="hUB-eB-U49" secondAttribute="centerY" id="lqi-BU-Swj"/>
                             <constraint firstItem="EHZ-CY-B8s" firstAttribute="leading" secondItem="Xt5-HX-qNo" secondAttribute="trailing" constant="14" id="oSE-3B-xGO"/>
                             <constraint firstAttribute="trailing" secondItem="odG-Hj-o1O" secondAttribute="trailing" constant="10" id="ozv-GQ-CgI"/>
                             <constraint firstItem="EHZ-CY-B8s" firstAttribute="centerY" secondItem="hUB-eB-U49" secondAttribute="centerY" id="tyM-yG-e5x"/>
@@ -206,12 +219,11 @@
                     <view key="view" contentMode="scaleToFill" id="gbb-7w-JS0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.21121604311391476" green="0.38255220762072895" blue="0.42235088832487311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQ2-5z-EbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2191" y="94"/>
+            <point key="canvasLocation" x="2426" y="40"/>
         </scene>
     </scenes>
 </document>

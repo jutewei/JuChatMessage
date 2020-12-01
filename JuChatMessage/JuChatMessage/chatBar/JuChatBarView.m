@@ -179,18 +179,18 @@
         }
         textView.text=@"";
         [textView resignFirstResponder];
+        [self adjustTextViewHeightBy:0];
         return NO;
     }
     return YES;
 }
-
 //改变输入框的高度
 #pragma mark - Message input view
 -(void)adjustTextViewHeightBy:(CGFloat)changeHeight
 {
     CGFloat maxHeight = [JuChatBarView maxHeight];
     changeHeight=MIN(maxHeight, changeHeight+14);//   changeInHeight+19 文本内容高度加上最小高度
-    self.ju_Height.constant=changeHeight;
+    self.ju_Height.constant=MAX(ChatBarHeight, changeHeight);
 }
 ///每行高度
 + (CGFloat)textViewLineHeight{
@@ -204,14 +204,12 @@
 + (CGFloat)maxHeight{
     return ([self maxLines] + 1.0f) * [self textViewLineHeight];
 }
-
 -(JuRecordView *)ju_recordView{
     if (!ju_recordView) {
         ju_recordView = [[JuRecordView alloc]init];
     }
     return ju_recordView;
 }
-
 /***各个事件处理***/
 -(void)juTouchMore:(UIButton *)sender{
     sender.selected=!sender.selected;
@@ -292,7 +290,6 @@
 }
 //移动回来
 -(void)juRecordDragInside{
-
     [self.ju_recordView juSetVoiceImage:NO];
 }
 //移走
