@@ -17,8 +17,6 @@
 		EB266B401DB73EB100D4A15F /* consult_RightBubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */; };
 		EB266B421DB73EC500D4A15F /* assistor_news0_03.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B411DB73EC500D4A15F /* assistor_news0_03.png */; };
 		EB266B471DB74A8B00D4A15F /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB266B461DB74A8B00D4A15F /* timg.jpeg */; };
-		EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */; };
-		EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */; };
 		EB358FE42150A89E00B5AABC /* emoti_000.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB358FE32150A89E00B5AABC /* emoti_000.gif */; };
 		EB3590012150C1A900B5AABC /* RecordingBkg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FED2150C1A900B5AABC /* RecordingBkg@3x.png */; };
 		EB3590022150C1A900B5AABC /* RecordingSignal001@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FEE2150C1A900B5AABC /* RecordingSignal001@3x.png */; };
@@ -41,8 +39,6 @@
 		EB3590132150C1A900B5AABC /* RecordingSignal006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFF2150C1A900B5AABC /* RecordingSignal006@2x.png */; };
 		EB3590142150C1A900B5AABC /* RecordCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3590002150C1A900B5AABC /* RecordCancel@2x.png */; };
 		EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46F1BB1DB86A50004AB89A /* TestViewController.m */; };
-		EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */; };
-		EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */; };
 		EBC5052B25763F860038A617 /* JuDeviceManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504E725763F860038A617 /* JuDeviceManage.m */; };
 		EBC5052C25763F860038A617 /* JuPlayVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504EA25763F860038A617 /* JuPlayVoice.m */; };
 		EBC5052D25763F860038A617 /* JuAVAuthorizationManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504EB25763F860038A617 /* JuAVAuthorizationManage.m */; };
@@ -117,8 +113,6 @@
 		EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "consult_RightBubble@3x.png"; sourceTree = "<group>"; };
 		EB266B411DB73EC500D4A15F /* assistor_news0_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assistor_news0_03.png; sourceTree = "<group>"; };
 		EB266B461DB74A8B00D4A15F /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
-		EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceLeft@2x.png"; sourceTree = "<group>"; };
-		EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceRight@2x.png"; sourceTree = "<group>"; };
 		EB358FE32150A89E00B5AABC /* emoti_000.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = emoti_000.gif; sourceTree = "<group>"; };
 		EB358FED2150C1A900B5AABC /* RecordingBkg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@3x.png"; sourceTree = "<group>"; };
 		EB358FEE2150C1A900B5AABC /* RecordingSignal001@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal001@3x.png"; sourceTree = "<group>"; };
@@ -142,8 +136,6 @@
 		EB3590002150C1A900B5AABC /* RecordCancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordCancel@2x.png"; sourceTree = "<group>"; };
 		EB46F1BA1DB86A50004AB89A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB46F1BB1DB86A50004AB89A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_record@2x.png"; sourceTree = "<group>"; };
-		EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_more@2x.png"; sourceTree = "<group>"; };
 		EBC504E725763F860038A617 /* JuDeviceManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuDeviceManage.m; sourceTree = "<group>"; };
 		EBC504E825763F860038A617 /* JuAVAuthorizationManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuAVAuthorizationManage.h; sourceTree = "<group>"; };
 		EBC504E925763F860038A617 /* JuAudioManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuAudioManage.h; sourceTree = "<group>"; };
@@ -348,10 +340,6 @@
 				EBC505B0257642180038A617 /* MBEmojisList.plist */,
 				EB358FEC2150C1A900B5AABC /* VoiceImg */,
 				EB358FE32150A89E00B5AABC /* emoti_000.gif */,
-				EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */,
-				EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */,
-				EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */,
-				EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */,
 				EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */,
 				EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */,
 				EB266B411DB73EC500D4A15F /* assistor_news0_03.png */,
@@ -694,7 +682,6 @@
 				EB266B401DB73EB100D4A15F /* consult_RightBubble@3x.png in Resources */,
 				EB3590062150C1A900B5AABC /* RecordingBkg@2x.png in Resources */,
 				EB3590112150C1A900B5AABC /* RecordingSignal004@3x.png in Resources */,
-				EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */,
 				EB358FE42150A89E00B5AABC /* emoti_000.gif in Resources */,
 				EB3590082150C1A900B5AABC /* RecordingSignal007@3x.png in Resources */,
 				EB35900D2150C1A900B5AABC /* RecordCancel@3x.png in Resources */,
@@ -707,19 +694,16 @@
 				EB3590022150C1A900B5AABC /* RecordingSignal001@3x.png in Resources */,
 				EBC505B1257642180038A617 /* MBEmojisList.plist in Resources */,
 				EB35900C2150C1A900B5AABC /* RecordingSignal002@3x.png in Resources */,
-				EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */,
 				EB3590132150C1A900B5AABC /* RecordingSignal006@2x.png in Resources */,
 				EB35900F2150C1A900B5AABC /* RecordingSignal008@2x.png in Resources */,
 				EB3590032150C1A900B5AABC /* RecordingSignal003@2x.png in Resources */,
 				EB3590142150C1A900B5AABC /* RecordCancel@2x.png in Resources */,
-				EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */,
 				EB266B171DB70F9C00D4A15F /* LaunchScreen.storyboard in Resources */,
 				EB266B421DB73EC500D4A15F /* assistor_news0_03.png in Resources */,
 				EB3590102150C1A900B5AABC /* RecordingSignal004@2x.png in Resources */,
 				EB3590092150C1A900B5AABC /* RecordingSignal007@2x.png in Resources */,
 				EB266B141DB70F9C00D4A15F /* Assets.xcassets in Resources */,
 				EB266B3E1DB73EA300D4A15F /* consult_LeftBubble@3x.png in Resources */,
-				EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */,
 				EB266B121DB70F9C00D4A15F /* Main.storyboard in Resources */,
 				EB35900B2150C1A900B5AABC /* RecordingSignal002@2x.png in Resources */,
 			);
