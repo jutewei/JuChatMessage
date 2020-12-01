@@ -12,7 +12,6 @@
 #import "JuChatDataAdapter.h"
 #import "JuChatBarDelegate.h"
 #import "JuMessageModel.h"
-#import "UIView+tableView.h"
 #import "JuDeviceManage.h"
 #import "JuPhotoPickers.h"
 #import "JuChatMediaFile.h"
@@ -93,7 +92,7 @@
 }
 #pragma mark 气泡点击代理
 -(void)juSelectReSend:(UIButton *)sender{
-    NSIndexPath *indexPath=[sender juSubViewTable:ju_tableView];
+    NSIndexPath *indexPath = [self juIndexWithView:sender];
     JuChatDataAdapter *juM=_sh_MArrList[indexPath.section];
     [self mtSendMessage:juM indexPath:indexPath];
     [self juReloadTable:indexPath];
@@ -105,7 +104,7 @@
 
 }
 -(void)juSelectBubble:(UIView *)sender{
-    NSIndexPath *indexPath=[sender juSubViewTable:ju_tableView];
+    NSIndexPath *indexPath=[self juIndexWithView:sender];
     JuChatDataAdapter *juM=_sh_MArrList[indexPath.section];
     if (juM.ju_mesageType==JUMessageBodyTypeVoice) {
         if ([juM.ju_messageUrl hasPrefix:@"http"]) {///< 网络语音
@@ -252,6 +251,17 @@
 }
 -(void)juReadAudio:(NSIndexPath *)indexPath{
 
+}
+-(NSIndexPath *)juIndexWithView:(UIView *)view{
+    UIView *superView=view;
+    while (superView) {
+        if ([superView isKindOfClass:[UITableViewCell class]]) {
+            break;
+        }
+        superView=[superView superview];
+    }
+    NSIndexPath *indexPath = [ju_tableView indexPathForCell:(UITableViewCell *)superView];
+    return indexPath;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

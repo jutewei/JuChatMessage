@@ -87,7 +87,6 @@
 		EBC5059525763FBF0038A617 /* JuPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5058225763FBF0038A617 /* JuPhotoGroupCell.m */; };
 		EBC5059925763FFF0038A617 /* UIColor+juDark.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5059725763FFF0038A617 /* UIColor+juDark.m */; };
 		EBC5059D257640610038A617 /* UIImage+mbCropping.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5059C257640610038A617 /* UIImage+mbCropping.m */; };
-		EBC505A4257640FD0038A617 /* UIView+tableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505A3257640FD0038A617 /* UIView+tableView.m */; };
 		EBC505A8257641650038A617 /* JuVoiceConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505A6257641650038A617 /* JuVoiceConvert.m */; };
 		EBC505B1257642180038A617 /* MBEmojisList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBC505B0257642180038A617 /* MBEmojisList.plist */; };
 		EBC505C4257644740038A617 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505BB257644740038A617 /* UIView+JuLayout.m */; };
@@ -239,8 +238,6 @@
 		EBC5059825763FFF0038A617 /* UIColor+juDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+juDark.h"; sourceTree = "<group>"; };
 		EBC5059B257640610038A617 /* UIImage+mbCropping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+mbCropping.h"; sourceTree = "<group>"; };
 		EBC5059C257640610038A617 /* UIImage+mbCropping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+mbCropping.m"; sourceTree = "<group>"; };
-		EBC505A2257640FD0038A617 /* UIView+tableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+tableView.h"; sourceTree = "<group>"; };
-		EBC505A3257640FD0038A617 /* UIView+tableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+tableView.m"; sourceTree = "<group>"; };
 		EBC505A6257641650038A617 /* JuVoiceConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuVoiceConvert.m; sourceTree = "<group>"; };
 		EBC505A7257641650038A617 /* JuVoiceConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuVoiceConvert.h; sourceTree = "<group>"; };
 		EBC505B0257642180038A617 /* MBEmojisList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MBEmojisList.plist; sourceTree = "<group>"; };
@@ -521,9 +518,9 @@
 				EBC505B6257643DF0038A617 /* Ex */,
 				EBC5057225763FBF0038A617 /* JuPhotos */,
 				EBC5055B25763FBF0038A617 /* JuZoomImage */,
-				EBC5056F25763FBF0038A617 /* JuPhotoPickers.m */,
-				EBC5057025763FBF0038A617 /* JuPhotoPickers.h */,
 				EBC5057125763FBF0038A617 /* JuPhotoConfig.h */,
+				EBC5057025763FBF0038A617 /* JuPhotoPickers.h */,
+				EBC5056F25763FBF0038A617 /* JuPhotoPickers.m */,
 			);
 			path = JuPhoto;
 			sourceTree = "<group>";
@@ -579,8 +576,6 @@
 		EBC505A1257640F20038A617 /* JuEx */ = {
 			isa = PBXGroup;
 			children = (
-				EBC505A2257640FD0038A617 /* UIView+tableView.h */,
-				EBC505A3257640FD0038A617 /* UIView+tableView.m */,
 				EBC5059825763FFF0038A617 /* UIColor+juDark.h */,
 				EBC5059725763FFF0038A617 /* UIColor+juDark.m */,
 			);
@@ -760,7 +755,6 @@
 				EBC5059025763FBF0038A617 /* JuPhotoOverlayView.m in Sources */,
 				EBC5058C25763FBF0038A617 /* JuAlbumPreviewVC.m in Sources */,
 				EBC5052C25763F860038A617 /* JuPlayVoice.m in Sources */,
-				EBC505A4257640FD0038A617 /* UIView+tableView.m in Sources */,
 				EBC5053A25763F860038A617 /* JuBubbleView+Video.m in Sources */,
 				EBC5053125763F860038A617 /* JuChatBarView.m in Sources */,
 				EBC5053F25763F860038A617 /* JuBubbleView+image.m in Sources */,
