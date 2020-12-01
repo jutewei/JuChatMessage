@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6YJ-6l-TDs">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6YJ-6l-TDs">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +12,7 @@
             <objects>
                 <navigationController id="6YJ-6l-TDs" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Jen-LA-FX1">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -36,25 +32,8 @@
                         <viewControllerLayoutGuide type="bottom" id="XKW-nr-WQt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D90-Rl-ujx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yb3-2Q-6xB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="556"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="0.019607843140000001" green="0.70588235290000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="PTq-32-U4i" id="aya-K3-oDf"/>
-                                    <outlet property="delegate" destination="PTq-32-U4i" id="oA7-GU-EbF"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="XKW-nr-WQt" firstAttribute="top" secondItem="Yb3-2Q-6xB" secondAttribute="bottom" constant="47" id="6HJ-57-8r0"/>
-                            <constraint firstAttribute="trailing" secondItem="Yb3-2Q-6xB" secondAttribute="trailing" id="aZ3-UI-ese"/>
-                            <constraint firstItem="Yb3-2Q-6xB" firstAttribute="leading" secondItem="D90-Rl-ujx" secondAttribute="leading" id="kZy-Tm-DWS"/>
-                            <constraint firstItem="Yb3-2Q-6xB" firstAttribute="top" secondItem="D90-Rl-ujx" secondAttribute="top" id="zLf-IN-C4w"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="46e-AK-jCX">
                         <barButtonItem key="rightBarButtonItem" title="下一个" id="QYW-j4-9jO">
@@ -63,9 +42,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="ju_TableView" destination="Yb3-2Q-6xB" id="AA1-69-FJy"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9X-yV-md6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +56,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kNh-sI-N6m"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hUB-eB-U49">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xt5-HX-qNo" userLabel="左边">
@@ -92,18 +68,18 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHZ-CY-B8s" userLabel="中间">
-                                <rect key="frame" x="92" y="237.5" width="197" height="128"/>
+                                <rect key="frame" x="92" y="247.5" width="197" height="128"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Euc-0O-SPU"/>
                                 </constraints>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53O-Be-8rL" userLabel="中间2">
-                                <rect key="frame" x="92" y="237.5" width="197" height="128"/>
+                                <rect key="frame" x="92" y="247.5" width="197" height="128"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.27450980390000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odG-Hj-o1O" userLabel="右边">
-                                <rect key="frame" x="303" y="282.5" width="62" height="38"/>
+                                <rect key="frame" x="303" y="292.5" width="62" height="38"/>
                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.85098039219999999" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="lCG-8S-h5r"/>
@@ -173,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mA0-A9-b5T">
-                                <rect key="frame" x="67.5" y="237.5" width="240" height="128"/>
+                                <rect key="frame" x="67.5" y="247.5" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="XEm-P3-pMV"/>

@@ -7,109 +7,252 @@
 //
 
 #import "JuChatViewController.h"
-#import "JuChatBarView.h"
-#import "UIView+JuLayGroup.h"
+#import "JuLayoutFrame.h"
 #import "JuChatMessageCell.h"
-#import "JuMessageModel.h"
+#import "JuChatDataAdapter.h"
 #import "JuChatBarDelegate.h"
-@interface JuChatViewController ()<JuChatMessageDelegate,JuChatBarDelegate>{
-    JuChatBarView * ju_InputView;
-    __weak IBOutlet UITableView *ju_TableView;
-    NSMutableArray *ju_MArrList;
+#import "JuMessageModel.h"
+#import "UIView+tableView.h"
+#import "JuDeviceManage.h"
+#import "JuPhotoPickers.h"
+#import "JuChatMediaFile.h"
+#import "JuLargeImageVC.h"
+#import "JuAudioDownManage.h"
+#import "JuChatMsgTimeCell.h"
+@interface JuChatViewController ()<JuChatMessageDelegate,JuChatBarDelegate,SHChoosePhotoDelegate>{
+    JuChatBarView * _ju_InputView;
+   
+   
 }
 
 @end
 
 @implementation JuChatViewController
-
+@synthesize ju_InputView=_ju_InputView;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=@"chatDome";
-    ju_TableView.rowHeight=UITableViewAutomaticDimension;
-    ju_TableView.estimatedRowHeight=50;
-    ju_TableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+    [self juSetTableView];
     [self juSetInputView];
-    ju_MArrList =[NSMutableArray array];
-    for (int i=0; i<100; i++) {
-        JuMessageModel *juM=[JuMessageModel new];
-        if (i%2==0) {
-            juM.isSend=YES;
-        }
-        if (i%4==0) {
-            juM.type=JUMessageBodyTypeText;
-        }else if(i%4==1){
-            juM.type=JUMessageBodyTypeImage;
-            juM.ju_scale=0.05*i+1;
-        }else if(i%4==2){
-            juM.type=JUMessageBodyTypeGif;
-            juM.ju_scale=1;
-        }
-        else{
-            juM.type=JUMessageBodyTypeVoice;
-        }
-        juM.ju_messageText=@"这是条测试行家里的规定时间发链接而对方";
-        [ju_MArrList addObject:juM];
-    }
+    _sh_MArrList =[NSMutableArray array];
+
     // Do any additional setup after loading the view.
 }
-
+-(void)juSetTableView{
+    ju_tableView=[[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    ju_tableView.rowHeight=44;
+    ju_tableView.delegate=self;
+    ju_tableView.dataSource=self;
+    ju_tableView.estimatedSectionFooterHeight=0;
+    ju_tableView.estimatedRowHeight=0;
+    ju_tableView.estimatedSectionHeaderHeight=0;
+    ju_tableView.backgroundColor=JUMsgColor_BackGround;
+    ju_tableView.rowHeight=UITableViewAutomaticDimension;
+    ju_tableView.estimatedRowHeight=50;
+    ju_tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+    [self.view addSubview:ju_tableView];
+    ju_tableView.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
+    self.view.backgroundColor=[UIColor whiteColor];
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [_ju_InputView juViewWillAppear];
+    self.navigationController.interactivePopGestureRecognizer.delaysTouchesBegan=NO;
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [_ju_InputView juViewWillDisAppear];
+    self.navigationController.interactivePopGestureRecognizer.delaysTouchesBegan=YES;
+}
+-(BOOL)shIsGrouped{
+    return YES;
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return _sh_MArrList.count;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return ju_MArrList.count;
+    return 1;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    JuMessageModel *juM=ju_MArrList[indexPath.row];
-    JuChatMessageCell *cell=[tableView dequeueReusableCellWithIdentifier:juM.ju_Identifier];
+    JuChatDataAdapter *juM=_sh_MArrList[indexPath.section];
+    JuChatMessageCell *cell=[tableView dequeueReusableCellWithIdentifier:juM.ju_identifier];
     if (!cell) {
-        cell=[[JuChatMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:juM.ju_Identifier withModel:juM];
+        cell=[[JuChatMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:juM.ju_identifier withModel:juM];
         cell.delegate=self;
     }
     cell.ju_Model=juM;
     return cell;
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [ju_InputView juViewWillAppear];
-}
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [ju_TableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:ju_MArrList.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
-}
--(void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [ju_InputView juViewWillDisAppear];
-}
-- (IBAction)juTouchNext:(id)sender {
-  }
 
 -(void)juSetInputView{
-    ju_InputView =[[JuChatBarView alloc]init];
-    ju_InputView.delegate=self;
-    [self.view addSubview:ju_InputView];
-    ju_InputView.ju_tableView=ju_TableView;
-    ju_InputView.juSafeFrame(CGRectMake(0.01, -0.01, 0, ChatBarHeight));
-    ju_TableView.juBottom.safe.equal(ChatBarHeight);
+    _ju_InputView =[[JuChatBarView alloc]init];
+    _ju_InputView.delegate=self;
+    [self.view addSubview:_ju_InputView];
+    _ju_InputView.ju_tableView=ju_tableView;
+    _ju_InputView.juSafeFrame(CGRectMake(0.01, -0.01, 0, ChatBarHeight));
+    ju_tableView.juBottom.safe.equal(ChatBarHeight);
 }
--(void)juDidSendText:(NSString *)text{
-    JuMessageModel *juM=[JuMessageModel new];
-    juM.isSend=YES;
-    juM.type=JUMessageBodyTypeText;
-    juM.ju_messageText=text;
-    [ju_MArrList addObject:juM];
-    [ju_TableView reloadData];
-    [ju_TableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:ju_MArrList.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
-}
--(void)juDidSendVoice:(NSString *)voicePath{
-    JuMessageModel *juM=[JuMessageModel new];
-    juM.isSend=YES;
-    juM.type=JUMessageBodyTypeVoice;
-    [ju_MArrList addObject:juM];
-    [ju_TableView reloadData];
-    [ju_TableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:ju_MArrList.count-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+#pragma mark 气泡点击代理
+-(void)juSelectReSend:(UIButton *)sender{
+    NSIndexPath *indexPath=[sender juSubViewTable:ju_tableView];
+    JuChatDataAdapter *juM=_sh_MArrList[indexPath.section];
+    [self mtSendMessage:juM indexPath:indexPath];
+    [self juReloadTable:indexPath];
 }
 
+-(void)juSelectHeadImage:(UIButton *)sender{
+//    NSIndexPath *indexPath=[sender juSubViewTable:sh_TableView];
+//    JuChatDataAdapter *juM=_sh_MArrList[indexPath.section];
+
+}
+-(void)juSelectBubble:(UIView *)sender{
+    NSIndexPath *indexPath=[sender juSubViewTable:ju_tableView];
+    JuChatDataAdapter *juM=_sh_MArrList[indexPath.section];
+    if (juM.ju_mesageType==JUMessageBodyTypeVoice) {
+        if ([juM.ju_messageUrl hasPrefix:@"http"]) {///< 网络语音
+            [self juReadAudio:indexPath];
+            if (![JuAudioDownManage mtGetExistFile:juM.ju_messageUrl]) {
+//                [MBProgressHUD juShowHUDText:@"正在准备语音文件..."];
+            }
+            [[JuAudioDownManage sharedInstance]mtDownDataURL:juM.ju_messageUrl handle:^(id result) {
+                [[JuDeviceManage sharedInstance]asyncPlayingWithPath:result completion:^(NSError * _Nonnull error) {
+
+                }];
+            }];
+            return;
+        }
+        //本地语音播放
+        [[JuDeviceManage sharedInstance]asyncPlayingWithPath:juM.ju_messageUrl completion:^(NSError * _Nonnull error) {
+            
+        }];
+    }else if(juM.ju_mesageType==JUMessageBodyTypeImage){
+        JuChatMessageCell *cell=[ju_tableView cellForRowAtIndexPath:indexPath];
+        CGRect frame= [cell convertRect:cell.ju_viewBubble.frame toView:cell.ju_viewBubble.window];
+        NSString *stringUrl=juM.isSend?[NSURL fileURLWithPath:juM.ju_messageUrl].absoluteString:juM.ju_messageUrl;
+        [[JuLargeImageVC initRect:frame images:@[stringUrl] currentIndex:0 thumbSize:CGSizeMake(80, 80) finishHandle:^CGRect(id result) {
+            return frame;
+        }] juShow];
+    }
+}
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self.view endEditing:YES];
+    [_ju_InputView juHidderAll];
+}
+
+#pragma mark chatBar delegate
+-(void)juDidSendText:(NSString *)text{
+    JuChatDataAdapter *adapter=[self juSetMessageWithData:text type:JUMessageBodyTypeText];
+    [self juInsterData:adapter isScroll:YES];
+    [self mtSendMessage:adapter indexPath:[NSIndexPath indexPathForRow:0 inSection:_sh_MArrList.count-1]];
+}
+
+-(void)juDidSelectMore:(UIView *)sender{
+    [[JuPhotoPickers sharedInstance] juSelectWithType:sender.tag presentVC:self finishHandle:^(id  _Nullable result) {
+        [self fbFinishImage:result];
+    }];
+}
+
+/*选择照片完成*/
+-(void)fbFinishImage:(UIImage *)imageData{
+    NSDictionary *imagePath = [JuChatMediaFile juSaveImage:imageData];
+    if (imagePath) {
+        [self juSetAdapter:[self juSetMessageWithData:imagePath type:JUMessageBodyTypeImage]];
+    }
+}
+-(void)juDidSendVoice:(id)voicePath{
+    [self juSetAdapter:[self juSetMessageWithData:voicePath type:JUMessageBodyTypeVoice]];
+}
+-(void)juSetAdapter:(JuChatDataAdapter *)adapter{
+    if (adapter) {
+        [self juInsterData:adapter isScroll:YES];
+        [self mtSendMessage:adapter indexPath:nil];
+    }
+}
+-(void)juInsterData:(JuChatDataAdapter *)adapter isScroll:(BOOL)isScroll{
+    [_sh_MArrList addObject:adapter];
+    [ju_tableView beginUpdates];
+    [ju_tableView insertSections:[NSIndexSet indexSetWithIndex:_sh_MArrList.count-1] withRowAnimation:UITableViewRowAnimationNone];
+    [ju_tableView endUpdates];
+    if (isScroll) {
+        [self juScrollPositionBottom:YES];
+    }
+}
+-(void)juScrollPositionBottom:(BOOL)animated{
+    if (ju_tableView.numberOfSections>0) {
+        [self.view layoutIfNeeded];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{\
+            [self->ju_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:self->ju_tableView.numberOfSections-1] atScrollPosition:UITableViewScrollPositionBottom animated:animated];
+        });
+    }
+}
+-(void)juReloadTable:(NSIndexPath *)indexPath{
+    if (indexPath) {
+        JuChatDataAdapter *juM=_sh_MArrList[indexPath.section];
+        JuChatMessageCell *cell=[ju_tableView cellForRowAtIndexPath:indexPath];
+        cell.ju_Model=juM;
+    }else{
+        [ju_tableView reloadData];
+    }
+}
+
+- ( id <JuChatDataProtocol>)juSetMessageWithData:(id)content type:(JUMessageBodyType )type{
+    JuMessageModel *juM=[JuMessageModel new];
+    juM.isSend=YES;
+    juM.type=type;
+    if (type==JUMessageBodyTypeText) {
+        juM.ju_messageText=content;
+    }else if (type==JUMessageBodyTypeImage){
+        juM.ju_content=content;
+    }else if (type==JUMessageBodyTypeVoice){
+        juM.ju_content=content;
+    }
+    return [JuChatDataAdapter initWithData:juM];
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    JuChatDataAdapter *juM=_sh_MArrList[indexPath.section];
+    if (juM.ju_mesageType==JUMessageBodyTypeImage) {
+        return juM.ju_conSize.height+32;
+    }
+    return UITableViewAutomaticDimension;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if ([self isHidderTime:section]) return nil;
+    JuChatDataAdapter *juM=_sh_MArrList[section];
+    UIView *view=[JuChatMsgTimeCell mtTimeView:juM.ju_msgTime];
+    view.backgroundColor=ju_tableView.backgroundColor;
+    return view;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *view=[[UIView alloc]init];
+    view.backgroundColor=ju_tableView.backgroundColor;
+    return view;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if ([self isHidderTime:section]) {
+        return 0.01;
+    }else if(section==0)return 28;
+    return 18;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.01;
+}
+-(BOOL)isHidderTime:(NSInteger)section{
+    if (section>0) {
+        JuChatDataAdapter *juM=_sh_MArrList[section];
+        JuChatDataAdapter *juLastM=_sh_MArrList[section-1];
+        if (juM.ju_creatTime-juLastM.ju_creatTime<60*1000) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+-(void)mtSendMessage:(id <JuChatDataProtocol> )mesage indexPath:(NSIndexPath *)indexPath{
+
+}
+-(void)juReadAudio:(NSIndexPath *)indexPath{
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

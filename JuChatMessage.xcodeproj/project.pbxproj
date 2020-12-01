@@ -7,32 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB20E56C1DD0593700A05A95 /* JuBubbleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5611DD0593700A05A95 /* JuBubbleImage.m */; };
-		EB20E56D1DD0593700A05A95 /* JuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5631DD0593700A05A95 /* JuBubbleView.m */; };
-		EB20E56E1DD0593700A05A95 /* JuChatBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5651DD0593700A05A95 /* JuChatBarView.m */; };
-		EB20E56F1DD0593700A05A95 /* JuBaseMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */; };
-		EB20E5701DD0593700A05A95 /* JuChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E5691DD0593700A05A95 /* JuChatViewController.m */; };
-		EB20E5711DD0593700A05A95 /* JuMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20E56B1DD0593700A05A95 /* JuMessageModel.m */; };
+		56C07FC3486B4E287D52A41E /* libPods-JuChatMessage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9FEA55D47FEC2B8F76C99D /* libPods-JuChatMessage.a */; };
 		EB266B091DB70F9C00D4A15F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B081DB70F9C00D4A15F /* main.m */; };
 		EB266B0C1DB70F9C00D4A15F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B0B1DB70F9C00D4A15F /* AppDelegate.m */; };
 		EB266B121DB70F9C00D4A15F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB266B101DB70F9C00D4A15F /* Main.storyboard */; };
 		EB266B141DB70F9C00D4A15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB266B131DB70F9C00D4A15F /* Assets.xcassets */; };
 		EB266B171DB70F9C00D4A15F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB266B151DB70F9C00D4A15F /* LaunchScreen.storyboard */; };
-		EB266B291DB710F800D4A15F /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B201DB710F800D4A15F /* JuLayout.m */; };
-		EB266B2A1DB710F800D4A15F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B221DB710F800D4A15F /* UIView+Frame.m */; };
-		EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B241DB710F800D4A15F /* UIView+JuConstraint.m */; };
-		EB266B2C1DB710F800D4A15F /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B261DB710F800D4A15F /* UIView+JuLayGroup.m */; };
-		EB266B2D1DB710F800D4A15F /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB266B281DB710F800D4A15F /* UIView+JuLayout.m */; };
 		EB266B3E1DB73EA300D4A15F /* consult_LeftBubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */; };
 		EB266B401DB73EB100D4A15F /* consult_RightBubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */; };
 		EB266B421DB73EC500D4A15F /* assistor_news0_03.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B411DB73EC500D4A15F /* assistor_news0_03.png */; };
 		EB266B471DB74A8B00D4A15F /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB266B461DB74A8B00D4A15F /* timg.jpeg */; };
 		EB266B521DB7600400D4A15F /* chatVoiceLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */; };
 		EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */; };
-		EB358FE02150A07E00B5AABC /* JuChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FDF2150A07E00B5AABC /* JuChatMessageCell.m */; };
 		EB358FE42150A89E00B5AABC /* emoti_000.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB358FE32150A89E00B5AABC /* emoti_000.gif */; };
-		EB358FEA2150A8B500B5AABC /* CADisplayLineImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FE62150A8B500B5AABC /* CADisplayLineImageView.m */; };
-		EB358FEB2150A8B500B5AABC /* CADisplayLineImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB358FE72150A8B500B5AABC /* CADisplayLineImage.m */; };
 		EB3590012150C1A900B5AABC /* RecordingBkg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FED2150C1A900B5AABC /* RecordingBkg@3x.png */; };
 		EB3590022150C1A900B5AABC /* RecordingSignal001@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FEE2150C1A900B5AABC /* RecordingSignal001@3x.png */; };
 		EB3590032150C1A900B5AABC /* RecordingSignal003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FEF2150C1A900B5AABC /* RecordingSignal003@2x.png */; };
@@ -53,33 +40,71 @@
 		EB3590122150C1A900B5AABC /* RecordingSignal008@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFE2150C1A900B5AABC /* RecordingSignal008@3x.png */; };
 		EB3590132150C1A900B5AABC /* RecordingSignal006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB358FFF2150C1A900B5AABC /* RecordingSignal006@2x.png */; };
 		EB3590142150C1A900B5AABC /* RecordCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3590002150C1A900B5AABC /* RecordCancel@2x.png */; };
-		EB3590172150C6EA00B5AABC /* JuRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3590162150C6EA00B5AABC /* JuRecordView.m */; };
-		EB35901B2150DEDB00B5AABC /* JuBubbleView+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = EB35901A2150DEDA00B5AABC /* JuBubbleView+Video.m */; };
-		EB35901E2150DEF600B5AABC /* JuBubbleView+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = EB35901D2150DEF600B5AABC /* JuBubbleView+Location.m */; };
-		EB3590212150DF0300B5AABC /* JuBubbleView+File.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3590202150DF0300B5AABC /* JuBubbleView+File.m */; };
-		EB3590242150DF4000B5AABC /* JuChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3590232150DF4000B5AABC /* JuChatMoreView.m */; };
 		EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB46F1BB1DB86A50004AB89A /* TestViewController.m */; };
 		EB46F1BF1DB877AD004AB89A /* chatBar_record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */; };
 		EB46F1C11DB877B2004AB89A /* chatBar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */; };
-		EBAAD9B3214FA90D000248B3 /* JuBubbleView+image.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAAD9B2214FA90D000248B3 /* JuBubbleView+image.m */; };
-		EBAAD9B6214FA919000248B3 /* JuBubbleView+text.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAAD9B5214FA919000248B3 /* JuBubbleView+text.m */; };
-		EBAAD9B9214FA924000248B3 /* JuBubbleView+gif.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAAD9B8214FA924000248B3 /* JuBubbleView+gif.m */; };
-		EBAAD9BC214FAB94000248B3 /* JuBubbleView+Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAAD9BB214FAB94000248B3 /* JuBubbleView+Voice.m */; };
+		EBC5052B25763F860038A617 /* JuDeviceManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504E725763F860038A617 /* JuDeviceManage.m */; };
+		EBC5052C25763F860038A617 /* JuPlayVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504EA25763F860038A617 /* JuPlayVoice.m */; };
+		EBC5052D25763F860038A617 /* JuAVAuthorizationManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504EB25763F860038A617 /* JuAVAuthorizationManage.m */; };
+		EBC5052E25763F860038A617 /* JuAudioManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504EF25763F860038A617 /* JuAudioManage.m */; };
+		EBC5052F25763F860038A617 /* JuChatEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504F425763F860038A617 /* JuChatEmojiView.m */; };
+		EBC5053025763F860038A617 /* JuRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504F525763F860038A617 /* JuRecordView.m */; };
+		EBC5053125763F860038A617 /* JuChatBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504F625763F860038A617 /* JuChatBarView.m */; };
+		EBC5053225763F860038A617 /* JuChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504F725763F860038A617 /* JuChatMoreView.m */; };
+		EBC5053325763F860038A617 /* JuDateManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC504FD25763F860038A617 /* JuDateManage.m */; };
+		EBC5053425763F860038A617 /* JuChatMediaFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5050125763F860038A617 /* JuChatMediaFile.m */; };
+		EBC5053525763F860038A617 /* JuAudioDownManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5050225763F860038A617 /* JuAudioDownManage.m */; };
+		EBC5053625763F860038A617 /* JuChatDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5050625763F860038A617 /* JuChatDataAdapter.m */; };
+		EBC5053725763F860038A617 /* JuMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5050925763F860038A617 /* JuMessageModel.m */; };
+		EBC5053825763F860038A617 /* JuBubbleView+File.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051325763F860038A617 /* JuBubbleView+File.m */; };
+		EBC5053925763F860038A617 /* JuBubbleView+gif.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051425763F860038A617 /* JuBubbleView+gif.m */; };
+		EBC5053A25763F860038A617 /* JuBubbleView+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051525763F860038A617 /* JuBubbleView+Video.m */; };
+		EBC5053B25763F860038A617 /* JuBubbleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051825763F860038A617 /* JuBubbleImage.m */; };
+		EBC5053C25763F860038A617 /* JuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051925763F860038A617 /* JuBubbleView.m */; };
+		EBC5053D25763F860038A617 /* JuBubbleView+Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051A25763F860038A617 /* JuBubbleView+Voice.m */; };
+		EBC5053E25763F860038A617 /* JuBubbleView+text.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051B25763F860038A617 /* JuBubbleView+text.m */; };
+		EBC5053F25763F860038A617 /* JuBubbleView+image.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051C25763F860038A617 /* JuBubbleView+image.m */; };
+		EBC5054025763F860038A617 /* JuBubbleView+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051D25763F860038A617 /* JuBubbleView+Location.m */; };
+		EBC5054125763F860038A617 /* JuChatMsgTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5051F25763F860038A617 /* JuChatMsgTimeCell.m */; };
+		EBC5054225763F860038A617 /* JuChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5052125763F860038A617 /* JuChatMessageCell.m */; };
+		EBC5054325763F860038A617 /* JuBaseMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5052325763F860038A617 /* JuBaseMessageCell.m */; };
+		EBC5054425763F860038A617 /* JuChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5052525763F860038A617 /* JuChatViewController.m */; };
+		EBC5054525763F860038A617 /* JuDisplayLineImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5052825763F860038A617 /* JuDisplayLineImage.m */; };
+		EBC5054625763F860038A617 /* JuDisplayLineImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5052925763F860038A617 /* JuDisplayLineImageView.m */; };
+		EBC5058425763FBF0038A617 /* JuAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5055D25763FBF0038A617 /* JuAnimated.m */; };
+		EBC5058525763FBF0038A617 /* JuImagesCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5055E25763FBF0038A617 /* JuImagesCollectView.m */; };
+		EBC5058625763FBF0038A617 /* JuZoomScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5055F25763FBF0038A617 /* JuZoomScaleView.m */; };
+		EBC5058725763FBF0038A617 /* JuImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5056025763FBF0038A617 /* JuImageObject.m */; };
+		EBC5058825763FBF0038A617 /* JuImagesCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5056125763FBF0038A617 /* JuImagesCollectCell.m */; };
+		EBC5058925763FBF0038A617 /* JuLargeImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5056325763FBF0038A617 /* JuLargeImageVC.m */; };
+		EBC5058A25763FBF0038A617 /* JuProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5056425763FBF0038A617 /* JuProgressView.m */; };
+		EBC5058B25763FBF0038A617 /* JuFullWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5056725763FBF0038A617 /* JuFullWindow.m */; };
+		EBC5058C25763FBF0038A617 /* JuAlbumPreviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5056C25763FBF0038A617 /* JuAlbumPreviewVC.m */; };
+		EBC5058D25763FBF0038A617 /* JuPhotoPickers.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5056F25763FBF0038A617 /* JuPhotoPickers.m */; };
+		EBC5058E25763FBF0038A617 /* RHAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5057725763FBF0038A617 /* RHAssetsLibrary.m */; };
+		EBC5058F25763FBF0038A617 /* JuPhotoCollectionVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5057925763FBF0038A617 /* JuPhotoCollectionVCell.m */; };
+		EBC5059025763FBF0038A617 /* JuPhotoOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5057C25763FBF0038A617 /* JuPhotoOverlayView.m */; };
+		EBC5059125763FBF0038A617 /* JuPhotoCollectionFoot.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5057D25763FBF0038A617 /* JuPhotoCollectionFoot.m */; };
+		EBC5059225763FBF0038A617 /* JuPhotoCollectionVController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5057E25763FBF0038A617 /* JuPhotoCollectionVController.m */; };
+		EBC5059325763FBF0038A617 /* JuPhotoGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5058025763FBF0038A617 /* JuPhotoGroupViewController.m */; };
+		EBC5059425763FBF0038A617 /* UIImage+PhotoManage.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5058125763FBF0038A617 /* UIImage+PhotoManage.m */; };
+		EBC5059525763FBF0038A617 /* JuPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5058225763FBF0038A617 /* JuPhotoGroupCell.m */; };
+		EBC5059925763FFF0038A617 /* UIColor+juDark.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5059725763FFF0038A617 /* UIColor+juDark.m */; };
+		EBC5059D257640610038A617 /* UIImage+mbCropping.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5059C257640610038A617 /* UIImage+mbCropping.m */; };
+		EBC505A4257640FD0038A617 /* UIView+tableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505A3257640FD0038A617 /* UIView+tableView.m */; };
+		EBC505A8257641650038A617 /* JuVoiceConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505A6257641650038A617 /* JuVoiceConvert.m */; };
+		EBC505B1257642180038A617 /* MBEmojisList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBC505B0257642180038A617 /* MBEmojisList.plist */; };
+		EBC505C4257644740038A617 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505BB257644740038A617 /* UIView+JuLayout.m */; };
+		EBC505C5257644740038A617 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505BC257644740038A617 /* UIView+Frame.m */; };
+		EBC505C6257644740038A617 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505BD257644740038A617 /* JuLayout.m */; };
+		EBC505C7257644740038A617 /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505BF257644740038A617 /* UIView+JuConstraint.m */; };
+		EBC505C8257644740038A617 /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC505C0257644740038A617 /* UIView+JuLayGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB20E5601DD0593700A05A95 /* JuBubbleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleImage.h; sourceTree = "<group>"; };
-		EB20E5611DD0593700A05A95 /* JuBubbleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleImage.m; sourceTree = "<group>"; };
-		EB20E5621DD0593700A05A95 /* JuBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleView.h; sourceTree = "<group>"; };
-		EB20E5631DD0593700A05A95 /* JuBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleView.m; sourceTree = "<group>"; };
-		EB20E5641DD0593700A05A95 /* JuChatBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatBarView.h; sourceTree = "<group>"; };
-		EB20E5651DD0593700A05A95 /* JuChatBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatBarView.m; sourceTree = "<group>"; };
-		EB20E5661DD0593700A05A95 /* JuBaseMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBaseMessageCell.h; sourceTree = "<group>"; };
-		EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBaseMessageCell.m; sourceTree = "<group>"; };
-		EB20E5681DD0593700A05A95 /* JuChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatViewController.h; sourceTree = "<group>"; };
-		EB20E5691DD0593700A05A95 /* JuChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatViewController.m; sourceTree = "<group>"; };
-		EB20E56A1DD0593700A05A95 /* JuMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuMessageModel.h; sourceTree = "<group>"; };
-		EB20E56B1DD0593700A05A95 /* JuMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuMessageModel.m; sourceTree = "<group>"; };
+		2F37D3085C977E35E634352C /* Pods-JuChatMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuChatMessage.debug.xcconfig"; path = "Target Support Files/Pods-JuChatMessage/Pods-JuChatMessage.debug.xcconfig"; sourceTree = "<group>"; };
+		3DC5C5A52620B1F51603CAA7 /* Pods-JuChatMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuChatMessage.release.xcconfig"; path = "Target Support Files/Pods-JuChatMessage/Pods-JuChatMessage.release.xcconfig"; sourceTree = "<group>"; };
+		AA9FEA55D47FEC2B8F76C99D /* libPods-JuChatMessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JuChatMessage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB266B041DB70F9C00D4A15F /* JuChatMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuChatMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB266B081DB70F9C00D4A15F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB266B0A1DB70F9C00D4A15F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,29 +113,13 @@
 		EB266B131DB70F9C00D4A15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB266B161DB70F9C00D4A15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB266B181DB70F9C00D4A15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB266B1F1DB710F800D4A15F /* JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLayout.h; sourceTree = "<group>"; };
-		EB266B201DB710F800D4A15F /* JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuLayout.m; sourceTree = "<group>"; };
-		EB266B211DB710F800D4A15F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		EB266B221DB710F800D4A15F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		EB266B231DB710F800D4A15F /* UIView+JuConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuConstraint.h"; sourceTree = "<group>"; };
-		EB266B241DB710F800D4A15F /* UIView+JuConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuConstraint.m"; sourceTree = "<group>"; };
-		EB266B251DB710F800D4A15F /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayGroup.h"; sourceTree = "<group>"; };
-		EB266B261DB710F800D4A15F /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayGroup.m"; sourceTree = "<group>"; };
-		EB266B271DB710F800D4A15F /* UIView+JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayout.h"; sourceTree = "<group>"; };
-		EB266B281DB710F800D4A15F /* UIView+JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayout.m"; sourceTree = "<group>"; };
 		EB266B3D1DB73EA200D4A15F /* consult_LeftBubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "consult_LeftBubble@3x.png"; sourceTree = "<group>"; };
 		EB266B3F1DB73EB100D4A15F /* consult_RightBubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "consult_RightBubble@3x.png"; sourceTree = "<group>"; };
 		EB266B411DB73EC500D4A15F /* assistor_news0_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assistor_news0_03.png; sourceTree = "<group>"; };
 		EB266B461DB74A8B00D4A15F /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 		EB266B511DB7600400D4A15F /* chatVoiceLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceLeft@2x.png"; sourceTree = "<group>"; };
 		EB266B531DB7600800D4A15F /* chatVoiceRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatVoiceRight@2x.png"; sourceTree = "<group>"; };
-		EB358FDE2150A07E00B5AABC /* JuChatMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuChatMessageCell.h; sourceTree = "<group>"; };
-		EB358FDF2150A07E00B5AABC /* JuChatMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuChatMessageCell.m; sourceTree = "<group>"; };
 		EB358FE32150A89E00B5AABC /* emoti_000.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = emoti_000.gif; sourceTree = "<group>"; };
-		EB358FE62150A8B500B5AABC /* CADisplayLineImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLineImageView.m; sourceTree = "<group>"; };
-		EB358FE72150A8B500B5AABC /* CADisplayLineImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLineImage.m; sourceTree = "<group>"; };
-		EB358FE82150A8B500B5AABC /* CADisplayLineImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLineImageView.h; sourceTree = "<group>"; };
-		EB358FE92150A8B500B5AABC /* CADisplayLineImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLineImage.h; sourceTree = "<group>"; };
 		EB358FED2150C1A900B5AABC /* RecordingBkg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@3x.png"; sourceTree = "<group>"; };
 		EB358FEE2150C1A900B5AABC /* RecordingSignal001@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal001@3x.png"; sourceTree = "<group>"; };
 		EB358FEF2150C1A900B5AABC /* RecordingSignal003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal003@2x.png"; sourceTree = "<group>"; };
@@ -131,29 +140,129 @@
 		EB358FFE2150C1A900B5AABC /* RecordingSignal008@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal008@3x.png"; sourceTree = "<group>"; };
 		EB358FFF2150C1A900B5AABC /* RecordingSignal006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal006@2x.png"; sourceTree = "<group>"; };
 		EB3590002150C1A900B5AABC /* RecordCancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordCancel@2x.png"; sourceTree = "<group>"; };
-		EB3590152150C6EA00B5AABC /* JuRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuRecordView.h; sourceTree = "<group>"; };
-		EB3590162150C6EA00B5AABC /* JuRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuRecordView.m; sourceTree = "<group>"; };
-		EB3590182150D59B00B5AABC /* JuChatBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuChatBarDelegate.h; sourceTree = "<group>"; };
-		EB3590192150DEDA00B5AABC /* JuBubbleView+Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Video.h"; sourceTree = "<group>"; };
-		EB35901A2150DEDA00B5AABC /* JuBubbleView+Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Video.m"; sourceTree = "<group>"; };
-		EB35901C2150DEF600B5AABC /* JuBubbleView+Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Location.h"; sourceTree = "<group>"; };
-		EB35901D2150DEF600B5AABC /* JuBubbleView+Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Location.m"; sourceTree = "<group>"; };
-		EB35901F2150DF0300B5AABC /* JuBubbleView+File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+File.h"; sourceTree = "<group>"; };
-		EB3590202150DF0300B5AABC /* JuBubbleView+File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+File.m"; sourceTree = "<group>"; };
-		EB3590222150DF4000B5AABC /* JuChatMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JuChatMoreView.h; sourceTree = "<group>"; };
-		EB3590232150DF4000B5AABC /* JuChatMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JuChatMoreView.m; sourceTree = "<group>"; };
 		EB46F1BA1DB86A50004AB89A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB46F1BB1DB86A50004AB89A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB46F1BE1DB877AD004AB89A /* chatBar_record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_record@2x.png"; sourceTree = "<group>"; };
 		EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBar_more@2x.png"; sourceTree = "<group>"; };
-		EBAAD9B1214FA90D000248B3 /* JuBubbleView+image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+image.h"; sourceTree = "<group>"; };
-		EBAAD9B2214FA90D000248B3 /* JuBubbleView+image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+image.m"; sourceTree = "<group>"; };
-		EBAAD9B4214FA919000248B3 /* JuBubbleView+text.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+text.h"; sourceTree = "<group>"; };
-		EBAAD9B5214FA919000248B3 /* JuBubbleView+text.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+text.m"; sourceTree = "<group>"; };
-		EBAAD9B7214FA924000248B3 /* JuBubbleView+gif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+gif.h"; sourceTree = "<group>"; };
-		EBAAD9B8214FA924000248B3 /* JuBubbleView+gif.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+gif.m"; sourceTree = "<group>"; };
-		EBAAD9BA214FAB94000248B3 /* JuBubbleView+Voice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Voice.h"; sourceTree = "<group>"; };
-		EBAAD9BB214FAB94000248B3 /* JuBubbleView+Voice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Voice.m"; sourceTree = "<group>"; };
+		EBC504E725763F860038A617 /* JuDeviceManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuDeviceManage.m; sourceTree = "<group>"; };
+		EBC504E825763F860038A617 /* JuAVAuthorizationManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuAVAuthorizationManage.h; sourceTree = "<group>"; };
+		EBC504E925763F860038A617 /* JuAudioManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuAudioManage.h; sourceTree = "<group>"; };
+		EBC504EA25763F860038A617 /* JuPlayVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuPlayVoice.m; sourceTree = "<group>"; };
+		EBC504EB25763F860038A617 /* JuAVAuthorizationManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuAVAuthorizationManage.m; sourceTree = "<group>"; };
+		EBC504EC25763F860038A617 /* JuDeviceManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDeviceManage.h; sourceTree = "<group>"; };
+		EBC504ED25763F860038A617 /* JuDeviceErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDeviceErrorCode.h; sourceTree = "<group>"; };
+		EBC504EE25763F860038A617 /* JuPlayVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPlayVoice.h; sourceTree = "<group>"; };
+		EBC504EF25763F860038A617 /* JuAudioManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuAudioManage.m; sourceTree = "<group>"; };
+		EBC504F125763F860038A617 /* JuChatMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatMoreView.h; sourceTree = "<group>"; };
+		EBC504F225763F860038A617 /* JuChatBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatBarView.h; sourceTree = "<group>"; };
+		EBC504F325763F860038A617 /* JuChatBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatBarDelegate.h; sourceTree = "<group>"; };
+		EBC504F425763F860038A617 /* JuChatEmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatEmojiView.m; sourceTree = "<group>"; };
+		EBC504F525763F860038A617 /* JuRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuRecordView.m; sourceTree = "<group>"; };
+		EBC504F625763F860038A617 /* JuChatBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatBarView.m; sourceTree = "<group>"; };
+		EBC504F725763F860038A617 /* JuChatMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatMoreView.m; sourceTree = "<group>"; };
+		EBC504F825763F860038A617 /* JuChatEmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatEmojiView.h; sourceTree = "<group>"; };
+		EBC504F925763F860038A617 /* JuRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuRecordView.h; sourceTree = "<group>"; };
+		EBC504FB25763F860038A617 /* JuDateManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDateManage.h; sourceTree = "<group>"; };
+		EBC504FC25763F860038A617 /* JuMsgConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuMsgConfig.h; sourceTree = "<group>"; };
+		EBC504FD25763F860038A617 /* JuDateManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuDateManage.m; sourceTree = "<group>"; };
+		EBC504FE25763F860038A617 /* JuChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatViewController.h; sourceTree = "<group>"; };
+		EBC5050025763F860038A617 /* JuAudioDownManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuAudioDownManage.h; sourceTree = "<group>"; };
+		EBC5050125763F860038A617 /* JuChatMediaFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatMediaFile.m; sourceTree = "<group>"; };
+		EBC5050225763F860038A617 /* JuAudioDownManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuAudioDownManage.m; sourceTree = "<group>"; };
+		EBC5050325763F860038A617 /* JuChatMediaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatMediaFile.h; sourceTree = "<group>"; };
+		EBC5050525763F860038A617 /* JuChatDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatDataProtocol.h; sourceTree = "<group>"; };
+		EBC5050625763F860038A617 /* JuChatDataAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatDataAdapter.m; sourceTree = "<group>"; };
+		EBC5050725763F860038A617 /* JuMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuMessageModel.h; sourceTree = "<group>"; };
+		EBC5050825763F860038A617 /* JuChatDataAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatDataAdapter.h; sourceTree = "<group>"; };
+		EBC5050925763F860038A617 /* JuMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuMessageModel.m; sourceTree = "<group>"; };
+		EBC5050B25763F860038A617 /* JuBubbleView+gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+gif.h"; sourceTree = "<group>"; };
+		EBC5050C25763F860038A617 /* JuBubbleView+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+File.h"; sourceTree = "<group>"; };
+		EBC5050D25763F860038A617 /* JuBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleView.h; sourceTree = "<group>"; };
+		EBC5050E25763F860038A617 /* JuBubbleView+Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Video.h"; sourceTree = "<group>"; };
+		EBC5050F25763F860038A617 /* JuBubbleView+Voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Voice.h"; sourceTree = "<group>"; };
+		EBC5051025763F860038A617 /* JuBubbleView+Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+Location.h"; sourceTree = "<group>"; };
+		EBC5051125763F860038A617 /* JuBubbleView+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+image.h"; sourceTree = "<group>"; };
+		EBC5051225763F860038A617 /* JuBubbleView+text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuBubbleView+text.h"; sourceTree = "<group>"; };
+		EBC5051325763F860038A617 /* JuBubbleView+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+File.m"; sourceTree = "<group>"; };
+		EBC5051425763F860038A617 /* JuBubbleView+gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+gif.m"; sourceTree = "<group>"; };
+		EBC5051525763F860038A617 /* JuBubbleView+Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Video.m"; sourceTree = "<group>"; };
+		EBC5051725763F860038A617 /* JuBubbleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBubbleImage.h; sourceTree = "<group>"; };
+		EBC5051825763F860038A617 /* JuBubbleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleImage.m; sourceTree = "<group>"; };
+		EBC5051925763F860038A617 /* JuBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBubbleView.m; sourceTree = "<group>"; };
+		EBC5051A25763F860038A617 /* JuBubbleView+Voice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Voice.m"; sourceTree = "<group>"; };
+		EBC5051B25763F860038A617 /* JuBubbleView+text.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+text.m"; sourceTree = "<group>"; };
+		EBC5051C25763F860038A617 /* JuBubbleView+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+image.m"; sourceTree = "<group>"; };
+		EBC5051D25763F860038A617 /* JuBubbleView+Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JuBubbleView+Location.m"; sourceTree = "<group>"; };
+		EBC5051F25763F860038A617 /* JuChatMsgTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatMsgTimeCell.m; sourceTree = "<group>"; };
+		EBC5052025763F860038A617 /* JuBaseMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBaseMessageCell.h; sourceTree = "<group>"; };
+		EBC5052125763F860038A617 /* JuChatMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatMessageCell.m; sourceTree = "<group>"; };
+		EBC5052225763F860038A617 /* JuChatMsgTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatMsgTimeCell.h; sourceTree = "<group>"; };
+		EBC5052325763F860038A617 /* JuBaseMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBaseMessageCell.m; sourceTree = "<group>"; };
+		EBC5052425763F860038A617 /* JuChatMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuChatMessageCell.h; sourceTree = "<group>"; };
+		EBC5052525763F860038A617 /* JuChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuChatViewController.m; sourceTree = "<group>"; };
+		EBC5052725763F860038A617 /* JuDisplayLineImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDisplayLineImageView.h; sourceTree = "<group>"; };
+		EBC5052825763F860038A617 /* JuDisplayLineImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuDisplayLineImage.m; sourceTree = "<group>"; };
+		EBC5052925763F860038A617 /* JuDisplayLineImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuDisplayLineImageView.m; sourceTree = "<group>"; };
+		EBC5052A25763F860038A617 /* JuDisplayLineImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDisplayLineImage.h; sourceTree = "<group>"; };
+		EBC5055C25763FBF0038A617 /* JuFullWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuFullWindow.h; sourceTree = "<group>"; };
+		EBC5055D25763FBF0038A617 /* JuAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuAnimated.m; sourceTree = "<group>"; };
+		EBC5055E25763FBF0038A617 /* JuImagesCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuImagesCollectView.m; sourceTree = "<group>"; };
+		EBC5055F25763FBF0038A617 /* JuZoomScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuZoomScaleView.m; sourceTree = "<group>"; };
+		EBC5056025763FBF0038A617 /* JuImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuImageObject.m; sourceTree = "<group>"; };
+		EBC5056125763FBF0038A617 /* JuImagesCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuImagesCollectCell.m; sourceTree = "<group>"; };
+		EBC5056225763FBF0038A617 /* JuAlbumPreviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuAlbumPreviewVC.h; sourceTree = "<group>"; };
+		EBC5056325763FBF0038A617 /* JuLargeImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuLargeImageVC.m; sourceTree = "<group>"; };
+		EBC5056425763FBF0038A617 /* JuProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuProgressView.m; sourceTree = "<group>"; };
+		EBC5056525763FBF0038A617 /* JuDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuDefine.h; sourceTree = "<group>"; };
+		EBC5056625763FBF0038A617 /* JuAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuAnimated.h; sourceTree = "<group>"; };
+		EBC5056725763FBF0038A617 /* JuFullWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuFullWindow.m; sourceTree = "<group>"; };
+		EBC5056825763FBF0038A617 /* JuZoomScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuZoomScaleView.h; sourceTree = "<group>"; };
+		EBC5056925763FBF0038A617 /* JuImagesCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuImagesCollectView.h; sourceTree = "<group>"; };
+		EBC5056A25763FBF0038A617 /* JuLargeImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLargeImageVC.h; sourceTree = "<group>"; };
+		EBC5056B25763FBF0038A617 /* JuProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuProgressView.h; sourceTree = "<group>"; };
+		EBC5056C25763FBF0038A617 /* JuAlbumPreviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuAlbumPreviewVC.m; sourceTree = "<group>"; };
+		EBC5056D25763FBF0038A617 /* JuImagesCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuImagesCollectCell.h; sourceTree = "<group>"; };
+		EBC5056E25763FBF0038A617 /* JuImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuImageObject.h; sourceTree = "<group>"; };
+		EBC5056F25763FBF0038A617 /* JuPhotoPickers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuPhotoPickers.m; sourceTree = "<group>"; };
+		EBC5057025763FBF0038A617 /* JuPhotoPickers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoPickers.h; sourceTree = "<group>"; };
+		EBC5057125763FBF0038A617 /* JuPhotoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoConfig.h; sourceTree = "<group>"; };
+		EBC5057325763FBF0038A617 /* JuPhotoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoDelegate.h; sourceTree = "<group>"; };
+		EBC5057425763FBF0038A617 /* JuPhotoCollectionFoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoCollectionFoot.h; sourceTree = "<group>"; };
+		EBC5057525763FBF0038A617 /* JuPhotoOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoOverlayView.h; sourceTree = "<group>"; };
+		EBC5057625763FBF0038A617 /* JuPhotoGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoGroupViewController.h; sourceTree = "<group>"; };
+		EBC5057725763FBF0038A617 /* RHAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAssetsLibrary.m; sourceTree = "<group>"; };
+		EBC5057825763FBF0038A617 /* JuPhotoCollectionVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoCollectionVController.h; sourceTree = "<group>"; };
+		EBC5057925763FBF0038A617 /* JuPhotoCollectionVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuPhotoCollectionVCell.m; sourceTree = "<group>"; };
+		EBC5057A25763FBF0038A617 /* JuPhotoGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoGroupCell.h; sourceTree = "<group>"; };
+		EBC5057B25763FBF0038A617 /* UIImage+PhotoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PhotoManage.h"; sourceTree = "<group>"; };
+		EBC5057C25763FBF0038A617 /* JuPhotoOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuPhotoOverlayView.m; sourceTree = "<group>"; };
+		EBC5057D25763FBF0038A617 /* JuPhotoCollectionFoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuPhotoCollectionFoot.m; sourceTree = "<group>"; };
+		EBC5057E25763FBF0038A617 /* JuPhotoCollectionVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuPhotoCollectionVController.m; sourceTree = "<group>"; };
+		EBC5057F25763FBF0038A617 /* RHAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAssetsLibrary.h; sourceTree = "<group>"; };
+		EBC5058025763FBF0038A617 /* JuPhotoGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuPhotoGroupViewController.m; sourceTree = "<group>"; };
+		EBC5058125763FBF0038A617 /* UIImage+PhotoManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PhotoManage.m"; sourceTree = "<group>"; };
+		EBC5058225763FBF0038A617 /* JuPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuPhotoGroupCell.m; sourceTree = "<group>"; };
+		EBC5058325763FBF0038A617 /* JuPhotoCollectionVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuPhotoCollectionVCell.h; sourceTree = "<group>"; };
+		EBC5059725763FFF0038A617 /* UIColor+juDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+juDark.m"; sourceTree = "<group>"; };
+		EBC5059825763FFF0038A617 /* UIColor+juDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+juDark.h"; sourceTree = "<group>"; };
+		EBC5059B257640610038A617 /* UIImage+mbCropping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+mbCropping.h"; sourceTree = "<group>"; };
+		EBC5059C257640610038A617 /* UIImage+mbCropping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+mbCropping.m"; sourceTree = "<group>"; };
+		EBC505A2257640FD0038A617 /* UIView+tableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+tableView.h"; sourceTree = "<group>"; };
+		EBC505A3257640FD0038A617 /* UIView+tableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+tableView.m"; sourceTree = "<group>"; };
+		EBC505A6257641650038A617 /* JuVoiceConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuVoiceConvert.m; sourceTree = "<group>"; };
+		EBC505A7257641650038A617 /* JuVoiceConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuVoiceConvert.h; sourceTree = "<group>"; };
+		EBC505B0257642180038A617 /* MBEmojisList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MBEmojisList.plist; sourceTree = "<group>"; };
+		EBC505B9257644740038A617 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayGroup.h"; sourceTree = "<group>"; };
+		EBC505BA257644740038A617 /* UIView+JuConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuConstraint.h"; sourceTree = "<group>"; };
+		EBC505BB257644740038A617 /* UIView+JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayout.m"; sourceTree = "<group>"; };
+		EBC505BC257644740038A617 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		EBC505BD257644740038A617 /* JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuLayout.m; sourceTree = "<group>"; };
+		EBC505BE257644740038A617 /* JuLayoutFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLayoutFrame.h; sourceTree = "<group>"; };
+		EBC505BF257644740038A617 /* UIView+JuConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuConstraint.m"; sourceTree = "<group>"; };
+		EBC505C0257644740038A617 /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayGroup.m"; sourceTree = "<group>"; };
+		EBC505C1257644740038A617 /* UIView+JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayout.h"; sourceTree = "<group>"; };
+		EBC505C2257644740038A617 /* JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLayout.h; sourceTree = "<group>"; };
+		EBC505C3257644740038A617 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,23 +270,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C07FC3486B4E287D52A41E /* libPods-JuChatMessage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EB20E55F1DD0593700A05A95 /* JuChatMessage */ = {
+		9C72615B6600D63B01B59DEB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EBAAD9B0214FA8AD000248B3 /* Model */,
-				EBAAD9AF214FA89A000248B3 /* chatBar */,
-				EBAAD9AE214FA882000248B3 /* Cell */,
-				EBAAD9AD214FA873000248B3 /* Bubble */,
-				EB20E5681DD0593700A05A95 /* JuChatViewController.h */,
-				EB20E5691DD0593700A05A95 /* JuChatViewController.m */,
+				2F37D3085C977E35E634352C /* Pods-JuChatMessage.debug.xcconfig */,
+				3DC5C5A52620B1F51603CAA7 /* Pods-JuChatMessage.release.xcconfig */,
 			);
-			path = JuChatMessage;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8AA00A5FE01321EC4B1E2F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FEA55D47FEC2B8F76C99D /* libPods-JuChatMessage.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EB266AFB1DB70F9C00D4A15F = {
@@ -185,6 +299,8 @@
 			children = (
 				EB266B061DB70F9C00D4A15F /* JuChatMessage */,
 				EB266B051DB70F9C00D4A15F /* Products */,
+				9C72615B6600D63B01B59DEB /* Pods */,
+				C8AA00A5FE01321EC4B1E2F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,9 +315,10 @@
 		EB266B061DB70F9C00D4A15F /* JuChatMessage */ = {
 			isa = PBXGroup;
 			children = (
-				EB20E55F1DD0593700A05A95 /* JuChatMessage */,
-				EB266B1E1DB710F800D4A15F /* Layout */,
-				EB358FE52150A8B500B5AABC /* DisplayGif */,
+				EBC505B8257644740038A617 /* JuLayout */,
+				EBC505A1257640F20038A617 /* JuEx */,
+				EBC5055A25763FBF0038A617 /* JuPhoto */,
+				EBC504E525763F860038A617 /* JuChatMessage */,
 				EB358FE22150A88B00B5AABC /* Resources */,
 				EB266B0A1DB70F9C00D4A15F /* AppDelegate.h */,
 				EB266B0B1DB70F9C00D4A15F /* AppDelegate.m */,
@@ -225,35 +342,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EB266B1E1DB710F800D4A15F /* Layout */ = {
-			isa = PBXGroup;
-			children = (
-				EB266B1F1DB710F800D4A15F /* JuLayout.h */,
-				EB266B201DB710F800D4A15F /* JuLayout.m */,
-				EB266B211DB710F800D4A15F /* UIView+Frame.h */,
-				EB266B221DB710F800D4A15F /* UIView+Frame.m */,
-				EB266B231DB710F800D4A15F /* UIView+JuConstraint.h */,
-				EB266B241DB710F800D4A15F /* UIView+JuConstraint.m */,
-				EB266B251DB710F800D4A15F /* UIView+JuLayGroup.h */,
-				EB266B261DB710F800D4A15F /* UIView+JuLayGroup.m */,
-				EB266B271DB710F800D4A15F /* UIView+JuLayout.h */,
-				EB266B281DB710F800D4A15F /* UIView+JuLayout.m */,
-			);
-			path = Layout;
-			sourceTree = "<group>";
-		};
-		EB358FE12150A1B200B5AABC /* ExView */ = {
-			isa = PBXGroup;
-			children = (
-				EB20E5601DD0593700A05A95 /* JuBubbleImage.h */,
-				EB20E5611DD0593700A05A95 /* JuBubbleImage.m */,
-			);
-			path = ExView;
-			sourceTree = "<group>";
-		};
 		EB358FE22150A88B00B5AABC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EBC505B0257642180038A617 /* MBEmojisList.plist */,
 				EB358FEC2150C1A900B5AABC /* VoiceImg */,
 				EB358FE32150A89E00B5AABC /* emoti_000.gif */,
 				EB46F1C01DB877B2004AB89A /* chatBar_more@2x.png */,
@@ -265,17 +357,6 @@
 				EB266B411DB73EC500D4A15F /* assistor_news0_03.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		EB358FE52150A8B500B5AABC /* DisplayGif */ = {
-			isa = PBXGroup;
-			children = (
-				EB358FE92150A8B500B5AABC /* CADisplayLineImage.h */,
-				EB358FE72150A8B500B5AABC /* CADisplayLineImage.m */,
-				EB358FE82150A8B500B5AABC /* CADisplayLineImageView.h */,
-				EB358FE62150A8B500B5AABC /* CADisplayLineImageView.m */,
-			);
-			path = DisplayGif;
 			sourceTree = "<group>";
 		};
 		EB358FEC2150C1A900B5AABC /* VoiceImg */ = {
@@ -305,62 +386,246 @@
 			path = VoiceImg;
 			sourceTree = "<group>";
 		};
-		EBAAD9AD214FA873000248B3 /* Bubble */ = {
+		EBC504E525763F860038A617 /* JuChatMessage */ = {
 			isa = PBXGroup;
 			children = (
-				EB358FE12150A1B200B5AABC /* ExView */,
-				EB20E5621DD0593700A05A95 /* JuBubbleView.h */,
-				EB20E5631DD0593700A05A95 /* JuBubbleView.m */,
-				EBAAD9B7214FA924000248B3 /* JuBubbleView+gif.h */,
-				EBAAD9B8214FA924000248B3 /* JuBubbleView+gif.m */,
-				EBAAD9B4214FA919000248B3 /* JuBubbleView+text.h */,
-				EBAAD9B5214FA919000248B3 /* JuBubbleView+text.m */,
-				EBAAD9B1214FA90D000248B3 /* JuBubbleView+image.h */,
-				EBAAD9B2214FA90D000248B3 /* JuBubbleView+image.m */,
-				EBAAD9BA214FAB94000248B3 /* JuBubbleView+Voice.h */,
-				EBAAD9BB214FAB94000248B3 /* JuBubbleView+Voice.m */,
-				EB3590192150DEDA00B5AABC /* JuBubbleView+Video.h */,
-				EB35901A2150DEDA00B5AABC /* JuBubbleView+Video.m */,
-				EB35901C2150DEF600B5AABC /* JuBubbleView+Location.h */,
-				EB35901D2150DEF600B5AABC /* JuBubbleView+Location.m */,
-				EB35901F2150DF0300B5AABC /* JuBubbleView+File.h */,
-				EB3590202150DF0300B5AABC /* JuBubbleView+File.m */,
+				EBC5050425763F860038A617 /* Adapter */,
+				EBC5050A25763F860038A617 /* Bubble */,
+				EBC5051E25763F860038A617 /* Cell */,
+				EBC504F025763F860038A617 /* chatBar */,
+				EBC504FA25763F860038A617 /* config */,
+				EBC5052625763F860038A617 /* DisplayGif */,
+				EBC504FE25763F860038A617 /* JuChatViewController.h */,
+				EBC5052525763F860038A617 /* JuChatViewController.m */,
+				EBC504FF25763F860038A617 /* JuFileManage */,
+				EBC504E625763F860038A617 /* Record */,
 			);
-			path = Bubble;
+			path = JuChatMessage;
 			sourceTree = "<group>";
 		};
-		EBAAD9AE214FA882000248B3 /* Cell */ = {
+		EBC504E625763F860038A617 /* Record */ = {
 			isa = PBXGroup;
 			children = (
-				EB20E5661DD0593700A05A95 /* JuBaseMessageCell.h */,
-				EB20E5671DD0593700A05A95 /* JuBaseMessageCell.m */,
-				EB358FDE2150A07E00B5AABC /* JuChatMessageCell.h */,
-				EB358FDF2150A07E00B5AABC /* JuChatMessageCell.m */,
+				EBC505A7257641650038A617 /* JuVoiceConvert.h */,
+				EBC505A6257641650038A617 /* JuVoiceConvert.m */,
+				EBC504E925763F860038A617 /* JuAudioManage.h */,
+				EBC504EF25763F860038A617 /* JuAudioManage.m */,
+				EBC504E825763F860038A617 /* JuAVAuthorizationManage.h */,
+				EBC504EB25763F860038A617 /* JuAVAuthorizationManage.m */,
+				EBC504ED25763F860038A617 /* JuDeviceErrorCode.h */,
+				EBC504EC25763F860038A617 /* JuDeviceManage.h */,
+				EBC504E725763F860038A617 /* JuDeviceManage.m */,
+				EBC504EE25763F860038A617 /* JuPlayVoice.h */,
+				EBC504EA25763F860038A617 /* JuPlayVoice.m */,
 			);
-			path = Cell;
+			path = Record;
 			sourceTree = "<group>";
 		};
-		EBAAD9AF214FA89A000248B3 /* chatBar */ = {
+		EBC504F025763F860038A617 /* chatBar */ = {
 			isa = PBXGroup;
 			children = (
-				EB20E5641DD0593700A05A95 /* JuChatBarView.h */,
-				EB20E5651DD0593700A05A95 /* JuChatBarView.m */,
-				EB3590152150C6EA00B5AABC /* JuRecordView.h */,
-				EB3590162150C6EA00B5AABC /* JuRecordView.m */,
-				EB3590222150DF4000B5AABC /* JuChatMoreView.h */,
-				EB3590232150DF4000B5AABC /* JuChatMoreView.m */,
-				EB3590182150D59B00B5AABC /* JuChatBarDelegate.h */,
+				EBC504F325763F860038A617 /* JuChatBarDelegate.h */,
+				EBC504F225763F860038A617 /* JuChatBarView.h */,
+				EBC504F625763F860038A617 /* JuChatBarView.m */,
+				EBC504F825763F860038A617 /* JuChatEmojiView.h */,
+				EBC504F425763F860038A617 /* JuChatEmojiView.m */,
+				EBC504F125763F860038A617 /* JuChatMoreView.h */,
+				EBC504F725763F860038A617 /* JuChatMoreView.m */,
+				EBC504F925763F860038A617 /* JuRecordView.h */,
+				EBC504F525763F860038A617 /* JuRecordView.m */,
 			);
 			path = chatBar;
 			sourceTree = "<group>";
 		};
-		EBAAD9B0214FA8AD000248B3 /* Model */ = {
+		EBC504FA25763F860038A617 /* config */ = {
 			isa = PBXGroup;
 			children = (
-				EB20E56A1DD0593700A05A95 /* JuMessageModel.h */,
-				EB20E56B1DD0593700A05A95 /* JuMessageModel.m */,
+				EBC504FB25763F860038A617 /* JuDateManage.h */,
+				EBC504FD25763F860038A617 /* JuDateManage.m */,
+				EBC504FC25763F860038A617 /* JuMsgConfig.h */,
 			);
-			path = Model;
+			path = config;
+			sourceTree = "<group>";
+		};
+		EBC504FF25763F860038A617 /* JuFileManage */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5050325763F860038A617 /* JuChatMediaFile.h */,
+				EBC5050125763F860038A617 /* JuChatMediaFile.m */,
+				EBC5050025763F860038A617 /* JuAudioDownManage.h */,
+				EBC5050225763F860038A617 /* JuAudioDownManage.m */,
+			);
+			path = JuFileManage;
+			sourceTree = "<group>";
+		};
+		EBC5050425763F860038A617 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5050825763F860038A617 /* JuChatDataAdapter.h */,
+				EBC5050625763F860038A617 /* JuChatDataAdapter.m */,
+				EBC5050525763F860038A617 /* JuChatDataProtocol.h */,
+				EBC5050725763F860038A617 /* JuMessageModel.h */,
+				EBC5050925763F860038A617 /* JuMessageModel.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		EBC5050A25763F860038A617 /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5051625763F860038A617 /* ExView */,
+				EBC5050D25763F860038A617 /* JuBubbleView.h */,
+				EBC5051925763F860038A617 /* JuBubbleView.m */,
+				EBC5050C25763F860038A617 /* JuBubbleView+File.h */,
+				EBC5051325763F860038A617 /* JuBubbleView+File.m */,
+				EBC5050B25763F860038A617 /* JuBubbleView+gif.h */,
+				EBC5051425763F860038A617 /* JuBubbleView+gif.m */,
+				EBC5051125763F860038A617 /* JuBubbleView+image.h */,
+				EBC5051C25763F860038A617 /* JuBubbleView+image.m */,
+				EBC5051025763F860038A617 /* JuBubbleView+Location.h */,
+				EBC5051D25763F860038A617 /* JuBubbleView+Location.m */,
+				EBC5051225763F860038A617 /* JuBubbleView+text.h */,
+				EBC5051B25763F860038A617 /* JuBubbleView+text.m */,
+				EBC5050E25763F860038A617 /* JuBubbleView+Video.h */,
+				EBC5051525763F860038A617 /* JuBubbleView+Video.m */,
+				EBC5050F25763F860038A617 /* JuBubbleView+Voice.h */,
+				EBC5051A25763F860038A617 /* JuBubbleView+Voice.m */,
+			);
+			path = Bubble;
+			sourceTree = "<group>";
+		};
+		EBC5051625763F860038A617 /* ExView */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5051725763F860038A617 /* JuBubbleImage.h */,
+				EBC5051825763F860038A617 /* JuBubbleImage.m */,
+			);
+			path = ExView;
+			sourceTree = "<group>";
+		};
+		EBC5051E25763F860038A617 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5052025763F860038A617 /* JuBaseMessageCell.h */,
+				EBC5052325763F860038A617 /* JuBaseMessageCell.m */,
+				EBC5052425763F860038A617 /* JuChatMessageCell.h */,
+				EBC5052125763F860038A617 /* JuChatMessageCell.m */,
+				EBC5052225763F860038A617 /* JuChatMsgTimeCell.h */,
+				EBC5051F25763F860038A617 /* JuChatMsgTimeCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EBC5052625763F860038A617 /* DisplayGif */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5052A25763F860038A617 /* JuDisplayLineImage.h */,
+				EBC5052825763F860038A617 /* JuDisplayLineImage.m */,
+				EBC5052725763F860038A617 /* JuDisplayLineImageView.h */,
+				EBC5052925763F860038A617 /* JuDisplayLineImageView.m */,
+			);
+			path = DisplayGif;
+			sourceTree = "<group>";
+		};
+		EBC5055A25763FBF0038A617 /* JuPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				EBC505B6257643DF0038A617 /* Ex */,
+				EBC5057225763FBF0038A617 /* JuPhotos */,
+				EBC5055B25763FBF0038A617 /* JuZoomImage */,
+				EBC5056F25763FBF0038A617 /* JuPhotoPickers.m */,
+				EBC5057025763FBF0038A617 /* JuPhotoPickers.h */,
+				EBC5057125763FBF0038A617 /* JuPhotoConfig.h */,
+			);
+			path = JuPhoto;
+			sourceTree = "<group>";
+		};
+		EBC5055B25763FBF0038A617 /* JuZoomImage */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5056225763FBF0038A617 /* JuAlbumPreviewVC.h */,
+				EBC5056C25763FBF0038A617 /* JuAlbumPreviewVC.m */,
+				EBC5056625763FBF0038A617 /* JuAnimated.h */,
+				EBC5055D25763FBF0038A617 /* JuAnimated.m */,
+				EBC5056525763FBF0038A617 /* JuDefine.h */,
+				EBC5055C25763FBF0038A617 /* JuFullWindow.h */,
+				EBC5056725763FBF0038A617 /* JuFullWindow.m */,
+				EBC5056E25763FBF0038A617 /* JuImageObject.h */,
+				EBC5056025763FBF0038A617 /* JuImageObject.m */,
+				EBC5056D25763FBF0038A617 /* JuImagesCollectCell.h */,
+				EBC5056125763FBF0038A617 /* JuImagesCollectCell.m */,
+				EBC5056925763FBF0038A617 /* JuImagesCollectView.h */,
+				EBC5055E25763FBF0038A617 /* JuImagesCollectView.m */,
+				EBC5056A25763FBF0038A617 /* JuLargeImageVC.h */,
+				EBC5056325763FBF0038A617 /* JuLargeImageVC.m */,
+				EBC5056B25763FBF0038A617 /* JuProgressView.h */,
+				EBC5056425763FBF0038A617 /* JuProgressView.m */,
+				EBC5056825763FBF0038A617 /* JuZoomScaleView.h */,
+				EBC5055F25763FBF0038A617 /* JuZoomScaleView.m */,
+			);
+			path = JuZoomImage;
+			sourceTree = "<group>";
+		};
+		EBC5057225763FBF0038A617 /* JuPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5057425763FBF0038A617 /* JuPhotoCollectionFoot.h */,
+				EBC5057D25763FBF0038A617 /* JuPhotoCollectionFoot.m */,
+				EBC5058325763FBF0038A617 /* JuPhotoCollectionVCell.h */,
+				EBC5057925763FBF0038A617 /* JuPhotoCollectionVCell.m */,
+				EBC5057825763FBF0038A617 /* JuPhotoCollectionVController.h */,
+				EBC5057E25763FBF0038A617 /* JuPhotoCollectionVController.m */,
+				EBC5057325763FBF0038A617 /* JuPhotoDelegate.h */,
+				EBC5057A25763FBF0038A617 /* JuPhotoGroupCell.h */,
+				EBC5058225763FBF0038A617 /* JuPhotoGroupCell.m */,
+				EBC5057625763FBF0038A617 /* JuPhotoGroupViewController.h */,
+				EBC5058025763FBF0038A617 /* JuPhotoGroupViewController.m */,
+				EBC5057525763FBF0038A617 /* JuPhotoOverlayView.h */,
+				EBC5057C25763FBF0038A617 /* JuPhotoOverlayView.m */,
+				EBC5057F25763FBF0038A617 /* RHAssetsLibrary.h */,
+				EBC5057725763FBF0038A617 /* RHAssetsLibrary.m */,
+			);
+			path = JuPhotos;
+			sourceTree = "<group>";
+		};
+		EBC505A1257640F20038A617 /* JuEx */ = {
+			isa = PBXGroup;
+			children = (
+				EBC505A2257640FD0038A617 /* UIView+tableView.h */,
+				EBC505A3257640FD0038A617 /* UIView+tableView.m */,
+				EBC5059825763FFF0038A617 /* UIColor+juDark.h */,
+				EBC5059725763FFF0038A617 /* UIColor+juDark.m */,
+			);
+			path = JuEx;
+			sourceTree = "<group>";
+		};
+		EBC505B6257643DF0038A617 /* Ex */ = {
+			isa = PBXGroup;
+			children = (
+				EBC5057B25763FBF0038A617 /* UIImage+PhotoManage.h */,
+				EBC5058125763FBF0038A617 /* UIImage+PhotoManage.m */,
+				EBC5059B257640610038A617 /* UIImage+mbCropping.h */,
+				EBC5059C257640610038A617 /* UIImage+mbCropping.m */,
+			);
+			path = Ex;
+			sourceTree = "<group>";
+		};
+		EBC505B8257644740038A617 /* JuLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EBC505C2257644740038A617 /* JuLayout.h */,
+				EBC505BD257644740038A617 /* JuLayout.m */,
+				EBC505BE257644740038A617 /* JuLayoutFrame.h */,
+				EBC505C3257644740038A617 /* UIView+Frame.h */,
+				EBC505BC257644740038A617 /* UIView+Frame.m */,
+				EBC505BA257644740038A617 /* UIView+JuConstraint.h */,
+				EBC505BF257644740038A617 /* UIView+JuConstraint.m */,
+				EBC505B9257644740038A617 /* UIView+JuLayGroup.h */,
+				EBC505C0257644740038A617 /* UIView+JuLayGroup.m */,
+				EBC505C1257644740038A617 /* UIView+JuLayout.h */,
+				EBC505BB257644740038A617 /* UIView+JuLayout.m */,
+			);
+			path = JuLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +635,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB266B1B1DB70F9C00D4A15F /* Build configuration list for PBXNativeTarget "JuChatMessage" */;
 			buildPhases = (
+				6EA9CF1AB2C6388EC078E5BF /* [CP] Check Pods Manifest.lock */,
 				EB266B001DB70F9C00D4A15F /* Sources */,
 				EB266B011DB70F9C00D4A15F /* Frameworks */,
 				EB266B021DB70F9C00D4A15F /* Resources */,
@@ -404,6 +670,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -438,6 +705,7 @@
 				EB3590012150C1A900B5AABC /* RecordingBkg@3x.png in Resources */,
 				EB3590042150C1A900B5AABC /* RecordingSignal003@3x.png in Resources */,
 				EB3590022150C1A900B5AABC /* RecordingSignal001@3x.png in Resources */,
+				EBC505B1257642180038A617 /* MBEmojisList.plist in Resources */,
 				EB35900C2150C1A900B5AABC /* RecordingSignal002@3x.png in Resources */,
 				EB266B541DB7600800D4A15F /* chatVoiceRight@2x.png in Resources */,
 				EB3590132150C1A900B5AABC /* RecordingSignal006@2x.png in Resources */,
@@ -459,37 +727,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EA9CF1AB2C6388EC078E5BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JuChatMessage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB266B001DB70F9C00D4A15F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3590172150C6EA00B5AABC /* JuRecordView.m in Sources */,
-				EB358FEB2150A8B500B5AABC /* CADisplayLineImage.m in Sources */,
-				EBAAD9BC214FAB94000248B3 /* JuBubbleView+Voice.m in Sources */,
-				EB266B2B1DB710F800D4A15F /* UIView+JuConstraint.m in Sources */,
-				EB3590242150DF4000B5AABC /* JuChatMoreView.m in Sources */,
-				EB35901E2150DEF600B5AABC /* JuBubbleView+Location.m in Sources */,
+				EBC5059525763FBF0038A617 /* JuPhotoGroupCell.m in Sources */,
+				EBC5053725763F860038A617 /* JuMessageModel.m in Sources */,
+				EBC5059425763FBF0038A617 /* UIImage+PhotoManage.m in Sources */,
+				EBC5054325763F860038A617 /* JuBaseMessageCell.m in Sources */,
+				EBC5058B25763FBF0038A617 /* JuFullWindow.m in Sources */,
 				EB46F1BC1DB86A50004AB89A /* TestViewController.m in Sources */,
-				EBAAD9B9214FA924000248B3 /* JuBubbleView+gif.m in Sources */,
-				EB358FE02150A07E00B5AABC /* JuChatMessageCell.m in Sources */,
-				EB20E56F1DD0593700A05A95 /* JuBaseMessageCell.m in Sources */,
-				EB35901B2150DEDB00B5AABC /* JuBubbleView+Video.m in Sources */,
-				EB266B2C1DB710F800D4A15F /* UIView+JuLayGroup.m in Sources */,
-				EBAAD9B6214FA919000248B3 /* JuBubbleView+text.m in Sources */,
+				EBC5052E25763F860038A617 /* JuAudioManage.m in Sources */,
+				EBC5053025763F860038A617 /* JuRecordView.m in Sources */,
+				EBC505C8257644740038A617 /* UIView+JuLayGroup.m in Sources */,
+				EBC5053B25763F860038A617 /* JuBubbleImage.m in Sources */,
+				EBC5054125763F860038A617 /* JuChatMsgTimeCell.m in Sources */,
+				EBC5053C25763F860038A617 /* JuBubbleView.m in Sources */,
+				EBC5053925763F860038A617 /* JuBubbleView+gif.m in Sources */,
+				EBC5059225763FBF0038A617 /* JuPhotoCollectionVController.m in Sources */,
+				EBC5058A25763FBF0038A617 /* JuProgressView.m in Sources */,
+				EBC5052F25763F860038A617 /* JuChatEmojiView.m in Sources */,
+				EBC5059025763FBF0038A617 /* JuPhotoOverlayView.m in Sources */,
+				EBC5058C25763FBF0038A617 /* JuAlbumPreviewVC.m in Sources */,
+				EBC5052C25763F860038A617 /* JuPlayVoice.m in Sources */,
+				EBC505A4257640FD0038A617 /* UIView+tableView.m in Sources */,
+				EBC5053A25763F860038A617 /* JuBubbleView+Video.m in Sources */,
+				EBC5053125763F860038A617 /* JuChatBarView.m in Sources */,
+				EBC5053F25763F860038A617 /* JuBubbleView+image.m in Sources */,
+				EBC5053525763F860038A617 /* JuAudioDownManage.m in Sources */,
+				EBC5053D25763F860038A617 /* JuBubbleView+Voice.m in Sources */,
+				EBC5052D25763F860038A617 /* JuAVAuthorizationManage.m in Sources */,
+				EBC5054625763F860038A617 /* JuDisplayLineImageView.m in Sources */,
+				EBC5053E25763F860038A617 /* JuBubbleView+text.m in Sources */,
+				EBC5054025763F860038A617 /* JuBubbleView+Location.m in Sources */,
+				EBC5058625763FBF0038A617 /* JuZoomScaleView.m in Sources */,
+				EBC5053825763F860038A617 /* JuBubbleView+File.m in Sources */,
+				EBC5058425763FBF0038A617 /* JuAnimated.m in Sources */,
+				EBC5059125763FBF0038A617 /* JuPhotoCollectionFoot.m in Sources */,
+				EBC5058F25763FBF0038A617 /* JuPhotoCollectionVCell.m in Sources */,
+				EBC5059D257640610038A617 /* UIImage+mbCropping.m in Sources */,
+				EBC5058525763FBF0038A617 /* JuImagesCollectView.m in Sources */,
+				EBC5053325763F860038A617 /* JuDateManage.m in Sources */,
+				EBC5053225763F860038A617 /* JuChatMoreView.m in Sources */,
+				EBC5058D25763FBF0038A617 /* JuPhotoPickers.m in Sources */,
+				EBC5058825763FBF0038A617 /* JuImagesCollectCell.m in Sources */,
+				EBC5053625763F860038A617 /* JuChatDataAdapter.m in Sources */,
 				EB266B0C1DB70F9C00D4A15F /* AppDelegate.m in Sources */,
-				EB266B291DB710F800D4A15F /* JuLayout.m in Sources */,
-				EB20E56D1DD0593700A05A95 /* JuBubbleView.m in Sources */,
-				EB20E56C1DD0593700A05A95 /* JuBubbleImage.m in Sources */,
-				EBAAD9B3214FA90D000248B3 /* JuBubbleView+image.m in Sources */,
-				EB266B2D1DB710F800D4A15F /* UIView+JuLayout.m in Sources */,
-				EB266B2A1DB710F800D4A15F /* UIView+Frame.m in Sources */,
-				EB358FEA2150A8B500B5AABC /* CADisplayLineImageView.m in Sources */,
-				EB20E56E1DD0593700A05A95 /* JuChatBarView.m in Sources */,
-				EB20E5701DD0593700A05A95 /* JuChatViewController.m in Sources */,
-				EB20E5711DD0593700A05A95 /* JuMessageModel.m in Sources */,
+				EBC5054425763F860038A617 /* JuChatViewController.m in Sources */,
+				EBC505C6257644740038A617 /* JuLayout.m in Sources */,
 				EB266B091DB70F9C00D4A15F /* main.m in Sources */,
-				EB3590212150DF0300B5AABC /* JuBubbleView+File.m in Sources */,
+				EBC505C5257644740038A617 /* UIView+Frame.m in Sources */,
+				EBC5052B25763F860038A617 /* JuDeviceManage.m in Sources */,
+				EBC5059325763FBF0038A617 /* JuPhotoGroupViewController.m in Sources */,
+				EBC5059925763FFF0038A617 /* UIColor+juDark.m in Sources */,
+				EBC5058725763FBF0038A617 /* JuImageObject.m in Sources */,
+				EBC5058925763FBF0038A617 /* JuLargeImageVC.m in Sources */,
+				EBC5054525763F860038A617 /* JuDisplayLineImage.m in Sources */,
+				EBC505C7257644740038A617 /* UIView+JuConstraint.m in Sources */,
+				EBC5058E25763FBF0038A617 /* RHAssetsLibrary.m in Sources */,
+				EBC5053425763F860038A617 /* JuChatMediaFile.m in Sources */,
+				EBC505C4257644740038A617 /* UIView+JuLayout.m in Sources */,
+				EBC5054225763F860038A617 /* JuChatMessageCell.m in Sources */,
+				EBC505A8257641650038A617 /* JuVoiceConvert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +950,7 @@
 		};
 		EB266B1C1DB70F9C00D4A15F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F37D3085C977E35E634352C /* Pods-JuChatMessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -641,6 +967,7 @@
 		};
 		EB266B1D1DB70F9C00D4A15F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC5C5A52620B1F51603CAA7 /* Pods-JuChatMessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

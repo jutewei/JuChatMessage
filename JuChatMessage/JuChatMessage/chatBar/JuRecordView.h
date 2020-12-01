@@ -16,7 +16,7 @@
 /**录音最长时间*/
 @property (assign)  CGFloat ju_voiceMaxTime;
 /**开始录音**/
--(void)juStartRecord:(UIView *)supView;
+-(void)juStartRecord:(UIView *)supView hanlde:(dispatch_block_t)hanlde;
 
 /**停止录音**/
 -(void)juStopRecord;

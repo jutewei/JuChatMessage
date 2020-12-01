@@ -10,5 +10,5 @@
 
 @interface JuBubbleView (gif)
 -(void)juSetGifView:(BOOL)isRight;
--(void)juSetGifData:(JuMessageModel *)juModel;
+-(void)juSetGifData:(JuChatDataAdapter *)juModel;
 @end

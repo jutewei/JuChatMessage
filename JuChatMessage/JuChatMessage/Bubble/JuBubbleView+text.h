@@ -10,5 +10,5 @@
 
 @interface JuBubbleView (text)
 -(void)juSetTextView:(BOOL)isRight;
--(void)juSetTextData:(JuMessageModel *)juModel;
+-(void)juSetTextData:(JuChatDataAdapter *)juModel;
 @end

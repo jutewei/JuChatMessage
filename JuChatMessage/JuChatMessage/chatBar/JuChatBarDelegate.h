@@ -13,6 +13,8 @@
 @optional
 - (void)juDidSendText:(NSString *)text;
 
+- (void)juDidSelectEmoji:(NSString *)text;
+
 - (void)juDidSendText:(NSString *)text withExt:(NSDictionary*)ext;
 
 - (BOOL)juDidInputAtInLocation:(NSUInteger)location;
@@ -21,8 +23,9 @@
 
 - (void)juDidSendFace:(NSString *)faceLocalPath;
 
-- (void)juDidSendVoice:(NSString *)voicePath;
+- (void)juDidSendVoice:(id)voicePath;
 
+- (void)juDidSelectMore:(UIView *)sender;
 
 - (void)juDidStartRecordingVoiceAction:(UIView *)recordView;
 

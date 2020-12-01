@@ -7,8 +7,9 @@
 //
 
 #import "JuChatMoreView.h"
-#import "UIView+JuLayGroup.h"
-#define Window_Width        [[UIScreen mainScreen] bounds].size.width
+#import "JuLayoutFrame.h"
+#import "JuMsgConfig.h"
+#import "JuChatBarDelegate.h"
 @implementation JuChatMoreView
 -(instancetype)init{
     self=[super init];
@@ -18,33 +19,33 @@
     return self;
 }
 -(void)shSubViews{
-    self.backgroundColor=[UIColor whiteColor];
-    NSArray *arrTitle=@[@"照片",@"拍照",@"快捷回复"];///< ,@"立即转诊",@"服务评价"
-    NSArray *arrImage = @[@"chat_messageAlbum",@"chat_messageCamera",@"quick_reply"];
-    CGFloat itemH=50;
-    CGFloat space= (Window_Width-200)/5;
+    self.backgroundColor=JUMsgColor_ChatMore;
+    NSArray *arrTitle=@[@"照片",@"拍照"];///< 
+    NSArray *arrImage = @[@"chat_morePhoto",@"chat_moreCamera"];
+    CGFloat itemW=65;
+    CGFloat space= (Chat_WindowWidth-itemW*4)/5;
     for (int i=0; i<arrTitle.count; i++) {
         UIButton *btn=[[UIButton alloc]init];
-        [btn setImage:[UIImage imageNamed:arrImage[i]] forState:UIControlStateNormal];
+        [btn setImage:JuChatImageName(arrImage[i]) forState:UIControlStateNormal];
         [btn setContentVerticalAlignment:UIControlContentVerticalAlignmentTop];
-        btn.contentEdgeInsets = UIEdgeInsetsMake(15, 0, 0, 0);
+//        btn.contentEdgeInsets = UIEdgeInsetsMake(12, 0, 0, 0);
         [btn addTarget:self action:@selector(juTouchMore:) forControlEvents:UIControlEventTouchUpInside];
         btn.tag=i;
         [self addSubview:btn];
         UILabel *lab=[[UILabel alloc]init];
         lab.text=arrTitle[i];
-        lab.textColor = [UIColor colorWithWhite:0.6 alpha:1];
+        lab.textColor = JUMsgColor_moreText;
         lab.font = [UIFont systemFontOfSize:13];
         [btn addSubview:lab];
-        lab.juOrigin(CGPointMake(0, -8));
+        lab.juOrigin(CGPointMake(0, -0.01));
 
-        btn.juLead.equal(space+(itemH+space)*i);
-        btn.juTop.equal(0);
-        btn.juSize(CGSizeMake(itemH, [JuChatMoreView juHeight]));
+        btn.juLead.equal(space+(itemW+space)*i);
+        btn.juTop.equal(20);
+        btn.juSize(CGSizeMake(itemW, 89));
     }
 }
 -(void)juShowView:(UIView *)view{
-
+    [self.superview layoutIfNeeded];
     if (view) {
         if (!self.superview) {
             [view addSubview:self];
@@ -55,7 +56,7 @@
             [self.superview layoutIfNeeded];
         }];
     }else{
-        self.ju_Bottom.constant=-[JuChatMoreView juHeight]-34;
+        self.ju_Bottom.constant=-[JuChatMoreView mbHeight]-34;
         [UIView animateWithDuration:0.3 animations:^{
             [self.superview layoutIfNeeded];
         }completion:^(BOOL finished) {
@@ -64,14 +65,16 @@
     }
 }
 -(void)juTouchMore:(UIButton *)sender{
-
+    if ([self.delegate respondsToSelector:@selector(juDidSelectMore:)]) {
+        [self.delegate juDidSelectMore:sender];
+    }
 
 }
 -(void)didMoveToSuperview{
     [super didMoveToSuperview];
     if (self.superview) {
-        self.juSafeFrame(CGRectMake(0, -0.01, 0, [JuChatMoreView juHeight]));
-        self.ju_Bottom.constant=-[JuChatMoreView juHeight];
+        self.juSafeFrame(CGRectMake(0, -0.01, 0, [JuChatMoreView mbHeight]));
+        self.ju_Bottom.constant=-[JuChatMoreView mbHeight];
         [self.superview layoutIfNeeded];
     }
 }
@@ -82,7 +85,7 @@
     // Drawing code
 }
 */
-+(CGFloat)juHeight{
-    return 100;
++(CGFloat)mbHeight{
+    return 189;
 }
 @end

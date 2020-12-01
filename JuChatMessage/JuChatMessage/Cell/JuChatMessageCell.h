@@ -7,7 +7,7 @@
 //
 
 #import "JuBaseMessageCell.h"
-
+#import "JuBubbleView.h"
 @interface JuChatMessageCell : JuBaseMessageCell
-@property (nonatomic,copy) JuMessageModel *ju_Model;
+@property (nonatomic,copy) JuChatDataAdapter *ju_Model;
 @end

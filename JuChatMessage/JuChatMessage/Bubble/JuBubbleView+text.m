@@ -11,17 +11,29 @@
 @implementation JuBubbleView (text)
 -(void)juSetTextView:(BOOL)isRight{
     self.ju_labMessage=[[UILabel alloc]init];
+    self.ju_labMessage.font=[UIFont systemFontOfSize:14];
     [self addSubview:self.ju_labMessage];
     self.ju_labMessage.numberOfLines=0;
     if (isRight) {
-        self.ju_labMessage.juEdge(UIEdgeInsetsMake(10, 10, 10, 12));
+        self.ju_labMessage.juEdge(UIEdgeInsetsMake(10, 12, 10, 12));
     }else{
-        self.ju_labMessage.juEdge(UIEdgeInsetsMake(10, 12, 10, 10));
+        self.ju_labMessage.juEdge(UIEdgeInsetsMake(10, 12, 10, 12));
     }
 }
 
--(void)juSetTextData:(JuMessageModel *)juModel{
+-(void)juSetTextData:(JuChatDataAdapter *)juModel{
+    
+    if (juModel.ju_attributeText) {
+        self.ju_labMessage.attributedText=juModel.ju_attributeText;
+    }else{
+        self.ju_labMessage.text=juModel.ju_messageText;
+    }
 
+    if (juModel.isSend) {
+        self.ju_labMessage.textColor=JUMsgColor_ChatText;
+    }else{
+        self.ju_labMessage.textColor=JUMsgColor_ChatText;
+    }
 }
 
 @end

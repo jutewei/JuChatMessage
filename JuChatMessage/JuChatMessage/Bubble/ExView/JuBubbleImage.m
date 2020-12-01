@@ -7,7 +7,7 @@
 //
 
 #import "JuBubbleImage.h"
-
+#import "JuMsgConfig.h"
 @implementation JuBubbleImage
 -(void)layoutSubviews{
     [super layoutSubviews];
@@ -16,12 +16,13 @@
     if (_isLeft) {
         imgName=@"consult_LeftBubble";
     }
-    UIImage *bubble = [UIImage imageNamed:imgName];
+    UIImage *bubble = [JuChatImageName(imgName) stretchableImageWithLeftCapWidth:15 topCapHeight:30];
     UIImageView *imageBubble = [[UIImageView alloc] init];
     [imageBubble setFrame:self.frame];
-    [imageBubble setImage:[bubble stretchableImageWithLeftCapWidth:15 topCapHeight:15]];
+    [imageBubble setImage:bubble];
     CALayer *layer              = imageBubble.layer;
     layer.frame                 = (CGRect){{0,0},imageBubble.layer.frame.size};
+    layer.contents=(id)imageBubble.image.CGImage;
     self.layer.mask = layer;
     [self setNeedsDisplay];
 }

@@ -13,6 +13,6 @@
 
 -(void)juShowView:(UIView *)view;
 
-+(CGFloat)juHeight;
++(CGFloat)mbHeight;
 
 @end

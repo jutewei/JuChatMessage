@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "JuBubbleImage.h"
-#import "JuMessageModel.h"
-#import "UIView+JuLayGroup.h"
+#import "JuChatDataAdapter.h"
+#import "JuLayoutFrame.h"
+#import "JuMsgConfig.h"
 @interface JuBubbleView : UIView
 
 @property (nonatomic,strong) UIImageView *ju_imgBubble;///< 气泡
@@ -21,7 +22,7 @@
 @property (nonatomic,strong) UIImageView *ju_imgVoice;///< 语音信息
 @property (nonatomic,strong) UILabel     *ju_labVoiceTime;///< 语音信息
 
--(void)juSetBubbleContent:(JuMessageModel *)juModel;
+-(void)juSetBubbleContent:(JuChatDataAdapter *)juModel;
 
--(void)juInitView:(JuMessageModel *)juModel;
+-(void)juInitView:(JuChatDataAdapter *)juModel;
 @end

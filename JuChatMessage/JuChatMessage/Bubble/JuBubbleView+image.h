@@ -10,5 +10,5 @@
 
 @interface JuBubbleView (image)
 -(void)juSetImageView:(BOOL)isRight;
--(void)juSetImageData:(JuMessageModel *)juModel;
+-(void)juSetImageData:(JuChatDataAdapter *)juModel;
 @end

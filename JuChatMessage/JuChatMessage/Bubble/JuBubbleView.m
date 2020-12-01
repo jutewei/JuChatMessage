@@ -7,6 +7,7 @@
 //
 
 #import "JuBubbleView.h"
+
 #import "JuBubbleView+gif.h"
 #import "JuBubbleView+text.h"
 #import "JuBubbleView+image.h"
@@ -19,28 +20,31 @@
 //}
 
 //初始化视图
--(void)juInitView:(JuMessageModel *)juModel{
+-(void)juInitView:(JuChatDataAdapter *)juModel{
     
     _ju_imgBubble=[[UIImageView alloc]init];
     [self addSubview:_ju_imgBubble];
     self.ju_imgBubble.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
 
-    if (juModel.type==JUMessageBodyTypeText) {
+    if (juModel.ju_mesageType==JUMessageBodyTypeText) {
         [self juSetTextView:juModel.isSend];
     }
-    else if(juModel.type==JUMessageBodyTypeImage){
+    else if(juModel.ju_mesageType==JUMessageBodyTypeImage){
         [self juSetImageView:juModel.isSend];
     }
-    else if(juModel.type==JUMessageBodyTypeVoice){
+    else if(juModel.ju_mesageType==JUMessageBodyTypeVoice){
         [self juSetVoiceView:juModel.isSend];
-    } else if(juModel.type==JUMessageBodyTypeGif){
+    } else if(juModel.ju_mesageType==JUMessageBodyTypeGif){
         [self juSetGifView:juModel.isSend];
     }
-
     if (juModel.isSend) {
-       self.ju_imgBubble.image=[[UIImage imageNamed:@"consult_RightBubble"] stretchableImageWithLeftCapWidth:15 topCapHeight:22];
+        [self.ju_imgBubble.layer setCornerRadius:8];
+        self.ju_imgBubble.backgroundColor=JUMsgColor_BubbleRight;
+//       self.ju_imgBubble.image=[JuChatImageName(@"consult_RightBubble") stretchableImageWithLeftCapWidth:15 topCapHeight:30];
     }else{
-        self.ju_imgBubble.image=[[UIImage imageNamed:@"consult_LeftBubble"] stretchableImageWithLeftCapWidth:20 topCapHeight:22];
+//        self.ju_imgBubble.image=[JuChatImageName(@"consult_LeftBubble") stretchableImageWithLeftCapWidth:15 topCapHeight:30];
+        [self.ju_imgBubble.layer setCornerRadius:8];
+        self.ju_imgBubble.backgroundColor=JUMsgColor_BubbleLeft;
     }
 
     ///< 气泡约束
@@ -50,17 +54,17 @@
 }
 
 //设置内容
--(void)juSetBubbleContent:(JuMessageModel *)juModel{
-    if (juModel.type==JUMessageBodyTypeText) {
+-(void)juSetBubbleContent:(JuChatDataAdapter *)juModel{
+    if (juModel.ju_mesageType==JUMessageBodyTypeText) {
         [self juSetTextData:juModel];
     }
-    else if(juModel.type==JUMessageBodyTypeImage){
+    else if(juModel.ju_mesageType==JUMessageBodyTypeImage){
         [self juSetImageData:juModel];
     }
-    else if(juModel.type==JUMessageBodyTypeVoice){
+    else if(juModel.ju_mesageType==JUMessageBodyTypeVoice){
         [self juSetVoiceData:juModel];
     }
-    else if(juModel.type==JUMessageBodyTypeGif){
+    else if(juModel.ju_mesageType==JUMessageBodyTypeGif){
         [self juSetGifData:juModel];
     }
 }
